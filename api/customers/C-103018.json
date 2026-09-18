@@ -1,0 +1,50 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "data": {
+    "customer_id": "C-103018",
+    "customer_name": "UT MD ANDERSON CANCER CTR",
+    "customer_class": "ACADEMIC-MEDICAL",
+    "country": "US",
+    "currency": "USD",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "tax_code": "US-TX-EXEMPT",
+    "tax_registration": "US-EIN 74-6001118",
+    "exemption_certificate": "TX-EX-3390174",
+    "credit_limit": 1400000,
+    "payment_terms": "Net 45",
+    "collector": "C N, Pavithra",
+    "bill_to": {
+      "site_use_id": "BT-103018-1",
+      "name": "UT MD ANDERSON CANCER CTR",
+      "address_1": "UT MD ANDERSON CANCER CTR",
+      "address_2": "ACCOUNTS PAYABLE UNIT 1682",
+      "address_3": "-",
+      "address_4": "PO BOX 301407",
+      "city": "Houston",
+      "state": "TX",
+      "postal_code": "77230",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-103018-1",
+      "name": "UT MD ANDERSON CANCER CTR",
+      "address_1": "UT MD ANDERSON CANCER CTR",
+      "address_2": "CENTRAL RECEIVING",
+      "address_3": "-",
+      "address_4": "1515 HOLCOMBE BLVD",
+      "city": "Houston",
+      "state": "TX",
+      "postal_code": "77030",
+      "country": "US"
+    },
+    "contact_name": "Rosa Delgado",
+    "contact_email": "rdelgado@mdanderson.org",
+    "contact_phone": "713-792-2121",
+    "contract_number": "MSA-MDA-ORB-2025-031",
+    "orders": [
+      "1886485",
+      "1886655"
+    ]
+  }
+}

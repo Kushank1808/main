@@ -1,0 +1,61 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "4500198856",
+    "customer_id": "C-200114",
+    "customer_name": "NORDWIND TURBINES GMBH",
+    "contract_number": "MSA-NW-ORB-2024-017",
+    "po_date": "2026-07-31",
+    "valid_from": "2026-07-31",
+    "valid_to": "2027-07-31",
+    "status": "OPEN",
+    "currency": "EUR",
+    "po_amount_limit": 45184.29,
+    "released_amount": 28240.18,
+    "buyer_name": "Katrin Bauer",
+    "buyer_email": "k.bauer@nordwind-turbines.de",
+    "payment_terms": "Net 45",
+    "incoterms": "DAP Hamburg Plant 2",
+    "sales_order": "SO-2026-7908",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "AX-SEAL-88",
+        "description": "Mechanical Seal Kit, tungsten carbide faces",
+        "uom": "EA",
+        "quantity": 45,
+        "unit_price": 134.13,
+        "amount": 6035.85
+      },
+      {
+        "po_line": 2,
+        "item_number": "AX-BRG-540",
+        "description": "High-load Bearing Set, sealed, Class 5",
+        "uom": "SET",
+        "quantity": 49,
+        "unit_price": 379.25,
+        "amount": 18583.25
+      },
+      {
+        "po_line": 3,
+        "item_number": "AX-GSKT-12",
+        "description": "Gasket and Fastener Pack (per pump)",
+        "uom": "PK",
+        "quantity": 54,
+        "unit_price": 57.81,
+        "amount": 3121.74
+      }
+    ],
+    "document_id": "DOC-PO-4500198856",
+    "documents": [
+      {
+        "document_id": "DOC-PO-4500198856",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_4500198856.pdf",
+        "size_bytes": 3583
+      }
+    ]
+  }
+}

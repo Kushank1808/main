@@ -1,0 +1,127 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Contract",
+  "data": {
+    "contract_number": "PA-SART-ORB-2025-022",
+    "contract_type": "PRICING_AGREEMENT",
+    "customer_id": "C-101902",
+    "status": "ACTIVE",
+    "effective_from": "2025-01-01",
+    "effective_to": "2026-12-31",
+    "currency": "USD",
+    "price_list": "US-OEM-2026",
+    "discount_pct": 8.0,
+    "payment_terms": "Net 30",
+    "incoterms": "EXW Marlborough",
+    "freight_terms": "COLLECT",
+    "billing_rule": "DELIVERY_BASED",
+    "tax_treatment": "ZERO_RATED",
+    "po_required": true,
+    "surcharge_allowed": true,
+    "price_tolerance_pct": 1.0,
+    "qty_tolerance_pct": 0.0,
+    "signed_by_customer": "A. Oms, Procurement Lead",
+    "signed_by_supplier": "D. Okafor, VP Commercial Operations",
+    "clauses": [
+      "Prices are taken from price list US-OEM-2026 less 8%, with a 1% price tolerance.",
+      "Freight is collect on the customer's carrier account and is never invoiced.",
+      "Puerto Rico Act 60 exemption applies; supplies are zero rated."
+    ],
+    "document_id": "DOC-CT-PA-SART-ORB-2025-022",
+    "customer_name": "SARTORIUS STEDIM FILTERS",
+    "price_list_lines": [
+      {
+        "price_list": "US-OEM-2026",
+        "contract_number": "PA-SART-ORB-2025-022",
+        "customer_id": "C-101902",
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "list_price": 8.05,
+        "discount_pct": 8.0,
+        "contract_price": 7.41,
+        "currency": "USD",
+        "effective_from": "2025-01-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-OEM-2026",
+        "contract_number": "PA-SART-ORB-2025-022",
+        "customer_id": "C-101902",
+        "item_number": "NEO96",
+        "uom": "EA",
+        "list_price": 7.36,
+        "discount_pct": 8.0,
+        "contract_price": 6.77,
+        "currency": "USD",
+        "effective_from": "2025-01-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-OEM-2026",
+        "contract_number": "PA-SART-ORB-2025-022",
+        "customer_id": "C-101902",
+        "item_number": "KA2V002PV1G",
+        "uom": "EA",
+        "list_price": 322.0,
+        "discount_pct": 8.0,
+        "contract_price": 296.24,
+        "currency": "USD",
+        "effective_from": "2025-01-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-OEM-2026",
+        "contract_number": "PA-SART-ORB-2025-022",
+        "customer_id": "C-101902",
+        "item_number": "CELLCUL500",
+        "uom": "BT",
+        "list_price": 96.4,
+        "discount_pct": 8.0,
+        "contract_price": 88.69,
+        "currency": "USD",
+        "effective_from": "2025-01-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-OEM-2026",
+        "contract_number": "PA-SART-ORB-2025-022",
+        "customer_id": "C-101902",
+        "item_number": "BIOPROC-FLT-22",
+        "uom": "EA",
+        "list_price": 214.75,
+        "discount_pct": 8.0,
+        "contract_price": 197.57,
+        "currency": "USD",
+        "effective_from": "2025-01-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-OEM-2026",
+        "contract_number": "PA-SART-ORB-2025-022",
+        "customer_id": "C-101902",
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "list_price": 1875.0,
+        "discount_pct": 8.0,
+        "contract_price": 1725.0,
+        "currency": "USD",
+        "effective_from": "2025-01-01",
+        "effective_to": "2026-12-31"
+      }
+    ],
+    "documents": [
+      {
+        "document_id": "DOC-CT-PA-SART-ORB-2025-022",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_PA-SART-ORB-2025-022.pdf",
+        "size_bytes": 3882
+      }
+    ],
+    "orders": [
+      "1886434",
+      "1886604",
+      "1886774"
+    ]
+  }
+}

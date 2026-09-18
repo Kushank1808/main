@@ -1,0 +1,17 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "customer_id": "C-DK-0301",
+    "customer_name": "Øresund Fleet A/S",
+    "company": "DK21",
+    "customer_type": "LEASING",
+    "country": "DK",
+    "vat_number": "DK36987654",
+    "related_party": false,
+    "nga_customer": false,
+    "leasing_plate_required": false,
+    "loan_provider": false,
+    "bpi_exception": false,
+    "sharepoint_tracker": true
+  }
+}

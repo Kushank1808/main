@@ -1,0 +1,56 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "DN-88218",
+    "sales_order": "SO-2026-7934",
+    "customer_id": "C-200552",
+    "ship_date": "2026-08-14",
+    "carrier": "DB Schenker",
+    "waybill": "DBS3273352713",
+    "ship_from": "Eastgate Business Park, Little Island, Cork T45 K294, Ireland",
+    "ship_to": {
+      "site_use_id": "ST-200552-1",
+      "name": "VANTA ENERGY SYSTEMS AB",
+      "address_1": "VANTA ENERGY SYSTEMS AB",
+      "address_2": "GODSMOTTAGNING",
+      "address_3": "-",
+      "address_4": "INDUSTRIGATAN 42",
+      "city": "Malmö",
+      "state": "SK",
+      "postal_code": "21275",
+      "country": "SE"
+    },
+    "proof_of_delivery_date": "2026-08-16",
+    "incoterms": "FCA Cork",
+    "gross_weight_kg": 8.82,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "AX-GSKT-12",
+        "uom": "PK",
+        "ordered_quantity": 33,
+        "shipped_quantity": 19,
+        "backordered_quantity": 14
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "AX-CTRL-PLC",
+        "uom": "EA",
+        "ordered_quantity": 2,
+        "shipped_quantity": 2,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-DN-88218",
+    "documents": [
+      {
+        "document_id": "DOC-DN-DN-88218",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_DN-88218.pdf",
+        "size_bytes": 3126
+      }
+    ]
+  }
+}

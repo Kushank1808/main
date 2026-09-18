@@ -1,0 +1,17 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "customer_id": "C-NO-0105",
+    "customer_name": "Oslo Leasing Partner AS",
+    "company": "NO21",
+    "customer_type": "LEASING",
+    "country": "NO",
+    "vat_number": "NO912345675MVA",
+    "related_party": false,
+    "nga_customer": true,
+    "leasing_plate_required": false,
+    "loan_provider": false,
+    "bpi_exception": false,
+    "sharepoint_tracker": false
+  }
+}

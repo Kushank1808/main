@@ -1,0 +1,37 @@
+{
+  "source_system": "POMS",
+  "data": {
+    "order_number": "11400003",
+    "market": "Denmark",
+    "company": "DK21",
+    "vin": "YSMKKE2AXS9800021",
+    "model": "Polestar 4",
+    "model_code": "P4",
+    "model_year": 2027,
+    "exterior_colour": "Storm",
+    "buyer_customer_id": "C-DK-0301",
+    "buyer_name": "Øresund Fleet A/S",
+    "financing_type": "LEASING",
+    "financing_partner_id": null,
+    "financing_partner": null,
+    "license_plate": null,
+    "order_date": "2026-08-09",
+    "handover_date": "2026-09-12",
+    "order_status": "HANDOVER_COMPLETED",
+    "currency": "DKK",
+    "base_price": 429995.0,
+    "paint_amount": 7495.0,
+    "options": [],
+    "fees": [],
+    "discount_amount": 0.0,
+    "gross_taxable_amount": 437490.0,
+    "vat_rate": 25.0,
+    "vat_amount": 109372.5,
+    "total_price": 546862.5,
+    "payment_status": "FINANCED",
+    "poms_last_updated": "2026-09-17T18:40:00Z",
+    "workday_invoices": [
+      "CI-DK21-400503"
+    ]
+  }
+}

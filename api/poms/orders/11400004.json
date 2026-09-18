@@ -1,0 +1,43 @@
+{
+  "source_system": "POMS",
+  "data": {
+    "order_number": "11400004",
+    "market": "Denmark",
+    "company": "DK21",
+    "vin": "YSMKKE2ALS9800028",
+    "model": "Polestar 4",
+    "model_code": "P4",
+    "model_year": 2027,
+    "exterior_colour": "Snow",
+    "buyer_customer_id": "C-DK-0304",
+    "buyer_name": "København Byggeri A/S",
+    "financing_type": "COMPANY",
+    "financing_partner_id": null,
+    "financing_partner": null,
+    "license_plate": null,
+    "order_date": "2026-08-09",
+    "handover_date": "2026-09-12",
+    "order_status": "HANDOVER_COMPLETED",
+    "currency": "DKK",
+    "base_price": 459995.0,
+    "paint_amount": 0.0,
+    "options": [
+      {
+        "option_code": "HOME-CHG",
+        "description": "Home charger 11 kW",
+        "amount": 7995.0
+      }
+    ],
+    "fees": [],
+    "discount_amount": 0.0,
+    "gross_taxable_amount": 467990.0,
+    "vat_rate": 25.0,
+    "vat_amount": 116997.5,
+    "total_price": 584987.5,
+    "payment_status": "PAID",
+    "poms_last_updated": "2026-09-17T18:40:00Z",
+    "workday_invoices": [
+      "CI-DK21-400504"
+    ]
+  }
+}

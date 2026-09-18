@@ -1,0 +1,171 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5517",
+    "proposed_invoice_number": "ORB-EU-INV-2026-05597",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-08-14",
+    "invoice_date": "2026-08-11",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+    "legal_entity": "ORBIS Industrial Solutions Ireland Ltd",
+    "sales_order": "SO-2026-7921",
+    "customer_po_number": "4500198857",
+    "contract_number": "MSA-HFS-ORB-2025-006",
+    "delivery_number": "DN-88217",
+    "customer_id": "C-200380",
+    "bill_to": {
+      "site_use_id": "BT-200380-1",
+      "name": "HELIOS FLUID SYSTEMS SAS",
+      "address_1": "HELIOS FLUID SYSTEMS SAS",
+      "address_2": "SERVICE COMPTABILITE",
+      "address_3": "-",
+      "address_4": "14 RUE DE LA VILLETTE",
+      "city": "Lyon",
+      "state": "ARA",
+      "postal_code": "69003",
+      "country": "FR"
+    },
+    "ship_to": {
+      "site_use_id": "ST-200380-1",
+      "name": "HELIOS FLUID SYSTEMS SAS",
+      "address_1": "HELIOS FLUID SYSTEMS SAS",
+      "address_2": "ATELIER SUD RECEPTION",
+      "address_3": "-",
+      "address_4": "ZI DES GRANDES TERRES",
+      "city": "Saint-Priest",
+      "state": "ARA",
+      "postal_code": "69800",
+      "country": "FR"
+    },
+    "currency": "EUR",
+    "payment_terms": "Net 60",
+    "incoterms": "DAP Saint-Priest",
+    "tax_code": "EU-RC-0",
+    "tax_treatment": "REVERSE_CHARGE",
+    "tax_rate": 0.0,
+    "customer_tax_registration": "FR 47812993041",
+    "exemption_certificate": null,
+    "notes": "Cross-border supply; VAT accounted by recipient under reverse charge.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "AX-BRG-540",
+        "description": "High-load Bearing Set, sealed, Class 5",
+        "line_type": "GOODS",
+        "uom": "SET",
+        "quantity_to_bill": 23,
+        "unit_price": 385.4,
+        "amount": 8864.2,
+        "source": "DELIVERY",
+        "source_reference": "DN-88217",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 2,
+        "item_number": "AX-GSKT-12",
+        "description": "Gasket and Fastener Pack (per pump)",
+        "line_type": "GOODS",
+        "uom": "PK",
+        "quantity_to_bill": 10,
+        "unit_price": 58.75,
+        "amount": 587.5,
+        "source": "DELIVERY",
+        "source_reference": "DN-88217",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 3,
+        "item_number": "AX-CTRL-PLC",
+        "description": "Pump Control Panel, PLC, IP66",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 5,
+        "unit_price": 4004.4,
+        "amount": 20022.0,
+        "source": "DELIVERY",
+        "source_reference": "DN-88217",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 4,
+        "item_number": "AX-PMP-320",
+        "description": "Centrifugal Pump Assembly, 320mm impeller, SS316",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 12,
+        "unit_price": 1739.0,
+        "amount": 20868.0,
+        "source": "DELIVERY",
+        "source_reference": "DN-88217",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 5,
+        "item_number": "FREIGHT-DAP",
+        "description": "Freight to named place under DAP terms",
+        "line_type": "FREIGHT",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 640.0,
+        "amount": 640.0,
+        "source": "ORDER",
+        "source_reference": "SO-2026-7921",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 50341.7,
+      "surcharge_total": 0.0,
+      "freight_total": 640.0,
+      "tax_amount": 0.0,
+      "total_payable": 50981.7,
+      "currency": "EUR"
+    },
+    "customer_name": "HELIOS FLUID SYSTEMS SAS",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-SO-2026-7921",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_SO-2026-7921.pdf",
+        "size_bytes": 4535
+      },
+      {
+        "document_id": "DOC-PO-4500198857",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_4500198857.pdf",
+        "size_bytes": 3742
+      },
+      {
+        "document_id": "DOC-CT-MSA-HFS-ORB-2025-006",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-HFS-ORB-2025-006.pdf",
+        "size_bytes": 3804
+      },
+      {
+        "document_id": "DOC-DN-DN-88217",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_DN-88217.pdf",
+        "size_bytes": 3256
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "data": {
+    "customer_id": "C-100428",
+    "customer_name": "ARKANSAS CHILDRENS HOSP",
+    "customer_class": "HEALTHCARE-IDN",
+    "country": "US",
+    "currency": "USD",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "tax_code": "US-AR-EXEMPT",
+    "tax_registration": "US-EIN 71-0236856",
+    "exemption_certificate": "AR-EX-8841207",
+    "credit_limit": 750000,
+    "payment_terms": "Net 45",
+    "collector": "Bhattacharjee, Arpan",
+    "bill_to": {
+      "site_use_id": "BT-100428-1",
+      "name": "ARKANSAS CHILDRENS HOSP",
+      "address_1": "ARKANSAS CHILDRENS HOSP",
+      "address_2": "ACCOUNTS PAYABLE",
+      "address_3": "-",
+      "address_4": "1 CHILDRENS WAY",
+      "city": "Little Rock",
+      "state": "AR",
+      "postal_code": "72202",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-100428-1",
+      "name": "ARKANSAS CHILDRENS HOSP",
+      "address_1": "ARKANSAS CHILDRENS HOSP",
+      "address_2": "WAREHOUSE",
+      "address_3": "-",
+      "address_4": "2410 W 8TH STREET",
+      "city": "Little Rock",
+      "state": "AR",
+      "postal_code": "72202",
+      "country": "US"
+    },
+    "contact_name": "Mary Heroux",
+    "contact_email": "HerouxME@archildrens.org",
+    "contact_phone": "501-364-1100",
+    "contract_number": "MSA-ACH-ORB-2024-011",
+    "orders": [
+      "1886400",
+      "1886570",
+      "1886740"
+    ]
+  }
+}

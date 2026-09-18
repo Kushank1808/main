@@ -1,0 +1,70 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO250118",
+    "customer_id": "C-102640",
+    "customer_name": "CHARLES RIVER LABS",
+    "contract_number": "MSA-CRL-ORB-2024-019",
+    "po_date": "2026-07-27",
+    "valid_from": "2026-07-27",
+    "valid_to": "2027-07-27",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 25520.02,
+    "released_amount": 15950.01,
+    "buyer_name": "Gregory Nunes",
+    "buyer_email": "greg.nunes@criver.com",
+    "payment_terms": "Net 30",
+    "incoterms": "FOB Origin",
+    "sales_order": "1886638",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "KA2V002PV1G",
+        "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+        "uom": "EA",
+        "quantity": 21,
+        "unit_price": 305.9,
+        "amount": 6423.9
+      },
+      {
+        "po_line": 2,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "uom": "BT",
+        "quantity": 56,
+        "unit_price": 91.58,
+        "amount": 5128.48
+      },
+      {
+        "po_line": 3,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "uom": "EA",
+        "quantity": 7,
+        "unit_price": 204.01,
+        "amount": 1428.07
+      },
+      {
+        "po_line": 4,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "uom": "EA",
+        "quantity": 1,
+        "unit_price": 1781.25,
+        "amount": 1781.25
+      }
+    ],
+    "document_id": "DOC-PO-PO250118",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO250118",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO250118.pdf",
+        "size_bytes": 3757
+      }
+    ]
+  }
+}

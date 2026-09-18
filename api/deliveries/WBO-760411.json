@@ -1,0 +1,72 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760411",
+    "sales_order": "1886587",
+    "customer_id": "C-100731",
+    "ship_date": "2026-07-31",
+    "carrier": "FedEx Freight",
+    "waybill": "FX8812530930",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-100731-1",
+      "name": "MAYO FDN",
+      "address_1": "MAYO FDN",
+      "address_2": "INV INVENTORY CENTER",
+      "address_3": "-",
+      "address_4": "3131 VALLEY HIGH RD NW",
+      "city": "Rochester",
+      "state": "MN",
+      "postal_code": "55901",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-08-02",
+    "incoterms": "FOB Destination",
+    "gross_weight_kg": 237.72,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "ordered_quantity": 5,
+        "shipped_quantity": 5,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "ordered_quantity": 187,
+        "shipped_quantity": 187,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "NEO96",
+        "uom": "EA",
+        "ordered_quantity": 340,
+        "shipped_quantity": 340,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 4,
+        "item_number": "KA2V002PV1G",
+        "uom": "EA",
+        "ordered_quantity": 34,
+        "shipped_quantity": 34,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760411",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760411",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760411.pdf",
+        "size_bytes": 3218
+      }
+    ]
+  }
+}

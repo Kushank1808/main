@@ -1,0 +1,92 @@
+{
+  "source_system": "Workday",
+  "object": "Sales Item",
+  "count": 14,
+  "generated_at": "2026-09-18T07:00:00Z",
+  "data": [
+    {
+      "sales_item": "P2-CAR",
+      "name": "Polestar 2 Car",
+      "default_revenue_category": "3022",
+      "item_group": "Vehicle"
+    },
+    {
+      "sales_item": "P3-CAR",
+      "name": "Polestar 3 Car",
+      "default_revenue_category": "3022",
+      "item_group": "Vehicle"
+    },
+    {
+      "sales_item": "P4-CAR",
+      "name": "Polestar 4 Car",
+      "default_revenue_category": "3022",
+      "item_group": "Vehicle"
+    },
+    {
+      "sales_item": "S00001",
+      "name": "S00001 PS4 SUV Connected services plus",
+      "default_revenue_category": "3027",
+      "item_group": "Service"
+    },
+    {
+      "sales_item": "S00002",
+      "name": "S00002 Connected services 24 months",
+      "default_revenue_category": "3027",
+      "item_group": "Service"
+    },
+    {
+      "sales_item": "DISC-FSP",
+      "name": "Discount FSP retail",
+      "default_revenue_category": "3033",
+      "item_group": "Discount"
+    },
+    {
+      "sales_item": "W20-WHEEL",
+      "name": "Winter wheels 20 inch",
+      "default_revenue_category": "3027",
+      "item_group": "Accessory"
+    },
+    {
+      "sales_item": "HOME-CHG",
+      "name": "Home charger 11 kW",
+      "default_revenue_category": "3027",
+      "item_group": "Accessory"
+    },
+    {
+      "sales_item": "FEE-DEL",
+      "name": "Delivery fee",
+      "default_revenue_category": "3041",
+      "item_group": "Fee"
+    },
+    {
+      "sales_item": "FEE-REG",
+      "name": "Registration fee",
+      "default_revenue_category": "3042",
+      "item_group": "Fee"
+    },
+    {
+      "sales_item": "FEE-ADM",
+      "name": "Administration fee",
+      "default_revenue_category": "3043",
+      "item_group": "Fee"
+    },
+    {
+      "sales_item": "PREPAY",
+      "name": "Customer prepayment",
+      "default_revenue_category": "3055",
+      "item_group": "Prepayment"
+    },
+    {
+      "sales_item": "DN-INT",
+      "name": "Delivery note",
+      "default_revenue_category": "9000",
+      "item_group": "Internal"
+    },
+    {
+      "sales_item": "SIE-INT",
+      "name": "Sales invoice extra",
+      "default_revenue_category": "9000",
+      "item_group": "Internal"
+    }
+  ]
+}

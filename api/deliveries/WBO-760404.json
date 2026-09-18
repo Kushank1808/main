@@ -1,0 +1,64 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760404",
+    "sales_order": "1886468",
+    "customer_id": "C-102640",
+    "ship_date": "2026-07-17",
+    "carrier": "FedEx Freight",
+    "waybill": "FX1029249810",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-102640-1",
+      "name": "CHARLES RIVER LABS",
+      "address_1": "CHARLES RIVER LABORATORIES",
+      "address_2": "RECEIVING BLDG C",
+      "address_3": "-",
+      "address_4": "334 SOUTH ST",
+      "city": "Shrewsbury",
+      "state": "MA",
+      "postal_code": "01545",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-07-19",
+    "incoterms": "FOB Origin",
+    "gross_weight_kg": 55.86,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "BIOPROC-FLT-22",
+        "uom": "EA",
+        "ordered_quantity": 6,
+        "shipped_quantity": 6,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "ordered_quantity": 2,
+        "shipped_quantity": 2,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "ordered_quantity": 125,
+        "shipped_quantity": 125,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760404",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760404",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760404.pdf",
+        "size_bytes": 3173
+      }
+    ]
+  }
+}

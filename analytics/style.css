@@ -1,0 +1,95 @@
+/* ORBIS Insight — dark analytics sheet in the QlikSense idiom: a selection bar
+   that governs every object on the sheet, and charts that are read, not decorated. */
+:root{
+  --bg:#0d1218;
+  --sheet:#131c25;
+  --panel:#18232e;
+  --line:#243342;
+  --text:#e8eef4;
+  --dim:#9fb0c0;
+  --muted:#6d8296;
+  --sel:#3fb98a;         /* Qlik-green for active selections */
+  --a1:#4da3ff;
+  --a2:#ff7a45;
+  --a3:#c48cff;
+  --a4:#ffc94d;
+  --bad:#f8686b;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{
+  background:var(--bg);color:var(--text);font-size:13px;font-variant-numeric:tabular-nums;
+  font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;
+}
+.loading{padding:70px;text-align:center;color:var(--muted)}
+
+.bar{
+  background:#0a0f14;border-bottom:1px solid var(--line);padding:12px 22px;
+  display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:baseline;gap:11px}
+.logo{font-weight:700;letter-spacing:.16em}
+.app{color:var(--sel);font-weight:600}
+.sheet{color:var(--muted);font-size:12px}
+.bar-right{display:flex;align-items:center;gap:16px;font-size:11.5px;color:var(--muted)}
+.erp-link{color:var(--a1);text-decoration:none;border:1px solid var(--line);border-radius:5px;padding:5px 11px}
+.erp-link:hover{border-color:var(--a1)}
+
+/* selection bar */
+.selections{
+  background:var(--sheet);border-bottom:1px solid var(--line);padding:10px 22px;
+  display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;
+}
+.sel-group label{
+  display:block;font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);
+  font-weight:700;margin-bottom:6px;
+}
+.chips{display:flex;gap:6px;flex-wrap:wrap;max-width:640px}
+.chip{
+  background:var(--panel);border:1px solid var(--line);color:var(--dim);border-radius:14px;
+  padding:4px 11px;font-size:11.5px;cursor:pointer;
+}
+.chip:hover{border-color:#35506a;color:var(--text)}
+.chip.on{background:var(--sel);border-color:var(--sel);color:#06231a;font-weight:700}
+.clear{
+  margin-left:auto;align-self:center;background:transparent;border:1px solid var(--line);
+  color:var(--dim);border-radius:5px;padding:7px 13px;cursor:pointer;font:inherit;font-size:12px;
+}
+.clear:hover{border-color:var(--bad);color:var(--bad)}
+
+main{padding:18px 22px 60px;display:grid;gap:14px;max-width:1620px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:13px 15px}
+.kpi .l{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:700}
+.kpi .v{font-size:25px;font-weight:600;margin-top:7px;letter-spacing:-.5px}
+.kpi .s{font-size:11px;color:var(--muted);margin-top:4px}
+.kpi.alert .v{color:var(--bad)}
+.kpi.good .v{color:var(--sel)}
+
+.row{display:grid;gap:14px}
+.row.two{grid-template-columns:repeat(auto-fit,minmax(430px,1fr))}
+.viz{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:13px 15px 8px}
+.viz h3{margin:0 0 2px;font-size:13px;font-weight:600}
+.viz .sub{color:var(--muted);font-size:11px;margin-bottom:10px}
+svg{display:block;width:100%;overflow:visible}
+.axis{fill:var(--muted);font-size:10.5px}
+.grid-line{stroke:#1e2c3a}
+.bar-label{fill:var(--dim);font-size:10.5px}
+.val-label{fill:var(--text);font-size:10.5px}
+
+table{border-collapse:collapse;width:100%}
+th,td{padding:8px 11px;text-align:left;border-bottom:1px solid #1c2836;font-size:12.5px;white-space:nowrap}
+th{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.07em;font-weight:700}
+td.num,th.num{text-align:right}
+tbody tr:hover{background:#16212c}
+.scroll{overflow:auto;max-height:340px}
+.tag{border-radius:10px;padding:1px 8px;font-size:10.5px;font-weight:700;border:1px solid}
+.tag.rc{color:var(--a3);border-color:#4b3a63}
+.tag.ex{color:var(--sel);border-color:#265744}
+.tag.tx{color:var(--a4);border-color:#5c4a1c}
+.legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--dim);font-size:11px;margin-top:6px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px}
+@media(max-width:640px){
+  main{padding:14px 12px 50px}
+  .chips{max-width:100%}
+}

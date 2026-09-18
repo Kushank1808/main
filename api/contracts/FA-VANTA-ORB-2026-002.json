@@ -1,0 +1,113 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Contract",
+  "data": {
+    "contract_number": "FA-VANTA-ORB-2026-002",
+    "contract_type": "FRAME_AGREEMENT",
+    "customer_id": "C-200552",
+    "status": "ACTIVE",
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "currency": "EUR",
+    "price_list": "EU-IND-2026",
+    "discount_pct": 4.0,
+    "payment_terms": "Net 30",
+    "incoterms": "FCA Cork",
+    "freight_terms": "COLLECT",
+    "billing_rule": "DELIVERY_BASED",
+    "tax_treatment": "REVERSE_CHARGE",
+    "po_required": true,
+    "surcharge_allowed": false,
+    "price_tolerance_pct": 0.0,
+    "qty_tolerance_pct": 0.0,
+    "signed_by_customer": "A. Lindgren, Category Buyer",
+    "signed_by_supplier": "S. Moloney, Commercial Director EMEA",
+    "clauses": [
+      "Prices are taken from price list EU-IND-2026 less 4% for the agreement year.",
+      "Delivery is FCA Cork; freight is arranged and paid by the customer and is not billable.",
+      "Supplies are intra-Community; VAT is accounted for by the recipient under reverse charge."
+    ],
+    "document_id": "DOC-CT-FA-VANTA-ORB-2026-002",
+    "customer_name": "VANTA ENERGY SYSTEMS AB",
+    "price_list_lines": [
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "FA-VANTA-ORB-2026-002",
+        "customer_id": "C-200552",
+        "item_number": "AX-PMP-320",
+        "uom": "EA",
+        "list_price": 1850.0,
+        "discount_pct": 4.0,
+        "contract_price": 1776.0,
+        "currency": "EUR",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "FA-VANTA-ORB-2026-002",
+        "customer_id": "C-200552",
+        "item_number": "AX-SEAL-88",
+        "uom": "EA",
+        "list_price": 145.0,
+        "discount_pct": 4.0,
+        "contract_price": 139.2,
+        "currency": "EUR",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "FA-VANTA-ORB-2026-002",
+        "customer_id": "C-200552",
+        "item_number": "AX-BRG-540",
+        "uom": "SET",
+        "list_price": 410.0,
+        "discount_pct": 4.0,
+        "contract_price": 393.6,
+        "currency": "EUR",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "FA-VANTA-ORB-2026-002",
+        "customer_id": "C-200552",
+        "item_number": "AX-GSKT-12",
+        "uom": "PK",
+        "list_price": 62.5,
+        "discount_pct": 4.0,
+        "contract_price": 60.0,
+        "currency": "EUR",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "FA-VANTA-ORB-2026-002",
+        "customer_id": "C-200552",
+        "item_number": "AX-CTRL-PLC",
+        "uom": "EA",
+        "list_price": 4260.0,
+        "discount_pct": 4.0,
+        "contract_price": 4089.6,
+        "currency": "EUR",
+        "effective_from": "2026-01-01",
+        "effective_to": "2026-12-31"
+      }
+    ],
+    "documents": [
+      {
+        "document_id": "DOC-CT-FA-VANTA-ORB-2026-002",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_FA-VANTA-ORB-2026-002.pdf",
+        "size_bytes": 3778
+      }
+    ],
+    "orders": [
+      "SO-2026-7804",
+      "SO-2026-7934"
+    ]
+  }
+}

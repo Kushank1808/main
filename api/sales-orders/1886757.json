@@ -1,0 +1,125 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Sales Order",
+  "data": {
+    "order_number": "1886757",
+    "customer_po_number": "PO250377",
+    "contract_number": "MSA-MAYO-ORB-2023-004",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "legal_entity": "ORBIS Life Sciences Inc.",
+    "order_type": "Standard Order",
+    "order_source": "EDI 850",
+    "status": "BOOKED",
+    "entered_date": "2026-08-16",
+    "booked_date": "2026-08-17",
+    "requested_ship_date": "2026-08-20",
+    "invoiced_date": null,
+    "transaction_originator": "C N, Pavithra",
+    "caller_name": "INV Inventory Center Procurement",
+    "caller_email": "orderconfirmations@mayo.edu",
+    "caller_phone": "507-266-5551",
+    "customer_id": "C-100731",
+    "customer_name_bill_to": "MAYO CLINIC",
+    "customer_name_ship_to": "MAYO FDN",
+    "bill_to": {
+      "site_use_id": "BT-100731-1",
+      "name": "MAYO CLINIC",
+      "address_1": "MAYO CLINIC",
+      "address_2": "SUPPLY CHAIN AP",
+      "address_3": "-",
+      "address_4": "200 1ST ST SW",
+      "city": "ROCHESTER",
+      "state": "MN",
+      "postal_code": "55905",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-100731-1",
+      "name": "MAYO FDN",
+      "address_1": "MAYO FDN",
+      "address_2": "INV INVENTORY CENTER",
+      "address_3": "-",
+      "address_4": "3131 VALLEY HIGH RD NW",
+      "city": "Rochester",
+      "state": "MN",
+      "postal_code": "55901",
+      "country": "US"
+    },
+    "currency": "USD",
+    "payment_terms": "Net 60",
+    "incoterms": "FOB Destination",
+    "freight_terms": "PREPAID",
+    "tax_code": "US-MN-EXEMPT",
+    "tax_treatment": "EXEMPT",
+    "tax_registration_customer": "US-EIN 41-6011702",
+    "exemption_certificate": "MN-EX-2277341",
+    "price_list": "US-IDN-2026-H1",
+    "delivery_number": null,
+    "holds": [
+      {
+        "hold_name": "CREDIT CHECK FAILURE",
+        "applied_on": "2026-08-17",
+        "applied_by": "AUTO-CREDIT-ENGINE",
+        "released": false
+      }
+    ],
+    "lines": [
+      {
+        "line_number": 1,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "line_type": "GOODS",
+        "uom": "BT",
+        "ordered_quantity": 16,
+        "shipped_quantity": 16,
+        "unit_list_price": 96.4,
+        "contract_price": 81.94,
+        "unit_selling_price": 81.94,
+        "discount_pct": 15.0,
+        "extended_amount": 1311.04,
+        "revenue_account": "4100-PRODUCT-REVENUE",
+        "hs_code": "3821.00",
+        "tax_code": "US-MN-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line_number": 2,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "ordered_quantity": 40,
+        "shipped_quantity": 40,
+        "unit_list_price": 214.75,
+        "contract_price": 182.54,
+        "unit_selling_price": 182.54,
+        "discount_pct": 15.0,
+        "extended_amount": 7301.6,
+        "revenue_account": "4100-PRODUCT-REVENUE",
+        "hs_code": "8421.29",
+        "tax_code": "US-MN-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_amount": 8612.64,
+      "surcharge_amount": 0.0,
+      "freight_amount": 0.0,
+      "tax_amount": 0.0,
+      "order_total": 8612.64,
+      "currency": "USD"
+    },
+    "document_id": "DOC-SO-1886757",
+    "documents": [
+      {
+        "document_id": "DOC-SO-1886757",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_1886757.pdf",
+        "size_bytes": 3665
+      }
+    ]
+  }
+}

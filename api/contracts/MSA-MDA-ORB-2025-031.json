@@ -1,0 +1,126 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Contract",
+  "data": {
+    "contract_number": "MSA-MDA-ORB-2025-031",
+    "contract_type": "MSA",
+    "customer_id": "C-103018",
+    "status": "ACTIVE",
+    "effective_from": "2025-09-01",
+    "effective_to": "2027-08-31",
+    "currency": "USD",
+    "price_list": "US-IDN-2026-H1",
+    "discount_pct": 11.0,
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "freight_terms": "PREPAID_AND_ADD",
+    "billing_rule": "DELIVERY_BASED",
+    "tax_treatment": "EXEMPT",
+    "po_required": true,
+    "surcharge_allowed": true,
+    "price_tolerance_pct": 0.0,
+    "qty_tolerance_pct": 0.0,
+    "signed_by_customer": "R. Delgado, Associate Director Supply Chain",
+    "signed_by_supplier": "D. Okafor, VP Commercial Operations",
+    "clauses": [
+      "Prices are taken from price list US-IDN-2026-H1 less 11%.",
+      "Texas state exemption certificate TX-EX-3390174 is held on file.",
+      "A valid customer purchase order is required before any shipment is invoiced."
+    ],
+    "document_id": "DOC-CT-MSA-MDA-ORB-2025-031",
+    "customer_name": "UT MD ANDERSON CANCER CTR",
+    "price_list_lines": [
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MDA-ORB-2025-031",
+        "customer_id": "C-103018",
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "list_price": 8.05,
+        "discount_pct": 11.0,
+        "contract_price": 7.16,
+        "currency": "USD",
+        "effective_from": "2025-09-01",
+        "effective_to": "2027-08-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MDA-ORB-2025-031",
+        "customer_id": "C-103018",
+        "item_number": "NEO96",
+        "uom": "EA",
+        "list_price": 7.36,
+        "discount_pct": 11.0,
+        "contract_price": 6.55,
+        "currency": "USD",
+        "effective_from": "2025-09-01",
+        "effective_to": "2027-08-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MDA-ORB-2025-031",
+        "customer_id": "C-103018",
+        "item_number": "KA2V002PV1G",
+        "uom": "EA",
+        "list_price": 322.0,
+        "discount_pct": 11.0,
+        "contract_price": 286.58,
+        "currency": "USD",
+        "effective_from": "2025-09-01",
+        "effective_to": "2027-08-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MDA-ORB-2025-031",
+        "customer_id": "C-103018",
+        "item_number": "CELLCUL500",
+        "uom": "BT",
+        "list_price": 96.4,
+        "discount_pct": 11.0,
+        "contract_price": 85.8,
+        "currency": "USD",
+        "effective_from": "2025-09-01",
+        "effective_to": "2027-08-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MDA-ORB-2025-031",
+        "customer_id": "C-103018",
+        "item_number": "BIOPROC-FLT-22",
+        "uom": "EA",
+        "list_price": 214.75,
+        "discount_pct": 11.0,
+        "contract_price": 191.13,
+        "currency": "USD",
+        "effective_from": "2025-09-01",
+        "effective_to": "2027-08-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MDA-ORB-2025-031",
+        "customer_id": "C-103018",
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "list_price": 1875.0,
+        "discount_pct": 11.0,
+        "contract_price": 1668.75,
+        "currency": "USD",
+        "effective_from": "2025-09-01",
+        "effective_to": "2027-08-31"
+      }
+    ],
+    "documents": [
+      {
+        "document_id": "DOC-CT-MSA-MDA-ORB-2025-031",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-MDA-ORB-2025-031.pdf",
+        "size_bytes": 3904
+      }
+    ],
+    "orders": [
+      "1886485",
+      "1886655"
+    ]
+  }
+}

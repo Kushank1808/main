@@ -1,0 +1,79 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "invoice_number": "CI-DK21-400502",
+    "document_kind": "Customer Invoice",
+    "company": "DK21",
+    "company_name": "DK21 Polestar Automotive Denmark ApS",
+    "status": "DRAFT",
+    "invoice_date": "2026-09-16",
+    "due_date": "2026-10-16",
+    "payment_terms": "Net 30",
+    "bill_to_customer_id": "C-DK-0301",
+    "bill_to_customer": "Øresund Fleet A/S",
+    "sold_to_customer_id": "C-DK-0301",
+    "sold_to_customer": "Øresund Fleet A/S",
+    "customer_vat_number": "DK36987654",
+    "currency": "DKK",
+    "po_number": "OF-PO-2026-118",
+    "vin": "YSMKKE2ALS9800014",
+    "poms_order_number": "11400002",
+    "model": "Polestar 2",
+    "statutory_invoice_type": null,
+    "statutory_invoice_number": null,
+    "memo": "",
+    "payment_application": null,
+    "attachments": [],
+    "lines": [
+      {
+        "line": 1,
+        "company": "DK21 Polestar Automotive Denmark ApS",
+        "sales_item": "P2-CAR",
+        "sales_item_name": "Polestar 2 Car",
+        "revenue_category": "3022",
+        "revenue_category_name": "Car Sales - New",
+        "line_item_description": "Brand - Model: Polestar 2 (2027) - CC-4410 Sales Fleet",
+        "quantity": 1,
+        "unit_of_measure": "Each",
+        "quantity_2": 0,
+        "unit_of_measure_2": null,
+        "unit_price": 329995.0,
+        "extended_amount": 329995.0,
+        "released_on_invoice_lines": null,
+        "tax_applicability": "Taxable"
+      },
+      {
+        "line": 2,
+        "company": "DK21 Polestar Automotive Denmark ApS",
+        "sales_item": "P2-CAR",
+        "sales_item_name": "Polestar 2 Car",
+        "revenue_category": "3022",
+        "revenue_category_name": "Car Sales - New",
+        "line_item_description": "Snow",
+        "quantity": 1,
+        "unit_of_measure": "Each",
+        "quantity_2": 0,
+        "unit_of_measure_2": null,
+        "unit_price": 0.0,
+        "extended_amount": 0.0,
+        "released_on_invoice_lines": null,
+        "tax_applicability": "Taxable"
+      }
+    ],
+    "tax": {
+      "tax_code": "DK-VAT-25",
+      "tax_rate": 25.0,
+      "taxable_amount": 329995.0,
+      "tax_amount": 82498.75
+    },
+    "totals": {
+      "subtotal": 329995.0,
+      "tax_amount": 82498.75,
+      "total_amount": 412493.75,
+      "currency": "DKK"
+    },
+    "created_by": "BPO O2C Billing Desk",
+    "created_on": "2026-09-15T09:15:00Z",
+    "last_updated": "2026-09-15T16:02:00Z"
+  }
+}

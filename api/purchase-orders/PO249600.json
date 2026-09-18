@@ -1,0 +1,52 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO249600",
+    "customer_id": "C-100428",
+    "customer_name": "ARKANSAS CHILDRENS HOSP",
+    "contract_number": "MSA-ACH-ORB-2024-011",
+    "po_date": "2026-06-29",
+    "valid_from": "2026-06-29",
+    "valid_to": "2027-06-29",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 4887.25,
+    "released_amount": 3054.53,
+    "buyer_name": "Mary Heroux",
+    "buyer_email": "HerouxME@archildrens.org",
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "sales_order": "1886400",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "uom": "EA",
+        "quantity": 129,
+        "unit_price": 7.08,
+        "amount": 913.32
+      },
+      {
+        "po_line": 2,
+        "item_number": "NEO96",
+        "description": "Neonatal Assay Plate, 96-well, non-treated",
+        "uom": "EA",
+        "quantity": 311,
+        "unit_price": 6.48,
+        "amount": 2015.28
+      }
+    ],
+    "document_id": "DOC-PO-PO249600",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO249600",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249600.pdf",
+        "size_bytes": 3424
+      }
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "count": 10,
+  "generated_at": "2026-08-27T08:15:23Z",
+  "data": [
+    {
+      "customer_id": "C-100428",
+      "customer_name": "ARKANSAS CHILDRENS HOSP",
+      "customer_class": "HEALTHCARE-IDN",
+      "country": "US",
+      "currency": "USD",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+      "tax_code": "US-AR-EXEMPT",
+      "payment_terms": "Net 45",
+      "credit_limit": 750000,
+      "collector": "Bhattacharjee, Arpan"
+    },
+    {
+      "customer_id": "C-100731",
+      "customer_name": "MAYO FDN",
+      "customer_class": "HEALTHCARE-IDN",
+      "country": "US",
+      "currency": "USD",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+      "tax_code": "US-MN-EXEMPT",
+      "payment_terms": "Net 60",
+      "credit_limit": 2500000,
+      "collector": "C N, Pavithra"
+    },
+    {
+      "customer_id": "C-101902",
+      "customer_name": "SARTORIUS STEDIM FILTERS",
+      "customer_class": "OEM-MANUFACTURER",
+      "country": "US",
+      "currency": "USD",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+      "tax_code": "US-PR-ZERO",
+      "payment_terms": "Net 30",
+      "credit_limit": 1200000,
+      "collector": "Kumar, Abhijeet"
+    },
+    {
+      "customer_id": "C-102255",
+      "customer_name": "CLEVELAND CLINIC FDN",
+      "customer_class": "HEALTHCARE-IDN",
+      "country": "US",
+      "currency": "USD",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+      "tax_code": "US-OH-EXEMPT",
+      "payment_terms": "Net 45",
+      "credit_limit": 1800000,
+      "collector": "Bhattacharjee, Arpan"
+    },
+    {
+      "customer_id": "C-102640",
+      "customer_name": "CHARLES RIVER LABS",
+      "customer_class": "CRO-RESEARCH",
+      "country": "US",
+      "currency": "USD",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+      "tax_code": "US-MA-SALES",
+      "payment_terms": "Net 30",
+      "credit_limit": 900000,
+      "collector": "Kumar, Abhijeet"
+    },
+    {
+      "customer_id": "C-103018",
+      "customer_name": "UT MD ANDERSON CANCER CTR",
+      "customer_class": "ACADEMIC-MEDICAL",
+      "country": "US",
+      "currency": "USD",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+      "tax_code": "US-TX-EXEMPT",
+      "payment_terms": "Net 45",
+      "credit_limit": 1400000,
+      "collector": "C N, Pavithra"
+    },
+    {
+      "customer_id": "C-200114",
+      "customer_name": "NORDWIND TURBINES GMBH",
+      "customer_class": "OEM-MANUFACTURER",
+      "country": "DE",
+      "currency": "EUR",
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+      "tax_code": "EU-RC-0",
+      "payment_terms": "Net 45",
+      "credit_limit": 3000000,
+      "collector": "Voss, Henrik"
+    },
+    {
+      "customer_id": "C-200380",
+      "customer_name": "HELIOS FLUID SYSTEMS SAS",
+      "customer_class": "OEM-MANUFACTURER",
+      "country": "FR",
+      "currency": "EUR",
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+      "tax_code": "EU-RC-0",
+      "payment_terms": "Net 60",
+      "credit_limit": 1600000,
+      "collector": "Voss, Henrik"
+    },
+    {
+      "customer_id": "C-200552",
+      "customer_name": "VANTA ENERGY SYSTEMS AB",
+      "customer_class": "EPC-CONTRACTOR",
+      "country": "SE",
+      "currency": "EUR",
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+      "tax_code": "EU-RC-0",
+      "payment_terms": "Net 30",
+      "credit_limit": 1100000,
+      "collector": "Voss, Henrik"
+    },
+    {
+      "customer_id": "C-200790",
+      "customer_name": "BRAEMAR PROCESS LTD",
+      "customer_class": "DISTRIBUTOR",
+      "country": "IE",
+      "currency": "EUR",
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+      "tax_code": "IE-VAT-23",
+      "payment_terms": "Net 30",
+      "credit_limit": 600000,
+      "collector": "Voss, Henrik"
+    }
+  ]
+}

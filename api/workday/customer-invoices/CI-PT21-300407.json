@@ -1,0 +1,79 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "invoice_number": "CI-PT21-300407",
+    "document_kind": "Customer Invoice",
+    "company": "PT21",
+    "company_name": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+    "status": "DRAFT",
+    "invoice_date": "2026-09-16",
+    "due_date": "2026-10-16",
+    "payment_terms": "Net 30",
+    "bill_to_customer_id": "C-PT-0206",
+    "bill_to_customer": "Banco BPI SA",
+    "sold_to_customer_id": "C-PT-0206",
+    "sold_to_customer": "Banco BPI SA",
+    "customer_vat_number": "PT501214534",
+    "currency": "EUR",
+    "po_number": null,
+    "vin": "LPSKKE2AXS9100049",
+    "poms_order_number": "11300007",
+    "model": "Polestar 2",
+    "statutory_invoice_type": "PRT Invoice - EY – Portugal",
+    "statutory_invoice_number": "PT240123",
+    "memo": "",
+    "payment_application": null,
+    "attachments": [],
+    "lines": [
+      {
+        "line": 1,
+        "company": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+        "sales_item": "P2-CAR",
+        "sales_item_name": "Polestar 2 Car",
+        "revenue_category": "3022",
+        "revenue_category_name": "Car Sales - New",
+        "line_item_description": "Brand - Model: Polestar 2 (2027)",
+        "quantity": 1,
+        "unit_of_measure": "Each",
+        "quantity_2": 0,
+        "unit_of_measure_2": null,
+        "unit_price": 45900.0,
+        "extended_amount": 45900.0,
+        "released_on_invoice_lines": null,
+        "tax_applicability": "Taxable"
+      },
+      {
+        "line": 2,
+        "company": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+        "sales_item": "P2-CAR",
+        "sales_item_name": "Polestar 2 Car",
+        "revenue_category": "3022",
+        "revenue_category_name": "Car Sales - New",
+        "line_item_description": "Midnight",
+        "quantity": 1,
+        "unit_of_measure": "Each",
+        "quantity_2": 0,
+        "unit_of_measure_2": null,
+        "unit_price": 990.0,
+        "extended_amount": 990.0,
+        "released_on_invoice_lines": null,
+        "tax_applicability": "Taxable"
+      }
+    ],
+    "tax": {
+      "tax_code": "PT-VAT-23",
+      "tax_rate": 23.0,
+      "taxable_amount": 46890.0,
+      "tax_amount": 10784.7
+    },
+    "totals": {
+      "subtotal": 46890.0,
+      "tax_amount": 10784.7,
+      "total_amount": 57674.7,
+      "currency": "EUR"
+    },
+    "created_by": "BPO O2C Billing Desk",
+    "created_on": "2026-09-15T09:15:00Z",
+    "last_updated": "2026-09-15T16:02:00Z"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO250340",
+    "customer_id": "C-100428",
+    "customer_name": "ARKANSAS CHILDRENS HOSP",
+    "contract_number": "MSA-ACH-ORB-2024-011",
+    "po_date": "2026-08-08",
+    "valid_from": "2026-08-08",
+    "valid_to": "2027-08-08",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 40129.38,
+    "released_amount": 25080.86,
+    "buyer_name": "Mary Heroux",
+    "buyer_email": "HerouxME@archildrens.org",
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "sales_order": "1886740",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "KA2V002PV1G",
+        "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+        "uom": "EA",
+        "quantity": 32,
+        "unit_price": 283.36,
+        "amount": 9067.52
+      },
+      {
+        "po_line": 2,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "uom": "BT",
+        "quantity": 37,
+        "unit_price": 84.83,
+        "amount": 3138.71
+      },
+      {
+        "po_line": 3,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "uom": "EA",
+        "quantity": 19,
+        "unit_price": 188.98,
+        "amount": 3590.62
+      },
+      {
+        "po_line": 4,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "uom": "EA",
+        "quantity": 5,
+        "unit_price": 1650.0,
+        "amount": 8250.0
+      }
+    ],
+    "document_id": "DOC-PO-PO250340",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO250340",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO250340.pdf",
+        "size_bytes": 3713
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760422",
+    "sales_order": "1886774",
+    "customer_id": "C-101902",
+    "ship_date": "2026-08-22",
+    "carrier": "FedEx Freight",
+    "waybill": "FX7483620303",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-101902-1",
+      "name": "SARTORIUS PUERTO RICO",
+      "address_1": "SARTORIUS PUERTO RICO",
+      "address_2": "-",
+      "address_3": "INT 368 KM 12 H 9",
+      "address_4": "ROAD 128",
+      "city": "Yauco",
+      "state": "PR",
+      "postal_code": "00698",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-08-24",
+    "incoterms": "EXW Marlborough",
+    "gross_weight_kg": 132.72,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "BIOPROC-FLT-22",
+        "uom": "EA",
+        "ordered_quantity": 32,
+        "shipped_quantity": 32,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "ordered_quantity": 1,
+        "shipped_quantity": 1,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "ordered_quantity": 283,
+        "shipped_quantity": 283,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760422",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760422",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760422.pdf",
+        "size_bytes": 3155
+      }
+    ]
+  }
+}

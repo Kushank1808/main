@@ -1,0 +1,52 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO249711",
+    "customer_id": "C-102255",
+    "customer_name": "CLEVELAND CLINIC FDN",
+    "contract_number": "MSA-CCF-ORB-2025-008",
+    "po_date": "2026-07-05",
+    "valid_from": "2026-07-05",
+    "valid_to": "2027-07-05",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 8691.6,
+    "released_amount": 5432.25,
+    "buyer_name": "Dana Whitfield",
+    "buyer_email": "whitfid@ccf.org",
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "sales_order": "1886451",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "uom": "BT",
+        "quantity": 37,
+        "unit_price": 86.76,
+        "amount": 3210.12
+      },
+      {
+        "po_line": 2,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "uom": "EA",
+        "quantity": 11,
+        "unit_price": 193.28,
+        "amount": 2126.08
+      }
+    ],
+    "document_id": "DOC-PO-PO249711",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO249711",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249711.pdf",
+        "size_bytes": 3484
+      }
+    ]
+  }
+}

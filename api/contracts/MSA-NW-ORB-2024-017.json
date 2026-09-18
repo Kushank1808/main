@@ -1,0 +1,115 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Contract",
+  "data": {
+    "contract_number": "MSA-NW-ORB-2024-017",
+    "contract_type": "MSA",
+    "customer_id": "C-200114",
+    "status": "ACTIVE",
+    "effective_from": "2024-03-01",
+    "effective_to": "2027-02-28",
+    "currency": "EUR",
+    "price_list": "EU-IND-2026",
+    "discount_pct": 7.5,
+    "payment_terms": "Net 45",
+    "incoterms": "DAP Hamburg Plant 2",
+    "freight_terms": "PREPAID_AND_ADD",
+    "billing_rule": "DELIVERY_BASED",
+    "tax_treatment": "REVERSE_CHARGE",
+    "po_required": true,
+    "surcharge_allowed": false,
+    "price_tolerance_pct": 0.0,
+    "qty_tolerance_pct": 0.0,
+    "signed_by_customer": "K. Bauer, Head of Procurement",
+    "signed_by_supplier": "S. Moloney, Commercial Director EMEA",
+    "clauses": [
+      "Prices are taken from price list EU-IND-2026 less 7.5% for the contract term.",
+      "Delivery is DAP Hamburg Plant 2 under Incoterms 2020; freight is billable at actual cost.",
+      "Supplies are intra-Community; VAT is accounted for by the recipient under reverse charge.",
+      "Early settlement discount of 2% applies if paid within 10 days.",
+      "A valid customer purchase order is required before any shipment is invoiced."
+    ],
+    "document_id": "DOC-CT-MSA-NW-ORB-2024-017",
+    "customer_name": "NORDWIND TURBINES GMBH",
+    "price_list_lines": [
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-NW-ORB-2024-017",
+        "customer_id": "C-200114",
+        "item_number": "AX-PMP-320",
+        "uom": "EA",
+        "list_price": 1850.0,
+        "discount_pct": 7.5,
+        "contract_price": 1711.25,
+        "currency": "EUR",
+        "effective_from": "2024-03-01",
+        "effective_to": "2027-02-28"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-NW-ORB-2024-017",
+        "customer_id": "C-200114",
+        "item_number": "AX-SEAL-88",
+        "uom": "EA",
+        "list_price": 145.0,
+        "discount_pct": 7.5,
+        "contract_price": 134.13,
+        "currency": "EUR",
+        "effective_from": "2024-03-01",
+        "effective_to": "2027-02-28"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-NW-ORB-2024-017",
+        "customer_id": "C-200114",
+        "item_number": "AX-BRG-540",
+        "uom": "SET",
+        "list_price": 410.0,
+        "discount_pct": 7.5,
+        "contract_price": 379.25,
+        "currency": "EUR",
+        "effective_from": "2024-03-01",
+        "effective_to": "2027-02-28"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-NW-ORB-2024-017",
+        "customer_id": "C-200114",
+        "item_number": "AX-GSKT-12",
+        "uom": "PK",
+        "list_price": 62.5,
+        "discount_pct": 7.5,
+        "contract_price": 57.81,
+        "currency": "EUR",
+        "effective_from": "2024-03-01",
+        "effective_to": "2027-02-28"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-NW-ORB-2024-017",
+        "customer_id": "C-200114",
+        "item_number": "AX-CTRL-PLC",
+        "uom": "EA",
+        "list_price": 4260.0,
+        "discount_pct": 7.5,
+        "contract_price": 3940.5,
+        "currency": "EUR",
+        "effective_from": "2024-03-01",
+        "effective_to": "2027-02-28"
+      }
+    ],
+    "documents": [
+      {
+        "document_id": "DOC-CT-MSA-NW-ORB-2024-017",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-NW-ORB-2024-017.pdf",
+        "size_bytes": 3922
+      }
+    ],
+    "orders": [
+      "SO-2026-7778",
+      "SO-2026-7908"
+    ]
+  }
+}

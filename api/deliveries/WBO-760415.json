@@ -1,0 +1,56 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760415",
+    "sales_order": "1886655",
+    "customer_id": "C-103018",
+    "ship_date": "2026-08-08",
+    "carrier": "FedEx Freight",
+    "waybill": "FX2382115826",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-103018-1",
+      "name": "UT MD ANDERSON CANCER CTR",
+      "address_1": "UT MD ANDERSON CANCER CTR",
+      "address_2": "CENTRAL RECEIVING",
+      "address_3": "-",
+      "address_4": "1515 HOLCOMBE BLVD",
+      "city": "Houston",
+      "state": "TX",
+      "postal_code": "77030",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-08-10",
+    "incoterms": "FOB Destination",
+    "gross_weight_kg": 32.76,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "CELLCUL500",
+        "uom": "BT",
+        "ordered_quantity": 42,
+        "shipped_quantity": 42,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "BIOPROC-FLT-22",
+        "uom": "EA",
+        "ordered_quantity": 36,
+        "shipped_quantity": 36,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760415",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760415",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760415.pdf",
+        "size_bytes": 3116
+      }
+    ]
+  }
+}

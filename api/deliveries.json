@@ -1,0 +1,228 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "count": 22,
+  "generated_at": "2026-08-27T08:15:23Z",
+  "data": [
+    {
+      "delivery_number": "WBO-760400",
+      "sales_order": "1886400",
+      "customer_id": "C-100428",
+      "ship_date": "2026-07-09",
+      "carrier": "FedEx Freight",
+      "waybill": "FX5503516216",
+      "proof_of_delivery_date": "2026-07-11",
+      "incoterms": "FOB Destination"
+    },
+    {
+      "delivery_number": "WBO-760401",
+      "sales_order": "1886417",
+      "customer_id": "C-100731",
+      "ship_date": "2026-07-11",
+      "carrier": "FedEx Freight",
+      "waybill": "FX2323035225",
+      "proof_of_delivery_date": "2026-07-13",
+      "incoterms": "FOB Destination"
+    },
+    {
+      "delivery_number": "WBO-760402",
+      "sales_order": "1886434",
+      "customer_id": "C-101902",
+      "ship_date": "2026-07-13",
+      "carrier": "FedEx Freight",
+      "waybill": "FX2606240474",
+      "proof_of_delivery_date": "2026-07-15",
+      "incoterms": "EXW Marlborough"
+    },
+    {
+      "delivery_number": "WBO-760403",
+      "sales_order": "1886451",
+      "customer_id": "C-102255",
+      "ship_date": "2026-07-15",
+      "carrier": "FedEx Freight",
+      "waybill": "FX6274357512",
+      "proof_of_delivery_date": "2026-07-17",
+      "incoterms": "FOB Destination"
+    },
+    {
+      "delivery_number": "WBO-760404",
+      "sales_order": "1886468",
+      "customer_id": "C-102640",
+      "ship_date": "2026-07-17",
+      "carrier": "FedEx Freight",
+      "waybill": "FX1029249810",
+      "proof_of_delivery_date": "2026-07-19",
+      "incoterms": "FOB Origin"
+    },
+    {
+      "delivery_number": "WBO-760405",
+      "sales_order": "1886485",
+      "customer_id": "C-103018",
+      "ship_date": "2026-07-19",
+      "carrier": "FedEx Freight",
+      "waybill": "FX3335166061",
+      "proof_of_delivery_date": "2026-07-21",
+      "incoterms": "FOB Destination"
+    },
+    {
+      "delivery_number": "DN-88206",
+      "sales_order": "SO-2026-7778",
+      "customer_id": "C-200114",
+      "ship_date": "2026-07-21",
+      "carrier": "DB Schenker",
+      "waybill": "DBS1556066873",
+      "proof_of_delivery_date": "2026-07-23",
+      "incoterms": "DAP Hamburg Plant 2"
+    },
+    {
+      "delivery_number": "DN-88207",
+      "sales_order": "SO-2026-7791",
+      "customer_id": "C-200380",
+      "ship_date": "2026-07-23",
+      "carrier": "DB Schenker",
+      "waybill": "DBS2402264551",
+      "proof_of_delivery_date": "2026-07-25",
+      "incoterms": "DAP Saint-Priest"
+    },
+    {
+      "delivery_number": "DN-88208",
+      "sales_order": "SO-2026-7804",
+      "customer_id": "C-200552",
+      "ship_date": "2026-07-25",
+      "carrier": "DB Schenker",
+      "waybill": "DBS6197895946",
+      "proof_of_delivery_date": "2026-07-27",
+      "incoterms": "FCA Cork"
+    },
+    {
+      "delivery_number": "DN-88209",
+      "sales_order": "SO-2026-7817",
+      "customer_id": "C-200790",
+      "ship_date": "2026-07-27",
+      "carrier": "DB Schenker",
+      "waybill": "DBS7788984492",
+      "proof_of_delivery_date": "2026-07-29",
+      "incoterms": "DAP Cork"
+    },
+    {
+      "delivery_number": "WBO-760410",
+      "sales_order": "1886570",
+      "customer_id": "C-100428",
+      "ship_date": "2026-07-29",
+      "carrier": "FedEx Freight",
+      "waybill": "FX8192180817",
+      "proof_of_delivery_date": "2026-07-31",
+      "incoterms": "FOB Destination"
+    },
+    {
+      "delivery_number": "WBO-760411",
+      "sales_order": "1886587",
+      "customer_id": "C-100731",
+      "ship_date": "2026-07-31",
+      "carrier": "FedEx Freight",
+      "waybill": "FX8812530930",
+      "proof_of_delivery_date": "2026-08-02",
+      "incoterms": "FOB Destination"
+    },
+    {
+      "delivery_number": "WBO-760412",
+      "sales_order": "1886604",
+      "customer_id": "C-101902",
+      "ship_date": "2026-08-02",
+      "carrier": "FedEx Freight",
+      "waybill": "FX3683607186",
+      "proof_of_delivery_date": "2026-08-04",
+      "incoterms": "EXW Marlborough"
+    },
+    {
+      "delivery_number": "WBO-760413",
+      "sales_order": "1886621",
+      "customer_id": "C-102255",
+      "ship_date": "2026-08-04",
+      "carrier": "FedEx Freight",
+      "waybill": "FX4393409916",
+      "proof_of_delivery_date": "2026-08-06",
+      "incoterms": "FOB Destination"
+    },
+    {
+      "delivery_number": "WBO-760414",
+      "sales_order": "1886638",
+      "customer_id": "C-102640",
+      "ship_date": "2026-08-06",
+      "carrier": "FedEx Freight",
+      "waybill": "FX4183327864",
+      "proof_of_delivery_date": "2026-08-08",
+      "incoterms": "FOB Origin"
+    },
+    {
+      "delivery_number": "WBO-760415",
+      "sales_order": "1886655",
+      "customer_id": "C-103018",
+      "ship_date": "2026-08-08",
+      "carrier": "FedEx Freight",
+      "waybill": "FX2382115826",
+      "proof_of_delivery_date": "2026-08-10",
+      "incoterms": "FOB Destination"
+    },
+    {
+      "delivery_number": "DN-88216",
+      "sales_order": "SO-2026-7908",
+      "customer_id": "C-200114",
+      "ship_date": "2026-08-10",
+      "carrier": "DB Schenker",
+      "waybill": "DBS2176127306",
+      "proof_of_delivery_date": "2026-08-12",
+      "incoterms": "DAP Hamburg Plant 2"
+    },
+    {
+      "delivery_number": "DN-88217",
+      "sales_order": "SO-2026-7921",
+      "customer_id": "C-200380",
+      "ship_date": "2026-08-12",
+      "carrier": "DB Schenker",
+      "waybill": "DBS6542554149",
+      "proof_of_delivery_date": "2026-08-14",
+      "incoterms": "DAP Saint-Priest"
+    },
+    {
+      "delivery_number": "DN-88218",
+      "sales_order": "SO-2026-7934",
+      "customer_id": "C-200552",
+      "ship_date": "2026-08-14",
+      "carrier": "DB Schenker",
+      "waybill": "DBS3273352713",
+      "proof_of_delivery_date": "2026-08-16",
+      "incoterms": "FCA Cork"
+    },
+    {
+      "delivery_number": "DN-88219",
+      "sales_order": "SO-2026-7947",
+      "customer_id": "C-200790",
+      "ship_date": "2026-08-16",
+      "carrier": "DB Schenker",
+      "waybill": "DBS3867303892",
+      "proof_of_delivery_date": "2026-08-18",
+      "incoterms": "DAP Cork"
+    },
+    {
+      "delivery_number": "WBO-760422",
+      "sales_order": "1886774",
+      "customer_id": "C-101902",
+      "ship_date": "2026-08-22",
+      "carrier": "FedEx Freight",
+      "waybill": "FX7483620303",
+      "proof_of_delivery_date": "2026-08-24",
+      "incoterms": "EXW Marlborough"
+    },
+    {
+      "delivery_number": "WBO-760423",
+      "sales_order": "1886791",
+      "customer_id": "C-102255",
+      "ship_date": "2026-08-24",
+      "carrier": "FedEx Freight",
+      "waybill": "FX5695124271",
+      "proof_of_delivery_date": "2026-08-26",
+      "incoterms": "FOB Destination"
+    }
+  ]
+}

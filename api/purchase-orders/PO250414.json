@@ -1,0 +1,61 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO250414",
+    "customer_id": "C-101902",
+    "customer_name": "SARTORIUS STEDIM FILTERS",
+    "contract_number": "PA-SART-ORB-2025-022",
+    "po_date": "2026-08-12",
+    "valid_from": "2026-08-12",
+    "valid_to": "2027-08-12",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 16230.83,
+    "released_amount": 10144.27,
+    "buyer_name": "Astrid Oms A",
+    "buyer_email": "astrid.oms@sartorius.com",
+    "payment_terms": "Net 30",
+    "incoterms": "EXW Marlborough",
+    "sales_order": "1886774",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "uom": "EA",
+        "quantity": 32,
+        "unit_price": 197.57,
+        "amount": 6322.24
+      },
+      {
+        "po_line": 2,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "uom": "EA",
+        "quantity": 1,
+        "unit_price": 1725.0,
+        "amount": 1725.0
+      },
+      {
+        "po_line": 3,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "uom": "EA",
+        "quantity": 283,
+        "unit_price": 7.41,
+        "amount": 2097.03
+      }
+    ],
+    "document_id": "DOC-PO-PO250414",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO250414",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO250414.pdf",
+        "size_bytes": 3577
+      }
+    ]
+  }
+}

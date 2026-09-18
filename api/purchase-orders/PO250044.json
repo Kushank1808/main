@@ -1,0 +1,52 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO250044",
+    "customer_id": "C-101902",
+    "customer_name": "SARTORIUS STEDIM FILTERS",
+    "contract_number": "PA-SART-ORB-2025-022",
+    "po_date": "2026-07-23",
+    "valid_from": "2026-07-23",
+    "valid_to": "2027-07-23",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 8124.3,
+    "released_amount": 5077.69,
+    "buyer_name": "Astrid Oms A",
+    "buyer_email": "astrid.oms@sartorius.com",
+    "payment_terms": "Net 30",
+    "incoterms": "EXW Marlborough",
+    "sales_order": "1886604",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "uom": "EA",
+        "quantity": 378,
+        "unit_price": 7.41,
+        "amount": 2800.98
+      },
+      {
+        "po_line": 2,
+        "item_number": "NEO96",
+        "description": "Neonatal Assay Plate, 96-well, non-treated",
+        "uom": "EA",
+        "quantity": 318,
+        "unit_price": 6.77,
+        "amount": 2152.86
+      }
+    ],
+    "document_id": "DOC-PO-PO250044",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO250044",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO250044.pdf",
+        "size_bytes": 3421
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Contract",
+  "data": {
+    "contract_number": "MSA-ACH-ORB-2024-011",
+    "contract_type": "MSA",
+    "customer_id": "C-100428",
+    "status": "ACTIVE",
+    "effective_from": "2024-10-01",
+    "effective_to": "2027-09-30",
+    "currency": "USD",
+    "price_list": "US-IDN-2026-H1",
+    "discount_pct": 12.0,
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "freight_terms": "PREPAID_AND_ADD",
+    "billing_rule": "DELIVERY_BASED",
+    "tax_treatment": "EXEMPT",
+    "po_required": true,
+    "surcharge_allowed": true,
+    "price_tolerance_pct": 0.0,
+    "qty_tolerance_pct": 0.0,
+    "signed_by_customer": "M. Heroux, Director of Supply Chain",
+    "signed_by_supplier": "D. Okafor, VP Commercial Operations",
+    "clauses": [
+      "Prices are firm for the contract term and taken from price list US-IDN-2026-H1 less 12%.",
+      "A valid customer purchase order is required before any shipment is invoiced.",
+      "Tariff surcharges may be passed through at cost with supporting documentation.",
+      "Freight is prepaid by supplier and added to the invoice at actual cost.",
+      "Invoices are raised on proof of delivery, not on order entry."
+    ],
+    "document_id": "DOC-CT-MSA-ACH-ORB-2024-011",
+    "customer_name": "ARKANSAS CHILDRENS HOSP",
+    "price_list_lines": [
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-ACH-ORB-2024-011",
+        "customer_id": "C-100428",
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "list_price": 8.05,
+        "discount_pct": 12.0,
+        "contract_price": 7.08,
+        "currency": "USD",
+        "effective_from": "2024-10-01",
+        "effective_to": "2027-09-30"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-ACH-ORB-2024-011",
+        "customer_id": "C-100428",
+        "item_number": "NEO96",
+        "uom": "EA",
+        "list_price": 7.36,
+        "discount_pct": 12.0,
+        "contract_price": 6.48,
+        "currency": "USD",
+        "effective_from": "2024-10-01",
+        "effective_to": "2027-09-30"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-ACH-ORB-2024-011",
+        "customer_id": "C-100428",
+        "item_number": "KA2V002PV1G",
+        "uom": "EA",
+        "list_price": 322.0,
+        "discount_pct": 12.0,
+        "contract_price": 283.36,
+        "currency": "USD",
+        "effective_from": "2024-10-01",
+        "effective_to": "2027-09-30"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-ACH-ORB-2024-011",
+        "customer_id": "C-100428",
+        "item_number": "CELLCUL500",
+        "uom": "BT",
+        "list_price": 96.4,
+        "discount_pct": 12.0,
+        "contract_price": 84.83,
+        "currency": "USD",
+        "effective_from": "2024-10-01",
+        "effective_to": "2027-09-30"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-ACH-ORB-2024-011",
+        "customer_id": "C-100428",
+        "item_number": "BIOPROC-FLT-22",
+        "uom": "EA",
+        "list_price": 214.75,
+        "discount_pct": 12.0,
+        "contract_price": 188.98,
+        "currency": "USD",
+        "effective_from": "2024-10-01",
+        "effective_to": "2027-09-30"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-ACH-ORB-2024-011",
+        "customer_id": "C-100428",
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "list_price": 1875.0,
+        "discount_pct": 12.0,
+        "contract_price": 1650.0,
+        "currency": "USD",
+        "effective_from": "2024-10-01",
+        "effective_to": "2027-09-30"
+      }
+    ],
+    "documents": [
+      {
+        "document_id": "DOC-CT-MSA-ACH-ORB-2024-011",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-ACH-ORB-2024-011.pdf",
+        "size_bytes": 4004
+      }
+    ],
+    "orders": [
+      "1886400",
+      "1886570",
+      "1886740"
+    ]
+  }
+}

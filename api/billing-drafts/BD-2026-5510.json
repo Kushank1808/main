@@ -1,0 +1,156 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5510",
+    "proposed_invoice_number": "ORB-US-INV-2026-05590",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-07-31",
+    "invoice_date": "2026-08-01",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "legal_entity": "ORBIS Life Sciences Inc.",
+    "sales_order": "1886570",
+    "customer_po_number": "PO249970",
+    "contract_number": "MSA-ACH-ORB-2024-011",
+    "delivery_number": "WBO-760410",
+    "customer_id": "C-100428",
+    "bill_to": {
+      "site_use_id": "BT-100428-0",
+      "name": "ARKANSAS CHILDRENS HOSP",
+      "address_1": "ARKANSAS CHILDRENS HOSP",
+      "address_2": "ACCOUNTS PAYABLE",
+      "address_3": "-",
+      "address_4": "800 MARSHALL ST",
+      "city": "Little Rock",
+      "state": "AR",
+      "postal_code": "72202",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-100428-1",
+      "name": "ARKANSAS CHILDRENS HOSP",
+      "address_1": "ARKANSAS CHILDRENS HOSP",
+      "address_2": "WAREHOUSE",
+      "address_3": "-",
+      "address_4": "2410 W 8TH STREET",
+      "city": "Little Rock",
+      "state": "AR",
+      "postal_code": "72202",
+      "country": "US"
+    },
+    "currency": "USD",
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "tax_code": "US-AR-EXEMPT",
+    "tax_treatment": "EXEMPT",
+    "tax_rate": 0.0,
+    "customer_tax_registration": "US-EIN 71-0236856",
+    "exemption_certificate": "AR-EX-8841207",
+    "notes": "Exemption certificate held on file.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 31,
+        "unit_price": 188.98,
+        "amount": 5858.38,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760410",
+        "tax_code": "US-AR-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 2,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 1650.0,
+        "amount": 1650.0,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760410",
+        "tax_code": "US-AR-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 3,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 379,
+        "unit_price": 7.08,
+        "amount": 2683.32,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760410",
+        "tax_code": "US-AR-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 4,
+        "item_number": "FREIGHT-US",
+        "description": "Outbound freight and handling",
+        "line_type": "FREIGHT",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 183.45,
+        "amount": 183.45,
+        "source": "ORDER",
+        "source_reference": "1886570",
+        "tax_code": "NON-TAXABLE",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 10191.7,
+      "surcharge_total": 0.0,
+      "freight_total": 183.45,
+      "tax_amount": 0.0,
+      "total_payable": 10375.15,
+      "currency": "USD"
+    },
+    "customer_name": "ARKANSAS CHILDRENS HOSP",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-1886570",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_1886570.pdf",
+        "size_bytes": 3915
+      },
+      {
+        "document_id": "DOC-PO-PO249970",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249970.pdf",
+        "size_bytes": 3571
+      },
+      {
+        "document_id": "DOC-CT-MSA-ACH-ORB-2024-011",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-ACH-ORB-2024-011.pdf",
+        "size_bytes": 4004
+      },
+      {
+        "document_id": "DOC-DN-WBO-760410",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760410.pdf",
+        "size_bytes": 3168
+      }
+    ]
+  }
+}

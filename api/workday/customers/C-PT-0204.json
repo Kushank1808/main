@@ -1,0 +1,17 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "customer_id": "C-PT-0204",
+    "customer_name": "Locarent",
+    "company": "PT21",
+    "customer_type": "LEASING",
+    "country": "PT",
+    "vat_number": "PT505345678",
+    "related_party": false,
+    "nga_customer": false,
+    "leasing_plate_required": true,
+    "loan_provider": false,
+    "bpi_exception": false,
+    "sharepoint_tracker": false
+  }
+}

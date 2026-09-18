@@ -1,0 +1,56 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760403",
+    "sales_order": "1886451",
+    "customer_id": "C-102255",
+    "ship_date": "2026-07-15",
+    "carrier": "FedEx Freight",
+    "waybill": "FX6274357512",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-102255-1",
+      "name": "CLEVELAND CLINIC FDN",
+      "address_1": "CLEVELAND CLINIC FDN",
+      "address_2": "CENTRAL RECEIVING DOCK 4",
+      "address_3": "-",
+      "address_4": "2049 E 100TH ST",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44106",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-07-17",
+    "incoterms": "FOB Destination",
+    "gross_weight_kg": 13.86,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "CELLCUL500",
+        "uom": "BT",
+        "ordered_quantity": 37,
+        "shipped_quantity": 22,
+        "backordered_quantity": 15
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "BIOPROC-FLT-22",
+        "uom": "EA",
+        "ordered_quantity": 11,
+        "shipped_quantity": 11,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760403",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760403",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760403.pdf",
+        "size_bytes": 3124
+      }
+    ]
+  }
+}

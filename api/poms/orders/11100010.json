@@ -1,0 +1,48 @@
+{
+  "source_system": "POMS",
+  "data": {
+    "order_number": "11100010",
+    "market": "Norway",
+    "company": "NO21",
+    "vin": "YSMKKE2ALS7700070",
+    "model": "Polestar 4",
+    "model_code": "P4",
+    "model_year": 2027,
+    "exterior_colour": "Snow",
+    "buyer_customer_id": "C-NO-0107",
+    "buyer_name": "Stavanger Fleet Solutions AS",
+    "financing_type": "LEASING",
+    "financing_partner_id": null,
+    "financing_partner": null,
+    "license_plate": null,
+    "order_date": "2026-08-09",
+    "handover_date": "2026-09-12",
+    "order_status": "HANDOVER_COMPLETED",
+    "currency": "NOK",
+    "base_price": 649900.0,
+    "paint_amount": 0.0,
+    "options": [],
+    "fees": [
+      {
+        "fee_code": "FEE-DEL",
+        "description": "Delivery fee",
+        "amount": 9900.0
+      },
+      {
+        "fee_code": "FEE-REG",
+        "description": "Registration fee",
+        "amount": 3290.0
+      }
+    ],
+    "discount_amount": 0.0,
+    "gross_taxable_amount": 663090.0,
+    "vat_rate": 25.0,
+    "vat_amount": 165772.5,
+    "total_price": 828862.5,
+    "payment_status": "FINANCED",
+    "poms_last_updated": "2026-09-17T18:40:00Z",
+    "workday_invoices": [
+      "CI-NO21-200310"
+    ]
+  }
+}

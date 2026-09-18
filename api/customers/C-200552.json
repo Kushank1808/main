@@ -1,0 +1,50 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "data": {
+    "customer_id": "C-200552",
+    "customer_name": "VANTA ENERGY SYSTEMS AB",
+    "customer_class": "EPC-CONTRACTOR",
+    "country": "SE",
+    "currency": "EUR",
+    "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+    "tax_code": "EU-RC-0",
+    "tax_registration": "SE 556677889901",
+    "exemption_certificate": null,
+    "credit_limit": 1100000,
+    "payment_terms": "Net 30",
+    "collector": "Voss, Henrik",
+    "bill_to": {
+      "site_use_id": "BT-200552-1",
+      "name": "VANTA ENERGY SYSTEMS AB",
+      "address_1": "VANTA ENERGY SYSTEMS AB",
+      "address_2": "LEVERANTORSFAKTUROR",
+      "address_3": "-",
+      "address_4": "BOX 1188",
+      "city": "Malmö",
+      "state": "SK",
+      "postal_code": "21120",
+      "country": "SE"
+    },
+    "ship_to": {
+      "site_use_id": "ST-200552-1",
+      "name": "VANTA ENERGY SYSTEMS AB",
+      "address_1": "VANTA ENERGY SYSTEMS AB",
+      "address_2": "GODSMOTTAGNING",
+      "address_3": "-",
+      "address_4": "INDUSTRIGATAN 42",
+      "city": "Malmö",
+      "state": "SK",
+      "postal_code": "21275",
+      "country": "SE"
+    },
+    "contact_name": "Anders Lindgren",
+    "contact_email": "a.lindgren@vantaenergy.se",
+    "contact_phone": "+46 40 660 1200",
+    "contract_number": "FA-VANTA-ORB-2026-002",
+    "orders": [
+      "SO-2026-7804",
+      "SO-2026-7934"
+    ]
+  }
+}

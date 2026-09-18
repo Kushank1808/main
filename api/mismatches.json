@@ -1,0 +1,119 @@
+{
+  "note": "Answer key for the billing validation POC. ORBIS is the source of truth; the defects listed here were deliberately seeded into the billing drafts.",
+  "count": 14,
+  "generated_at": "2026-08-27T08:15:23Z",
+  "data": [
+    {
+      "draft_number": "BD-2026-5501",
+      "sales_order": "1886417",
+      "customer_id": "C-100731",
+      "finding": "price_off_contract",
+      "description": "Unit price billed does not match the contract price list.",
+      "severity": "critical"
+    },
+    {
+      "draft_number": "BD-2026-5503",
+      "sales_order": "1886451",
+      "customer_id": "C-102255",
+      "finding": "qty_exceeds_shipped",
+      "description": "Quantity billed is greater than the quantity shipped on the delivery.",
+      "severity": "critical"
+    },
+    {
+      "draft_number": "BD-2026-5505",
+      "sales_order": "1886485",
+      "customer_id": "C-103018",
+      "finding": "po_expired",
+      "description": "The customer purchase order had expired before the shipment date.",
+      "severity": "high"
+    },
+    {
+      "draft_number": "BD-2026-5506",
+      "sales_order": "SO-2026-7778",
+      "customer_id": "C-200114",
+      "finding": "po_limit_exceeded",
+      "description": "Draft value exceeds the remaining value authorised on the customer PO.",
+      "severity": "high"
+    },
+    {
+      "draft_number": "BD-2026-5507",
+      "sales_order": "SO-2026-7791",
+      "customer_id": "C-200380",
+      "finding": "missing_po",
+      "description": "The contract requires a customer PO but the draft carries none.",
+      "severity": "high"
+    },
+    {
+      "draft_number": "BD-2026-5509",
+      "sales_order": "SO-2026-7817",
+      "customer_id": "C-200790",
+      "finding": "tax_treatment_wrong",
+      "description": "Tax treatment on the draft contradicts the contract and the tax rules.",
+      "severity": "critical"
+    },
+    {
+      "draft_number": "BD-2026-5510",
+      "sales_order": "1886570",
+      "customer_id": "C-100428",
+      "finding": "bill_to_address_stale",
+      "description": "Bill-to address on the draft does not match the customer master site.",
+      "severity": "medium"
+    },
+    {
+      "draft_number": "BD-2026-5511",
+      "sales_order": "1886587",
+      "customer_id": "C-100731",
+      "finding": "surcharge_not_allowed",
+      "description": "A surcharge is billed although the contract prohibits surcharges.",
+      "severity": "high"
+    },
+    {
+      "draft_number": "BD-2026-5512",
+      "sales_order": "1886604",
+      "customer_id": "C-101902",
+      "finding": "freight_not_billable",
+      "description": "Freight is billed although the contract makes freight non-billable.",
+      "severity": "high"
+    },
+    {
+      "draft_number": "BD-2026-5513",
+      "sales_order": "1886621",
+      "customer_id": "C-102255",
+      "finding": "payment_terms_off_contract",
+      "description": "Payment terms on the draft differ from the contract terms.",
+      "severity": "medium"
+    },
+    {
+      "draft_number": "BD-2026-5515",
+      "sales_order": "1886655",
+      "customer_id": "C-103018",
+      "finding": "currency_mismatch",
+      "description": "Draft currency differs from the contract and customer master currency.",
+      "severity": "critical"
+    },
+    {
+      "draft_number": "BD-2026-5516",
+      "sales_order": "SO-2026-7908",
+      "customer_id": "C-200114",
+      "finding": "total_math_error",
+      "description": "Total payable does not equal goods plus surcharge plus freight plus tax.",
+      "severity": "critical"
+    },
+    {
+      "draft_number": "BD-2026-5517",
+      "sales_order": "SO-2026-7921",
+      "customer_id": "C-200380",
+      "finding": "billing_before_delivery",
+      "description": "Invoice date precedes proof of delivery on a delivery-based contract.",
+      "severity": "medium"
+    },
+    {
+      "draft_number": "BD-2026-5519",
+      "sales_order": "1886774",
+      "customer_id": "C-101902",
+      "finding": "duplicate_billing",
+      "description": "A draft exists for an order that has already been invoiced.",
+      "severity": "critical"
+    }
+  ]
+}

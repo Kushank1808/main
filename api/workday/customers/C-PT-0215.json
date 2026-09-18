@@ -1,0 +1,17 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "customer_id": "C-PT-0215",
+    "customer_name": "Tiago Lopes",
+    "company": "PT21",
+    "customer_type": "PRIVATE",
+    "country": "PT",
+    "vat_number": "PT237012345",
+    "related_party": false,
+    "nga_customer": false,
+    "leasing_plate_required": false,
+    "loan_provider": false,
+    "bpi_exception": false,
+    "sharepoint_tracker": false
+  }
+}

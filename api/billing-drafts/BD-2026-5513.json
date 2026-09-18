@@ -1,0 +1,156 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5513",
+    "proposed_invoice_number": "ORB-US-INV-2026-05593",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-08-06",
+    "invoice_date": "2026-08-07",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "legal_entity": "ORBIS Life Sciences Inc.",
+    "sales_order": "1886621",
+    "customer_po_number": "PO250081",
+    "contract_number": "MSA-CCF-ORB-2025-008",
+    "delivery_number": "WBO-760413",
+    "customer_id": "C-102255",
+    "bill_to": {
+      "site_use_id": "BT-102255-1",
+      "name": "CLEVELAND CLINIC FDN",
+      "address_1": "CLEVELAND CLINIC FDN",
+      "address_2": "ACCOUNTS PAYABLE MC W14",
+      "address_3": "-",
+      "address_4": "9500 EUCLID AVE",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44195",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-102255-1",
+      "name": "CLEVELAND CLINIC FDN",
+      "address_1": "CLEVELAND CLINIC FDN",
+      "address_2": "CENTRAL RECEIVING DOCK 4",
+      "address_3": "-",
+      "address_4": "2049 E 100TH ST",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44106",
+      "country": "US"
+    },
+    "currency": "USD",
+    "payment_terms": "Net 30",
+    "incoterms": "FOB Destination",
+    "tax_code": "US-OH-EXEMPT",
+    "tax_treatment": "EXEMPT",
+    "tax_rate": 0.0,
+    "customer_tax_registration": "US-EIN 34-0714585",
+    "exemption_certificate": "OH-EX-5540912",
+    "notes": "Exemption certificate held on file.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "NEO96",
+        "description": "Neonatal Assay Plate, 96-well, non-treated",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 267,
+        "unit_price": 6.62,
+        "amount": 1767.54,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760413",
+        "tax_code": "US-OH-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 2,
+        "item_number": "KA2V002PV1G",
+        "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 5,
+        "unit_price": 289.8,
+        "amount": 1449.0,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760413",
+        "tax_code": "US-OH-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 3,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "line_type": "GOODS",
+        "uom": "BT",
+        "quantity_to_bill": 26,
+        "unit_price": 86.76,
+        "amount": 2255.76,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760413",
+        "tax_code": "US-OH-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 4,
+        "item_number": "FREIGHT-US",
+        "description": "Outbound freight and handling",
+        "line_type": "FREIGHT",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 98.5,
+        "amount": 98.5,
+        "source": "ORDER",
+        "source_reference": "1886621",
+        "tax_code": "NON-TAXABLE",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 5472.3,
+      "surcharge_total": 0.0,
+      "freight_total": 98.5,
+      "tax_amount": 0.0,
+      "total_payable": 5570.8,
+      "currency": "USD"
+    },
+    "customer_name": "CLEVELAND CLINIC FDN",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-1886621",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_1886621.pdf",
+        "size_bytes": 3942
+      },
+      {
+        "document_id": "DOC-PO-PO250081",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO250081.pdf",
+        "size_bytes": 3578
+      },
+      {
+        "document_id": "DOC-CT-MSA-CCF-ORB-2025-008",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-CCF-ORB-2025-008.pdf",
+        "size_bytes": 3884
+      },
+      {
+        "document_id": "DOC-DN-WBO-760413",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760413.pdf",
+        "size_bytes": 3166
+      }
+    ]
+  }
+}

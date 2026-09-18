@@ -1,0 +1,28 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Operating Unit",
+  "count": 2,
+  "generated_at": "2026-08-27T08:15:23Z",
+  "data": [
+    {
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+      "legal_entity": "ORBIS Life Sciences Inc.",
+      "entity_country": "US",
+      "entity_address": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+      "tax_registration": "US-EIN 04-3921188",
+      "currency": "USD",
+      "ledger": "ORBIS US Primary Ledger",
+      "business_line": "Bioprocess & Lab Consumables"
+    },
+    {
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+      "legal_entity": "ORBIS Industrial Solutions Ireland Ltd",
+      "entity_country": "IE",
+      "entity_address": "Eastgate Business Park, Little Island, Cork T45 K294, Ireland",
+      "tax_registration": "IE 9812345K",
+      "currency": "EUR",
+      "ledger": "ORBIS EMEA Primary Ledger",
+      "business_line": "Rotating Equipment & Flow Control"
+    }
+  ]
+}

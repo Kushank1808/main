@@ -1,0 +1,64 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "DN-88219",
+    "sales_order": "SO-2026-7947",
+    "customer_id": "C-200790",
+    "ship_date": "2026-08-16",
+    "carrier": "DB Schenker",
+    "waybill": "DBS3867303892",
+    "ship_from": "Eastgate Business Park, Little Island, Cork T45 K294, Ireland",
+    "ship_to": {
+      "site_use_id": "ST-200790-1",
+      "name": "BRAEMAR PROCESS LTD",
+      "address_1": "BRAEMAR PROCESS LTD",
+      "address_2": "STORES",
+      "address_3": "-",
+      "address_4": "UNIT 7 KILBARRY BUSINESS PARK",
+      "city": "Cork",
+      "state": "CO",
+      "postal_code": "T23 XH92",
+      "country": "IE"
+    },
+    "proof_of_delivery_date": "2026-08-18",
+    "incoterms": "DAP Cork",
+    "gross_weight_kg": 11.34,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "AX-CTRL-PLC",
+        "uom": "EA",
+        "ordered_quantity": 6,
+        "shipped_quantity": 6,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "AX-PMP-320",
+        "uom": "EA",
+        "ordered_quantity": 2,
+        "shipped_quantity": 2,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "AX-SEAL-88",
+        "uom": "EA",
+        "ordered_quantity": 19,
+        "shipped_quantity": 19,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-DN-88219",
+    "documents": [
+      {
+        "document_id": "DOC-DN-DN-88219",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_DN-88219.pdf",
+        "size_bytes": 3177
+      }
+    ]
+  }
+}

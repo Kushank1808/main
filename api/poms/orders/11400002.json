@@ -1,0 +1,37 @@
+{
+  "source_system": "POMS",
+  "data": {
+    "order_number": "11400002",
+    "market": "Denmark",
+    "company": "DK21",
+    "vin": "YSMKKE2ALS9800014",
+    "model": "Polestar 2",
+    "model_code": "P2",
+    "model_year": 2027,
+    "exterior_colour": "Snow",
+    "buyer_customer_id": "C-DK-0301",
+    "buyer_name": "Øresund Fleet A/S",
+    "financing_type": "LEASING",
+    "financing_partner_id": null,
+    "financing_partner": null,
+    "license_plate": null,
+    "order_date": "2026-08-09",
+    "handover_date": "2026-09-12",
+    "order_status": "HANDOVER_COMPLETED",
+    "currency": "DKK",
+    "base_price": 329995.0,
+    "paint_amount": 0.0,
+    "options": [],
+    "fees": [],
+    "discount_amount": 0.0,
+    "gross_taxable_amount": 329995.0,
+    "vat_rate": 25.0,
+    "vat_amount": 82498.75,
+    "total_price": 412493.75,
+    "payment_status": "FINANCED",
+    "poms_last_updated": "2026-09-17T18:40:00Z",
+    "workday_invoices": [
+      "CI-DK21-400502"
+    ]
+  }
+}

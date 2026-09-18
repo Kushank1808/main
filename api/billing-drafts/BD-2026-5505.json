@@ -1,0 +1,171 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5505",
+    "proposed_invoice_number": "ORB-US-INV-2026-05585",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-07-21",
+    "invoice_date": "2026-07-22",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "legal_entity": "ORBIS Life Sciences Inc.",
+    "sales_order": "1886485",
+    "customer_po_number": "PO249785",
+    "contract_number": "MSA-MDA-ORB-2025-031",
+    "delivery_number": "WBO-760405",
+    "customer_id": "C-103018",
+    "bill_to": {
+      "site_use_id": "BT-103018-1",
+      "name": "UT MD ANDERSON CANCER CTR",
+      "address_1": "UT MD ANDERSON CANCER CTR",
+      "address_2": "ACCOUNTS PAYABLE UNIT 1682",
+      "address_3": "-",
+      "address_4": "PO BOX 301407",
+      "city": "Houston",
+      "state": "TX",
+      "postal_code": "77230",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-103018-1",
+      "name": "UT MD ANDERSON CANCER CTR",
+      "address_1": "UT MD ANDERSON CANCER CTR",
+      "address_2": "CENTRAL RECEIVING",
+      "address_3": "-",
+      "address_4": "1515 HOLCOMBE BLVD",
+      "city": "Houston",
+      "state": "TX",
+      "postal_code": "77030",
+      "country": "US"
+    },
+    "currency": "USD",
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "tax_code": "US-TX-EXEMPT",
+    "tax_treatment": "EXEMPT",
+    "tax_rate": 0.0,
+    "customer_tax_registration": "US-EIN 74-6001118",
+    "exemption_certificate": "TX-EX-3390174",
+    "notes": "Exemption certificate held on file.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 1668.75,
+        "amount": 1668.75,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760405",
+        "tax_code": "US-TX-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 2,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 137,
+        "unit_price": 7.16,
+        "amount": 980.92,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760405",
+        "tax_code": "US-TX-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 3,
+        "item_number": "NEO96",
+        "description": "Neonatal Assay Plate, 96-well, non-treated",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 302,
+        "unit_price": 6.55,
+        "amount": 1978.1,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760405",
+        "tax_code": "US-TX-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 4,
+        "item_number": "KA2V002PV1G",
+        "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 12,
+        "unit_price": 286.58,
+        "amount": 3438.96,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760405",
+        "tax_code": "US-TX-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 5,
+        "item_number": "FREIGHT-US",
+        "description": "Outbound freight and handling",
+        "line_type": "FREIGHT",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 145.2,
+        "amount": 145.2,
+        "source": "ORDER",
+        "source_reference": "1886485",
+        "tax_code": "NON-TAXABLE",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 8066.73,
+      "surcharge_total": 0.0,
+      "freight_total": 145.2,
+      "tax_amount": 0.0,
+      "total_payable": 8211.93,
+      "currency": "USD"
+    },
+    "customer_name": "UT MD ANDERSON CANCER CTR",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-1886485",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_1886485.pdf",
+        "size_bytes": 4506
+      },
+      {
+        "document_id": "DOC-PO-PO249785",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249785.pdf",
+        "size_bytes": 3713
+      },
+      {
+        "document_id": "DOC-CT-MSA-MDA-ORB-2025-031",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-MDA-ORB-2025-031.pdf",
+        "size_bytes": 3904
+      },
+      {
+        "document_id": "DOC-DN-WBO-760405",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760405.pdf",
+        "size_bytes": 3225
+      }
+    ]
+  }
+}

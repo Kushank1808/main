@@ -1,0 +1,143 @@
+/* ORBIS ERP — dense enterprise UI in the Oracle EBS / Fusion idiom:
+   navy chrome, hairline grids, blue drill-down links, no decoration. */
+:root{
+  --navy:#1f3348;
+  --navy-2:#27415b;
+  --link:#0a63b0;
+  --ink:#1b232b;
+  --muted:#63707d;
+  --line:#d3dbe3;
+  --line-soft:#e7ecf1;
+  --head:#eef2f6;
+  --paper:#f5f7f9;
+  --ok:#1a7f4b;
+  --warn:#a2680b;
+  --bad:#b3261e;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:13px;color:var(--ink);
+  background:var(--paper);font-variant-numeric:tabular-nums;
+}
+a{color:var(--link);text-decoration:none;cursor:pointer}
+a:hover{text-decoration:underline}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px}
+
+/* chrome */
+.masthead{
+  background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center;
+  padding:9px 18px;gap:16px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:baseline;gap:12px;min-width:0}
+.logo{font-weight:700;letter-spacing:.16em;font-size:16px}
+.brand-sub{font-size:11.5px;color:#a9bdd0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.masthead-right{display:flex;align-items:center;gap:16px;font-size:11.5px;color:#b7c8d8}
+.env{border:1px solid #46617c;border-radius:3px;padding:2px 8px;letter-spacing:.05em}
+.home{color:#fff;font-size:15px}
+
+.shell{display:flex;min-height:calc(100vh - 40px)}
+.sidenav{
+  width:216px;flex:0 0 216px;background:#fff;border-right:1px solid var(--line);padding:10px 0 30px;
+}
+.nav-group{
+  padding:12px 16px 5px;font-size:10px;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--muted);font-weight:700;
+}
+.sidenav a{
+  display:flex;justify-content:space-between;gap:8px;padding:7px 16px;color:var(--ink);
+  border-left:3px solid transparent;
+}
+.sidenav a:hover{background:var(--head);text-decoration:none}
+.sidenav a.active{background:#e8f1fa;border-left-color:var(--link);color:var(--link);font-weight:600}
+.sidenav .n{color:var(--muted);font-size:11px}
+
+main{flex:1;min-width:0;padding:16px 22px 50px}
+.crumbs{font-size:11.5px;color:var(--muted);margin-bottom:8px}
+.crumbs a{color:var(--link)}
+h1{font-size:19px;font-weight:600;margin:0 0 4px}
+.page-sub{color:var(--muted);font-size:12px;margin-bottom:14px}
+
+/* cards + tables */
+.card{background:#fff;border:1px solid var(--line);border-radius:3px;margin-bottom:16px}
+.card h2{
+  font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--navy);margin:0;
+  padding:9px 14px;border-bottom:1px solid var(--line);background:var(--head);font-weight:700;
+}
+.card .body{padding:12px 14px}
+.toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:11px}
+.toolbar input,.toolbar select{
+  border:1px solid var(--line);border-radius:3px;padding:6px 9px;font-size:12.5px;background:#fff;
+}
+.toolbar input{min-width:280px}
+.toolbar input[type="checkbox"]{min-width:0;width:auto;margin:0;accent-color:var(--link)}
+.toolbar input:focus,.toolbar select:focus{outline:2px solid var(--link);outline-offset:-1px}
+.spacer{flex:1}
+.count{color:var(--muted);font-size:11.5px}
+
+.scroll{overflow:auto;max-height:72vh}
+table{border-collapse:collapse;width:100%;background:#fff}
+th,td{border-bottom:1px solid var(--line-soft);padding:7px 11px;text-align:left;vertical-align:top;white-space:nowrap}
+th{
+  background:var(--head);position:sticky;top:0;z-index:2;font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.06em;color:#41505f;font-weight:700;border-bottom:1px solid var(--line);
+}
+tbody tr:hover{background:#f7fafd}
+td.num,th.num{text-align:right}
+td.wrap{white-space:normal;max-width:340px}
+.empty{padding:34px;text-align:center;color:var(--muted)}
+
+/* key/value grids */
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2px 26px}
+.kv .row{display:grid;grid-template-columns:150px 1fr;gap:10px;padding:4px 0;align-items:start}
+.kv label{color:var(--muted);font-size:11.5px}
+.kv .v{font-size:12.5px;word-break:break-word}
+.kv .v.empty-val{color:#9aa5b1;font-style:italic}
+.addr{white-space:pre-line;line-height:1.5}
+
+/* tabs */
+.tabs{display:flex;gap:20px;border-bottom:1px solid var(--line);margin-bottom:14px;flex-wrap:wrap}
+.tab{
+  background:none;border:0;padding:9px 2px;font-size:12.5px;color:#3c4a58;cursor:pointer;
+  border-bottom:3px solid transparent;font-family:inherit;
+}
+.tab.active{border-bottom-color:var(--link);color:var(--link);font-weight:600}
+
+/* status chips */
+.chip{
+  display:inline-block;padding:1.5px 8px;border-radius:10px;font-size:10.5px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.05em;border:1px solid;
+}
+.chip.ok{color:var(--ok);border-color:#a9d9bf;background:#eaf7f0}
+.chip.warn{color:var(--warn);border-color:#e6cf9a;background:#fdf6e6}
+.chip.bad{color:var(--bad);border-color:#efb7b3;background:#fdeeed}
+.chip.neutral{color:#46566a;border-color:var(--line);background:var(--head)}
+
+/* KPI tiles on the dashboard */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:12px;margin-bottom:18px}
+.tile{background:#fff;border:1px solid var(--line);border-radius:3px;padding:12px 14px}
+.tile .l{font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:700}
+.tile .v{font-size:23px;font-weight:600;margin-top:6px}
+.tile .s{font-size:11.5px;color:var(--muted);margin-top:3px}
+.tile.alert .v{color:var(--bad)}
+
+.doc-list{display:grid;gap:8px}
+.doc{
+  display:flex;justify-content:space-between;align-items:center;gap:14px;border:1px solid var(--line);
+  border-radius:3px;padding:9px 12px;background:#fff;
+}
+.doc .meta{color:var(--muted);font-size:11.5px;margin-top:2px}
+.doc .pdf{
+  background:#fdeeed;color:var(--bad);border:1px solid #efb7b3;border-radius:3px;
+  padding:2px 7px;font-size:10.5px;font-weight:700;
+}
+.clause{margin:0 0 6px;padding-left:18px;text-indent:-18px;line-height:1.55}
+.loading{padding:50px;text-align:center;color:var(--muted)}
+.note{color:var(--muted);font-size:12px;line-height:1.6;margin:0 0 12px}
+@media(max-width:900px){
+  .shell{flex-direction:column}
+  .sidenav{width:auto;flex:none;display:flex;flex-wrap:wrap;border-right:0;border-bottom:1px solid var(--line)}
+  .nav-group{display:none}
+  .sidenav a{border-left:0;border-bottom:3px solid transparent}
+  .toolbar input{min-width:0;flex:1 1 100%}
+}

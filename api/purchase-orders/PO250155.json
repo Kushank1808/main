@@ -1,0 +1,52 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO250155",
+    "customer_id": "C-103018",
+    "customer_name": "UT MD ANDERSON CANCER CTR",
+    "contract_number": "MSA-MDA-ORB-2025-031",
+    "po_date": "2026-07-29",
+    "valid_from": "2026-07-29",
+    "valid_to": "2027-07-29",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 17076.8,
+    "released_amount": 10673.0,
+    "buyer_name": "Rosa Delgado",
+    "buyer_email": "rdelgado@mdanderson.org",
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "sales_order": "1886655",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "uom": "BT",
+        "quantity": 42,
+        "unit_price": 85.8,
+        "amount": 3603.6
+      },
+      {
+        "po_line": 2,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "uom": "EA",
+        "quantity": 36,
+        "unit_price": 191.13,
+        "amount": 6880.68
+      }
+    ],
+    "document_id": "DOC-PO-PO250155",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO250155",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO250155.pdf",
+        "size_bytes": 3481
+      }
+    ]
+  }
+}

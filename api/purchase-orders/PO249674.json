@@ -1,0 +1,70 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO249674",
+    "customer_id": "C-101902",
+    "customer_name": "SARTORIUS STEDIM FILTERS",
+    "contract_number": "PA-SART-ORB-2025-022",
+    "po_date": "2026-07-03",
+    "valid_from": "2026-07-03",
+    "valid_to": "2027-07-03",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 34940.98,
+    "released_amount": 21838.11,
+    "buyer_name": "Astrid Oms A",
+    "buyer_email": "astrid.oms@sartorius.com",
+    "payment_terms": "Net 30",
+    "incoterms": "EXW Marlborough",
+    "sales_order": "1886434",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "KA2V002PV1G",
+        "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+        "uom": "EA",
+        "quantity": 15,
+        "unit_price": 296.24,
+        "amount": 4443.6
+      },
+      {
+        "po_line": 2,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "uom": "BT",
+        "quantity": 12,
+        "unit_price": 88.69,
+        "amount": 1064.28
+      },
+      {
+        "po_line": 3,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "uom": "EA",
+        "quantity": 39,
+        "unit_price": 197.57,
+        "amount": 7705.23
+      },
+      {
+        "po_line": 4,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "uom": "EA",
+        "quantity": 5,
+        "unit_price": 1725.0,
+        "amount": 8625.0
+      }
+    ],
+    "document_id": "DOC-PO-PO249674",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO249674",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249674.pdf",
+        "size_bytes": 3726
+      }
+    ]
+  }
+}

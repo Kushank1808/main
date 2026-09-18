@@ -1,0 +1,61 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "4500198847",
+    "customer_id": "C-200380",
+    "customer_name": "HELIOS FLUID SYSTEMS SAS",
+    "contract_number": "MSA-HFS-ORB-2025-006",
+    "po_date": "2026-07-13",
+    "valid_from": "2026-07-13",
+    "valid_to": "2027-07-13",
+    "status": "OPEN",
+    "currency": "EUR",
+    "po_amount_limit": 21565.15,
+    "released_amount": 13478.22,
+    "buyer_name": "Émilie Rousseau",
+    "buyer_email": "e.rousseau@helios-fluid.fr",
+    "payment_terms": "Net 60",
+    "incoterms": "DAP Saint-Priest",
+    "sales_order": "SO-2026-7791",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "AX-BRG-540",
+        "description": "High-load Bearing Set, sealed, Class 5",
+        "uom": "SET",
+        "quantity": 20,
+        "unit_price": 385.4,
+        "amount": 7708.0
+      },
+      {
+        "po_line": 2,
+        "item_number": "AX-GSKT-12",
+        "description": "Gasket and Fastener Pack (per pump)",
+        "uom": "PK",
+        "quantity": 26,
+        "unit_price": 58.75,
+        "amount": 1527.5
+      },
+      {
+        "po_line": 3,
+        "item_number": "AX-CTRL-PLC",
+        "description": "Pump Control Panel, PLC, IP66",
+        "uom": "EA",
+        "quantity": 1,
+        "unit_price": 4004.4,
+        "amount": 4004.4
+      }
+    ],
+    "document_id": "DOC-PO-4500198847",
+    "documents": [
+      {
+        "document_id": "DOC-PO-4500198847",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_4500198847.pdf",
+        "size_bytes": 3590
+      }
+    ]
+  }
+}

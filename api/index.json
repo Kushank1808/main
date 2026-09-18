@@ -1,0 +1,57 @@
+{
+  "system": "ORBIS — Order & Revenue Billing Information System",
+  "purpose": "Pre-billing source of truth for an invoice field validation POC.",
+  "generated_at": "2026-08-27T08:15:23Z",
+  "endpoints": {
+    "operating_units": "api/operating-units.json",
+    "customers": "api/customers.json",
+    "customer_detail": "api/customers/{customer_id}.json",
+    "contracts": "api/contracts.json",
+    "contract_detail": "api/contracts/{contract_number}.json",
+    "price_list": "api/price-list.json",
+    "items": "api/items.json",
+    "tax_rules": "api/tax-rules.json",
+    "purchase_orders": "api/purchase-orders.json",
+    "purchase_order_detail": "api/purchase-orders/{po_number}.json",
+    "sales_orders": "api/sales-orders.json",
+    "sales_order_detail": "api/sales-orders/{order_number}.json",
+    "deliveries": "api/deliveries.json",
+    "delivery_detail": "api/deliveries/{delivery_number}.json",
+    "billing_drafts": "api/billing-drafts.json",
+    "billing_draft_detail": "api/billing-drafts/{draft_number}.json",
+    "billing_draft_lines_flat": "api/billing-draft-lines.json",
+    "documents": "api/documents.json",
+    "field_map": "api/field-map.json",
+    "expected_findings": "api/mismatches.json",
+    "validation_package_index": "api/validation-packages.json",
+    "validation_package": "api/validation-packages/{draft_number}.json",
+    "full_bundle": "api/bundle.json",
+    "openapi": "api/openapi.json"
+  },
+  "integration_notes": {
+    "auth": "None. Public read-only static hosting.",
+    "cors": "Access-Control-Allow-Origin: * on every file, PDFs included.",
+    "recommended_entry_point": "api/validation-packages/{draft_number}.json returns a draft with all upstream objects pre-joined, so one request replaces six.",
+    "document_urls": "Relative to the site root. Join with the base URL: {base}/docs/{file_name}."
+  },
+  "join_keys": {
+    "draft_to_order": "billing_draft.sales_order = sales_order.order_number",
+    "order_to_po": "sales_order.customer_po_number = purchase_order.po_number",
+    "order_to_contract": "sales_order.contract_number = contract.contract_number",
+    "order_to_delivery": "sales_order.delivery_number = delivery.delivery_number",
+    "line_price": "billing_draft.lines.unit_price = price_list.contract_price (by item and contract)",
+    "tax": "billing_draft.tax_code = tax_rule.tax_code"
+  },
+  "counts": {
+    "customers": 10,
+    "contracts": 10,
+    "purchase_orders": 24,
+    "sales_orders": 24,
+    "order_lines": 90,
+    "deliveries": 22,
+    "billing_drafts": 20,
+    "documents": 80,
+    "validated_fields": 24,
+    "seeded_findings": 14
+  }
+}

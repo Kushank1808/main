@@ -1,0 +1,113 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Contract",
+  "data": {
+    "contract_number": "MSA-HFS-ORB-2025-006",
+    "contract_type": "MSA",
+    "customer_id": "C-200380",
+    "status": "ACTIVE",
+    "effective_from": "2025-02-01",
+    "effective_to": "2027-01-31",
+    "currency": "EUR",
+    "price_list": "EU-IND-2026",
+    "discount_pct": 6.0,
+    "payment_terms": "Net 60",
+    "incoterms": "DAP Saint-Priest",
+    "freight_terms": "PREPAID_AND_ADD",
+    "billing_rule": "DELIVERY_BASED",
+    "tax_treatment": "REVERSE_CHARGE",
+    "po_required": true,
+    "surcharge_allowed": false,
+    "price_tolerance_pct": 0.0,
+    "qty_tolerance_pct": 0.0,
+    "signed_by_customer": "E. Rousseau, Responsable Achats",
+    "signed_by_supplier": "S. Moloney, Commercial Director EMEA",
+    "clauses": [
+      "Prices are taken from price list EU-IND-2026 less 6% for the contract term.",
+      "Supplies are intra-Community; VAT is accounted for by the recipient under reverse charge.",
+      "Customer VAT identification number must be validated before each invoice is raised."
+    ],
+    "document_id": "DOC-CT-MSA-HFS-ORB-2025-006",
+    "customer_name": "HELIOS FLUID SYSTEMS SAS",
+    "price_list_lines": [
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-HFS-ORB-2025-006",
+        "customer_id": "C-200380",
+        "item_number": "AX-PMP-320",
+        "uom": "EA",
+        "list_price": 1850.0,
+        "discount_pct": 6.0,
+        "contract_price": 1739.0,
+        "currency": "EUR",
+        "effective_from": "2025-02-01",
+        "effective_to": "2027-01-31"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-HFS-ORB-2025-006",
+        "customer_id": "C-200380",
+        "item_number": "AX-SEAL-88",
+        "uom": "EA",
+        "list_price": 145.0,
+        "discount_pct": 6.0,
+        "contract_price": 136.3,
+        "currency": "EUR",
+        "effective_from": "2025-02-01",
+        "effective_to": "2027-01-31"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-HFS-ORB-2025-006",
+        "customer_id": "C-200380",
+        "item_number": "AX-BRG-540",
+        "uom": "SET",
+        "list_price": 410.0,
+        "discount_pct": 6.0,
+        "contract_price": 385.4,
+        "currency": "EUR",
+        "effective_from": "2025-02-01",
+        "effective_to": "2027-01-31"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-HFS-ORB-2025-006",
+        "customer_id": "C-200380",
+        "item_number": "AX-GSKT-12",
+        "uom": "PK",
+        "list_price": 62.5,
+        "discount_pct": 6.0,
+        "contract_price": 58.75,
+        "currency": "EUR",
+        "effective_from": "2025-02-01",
+        "effective_to": "2027-01-31"
+      },
+      {
+        "price_list": "EU-IND-2026",
+        "contract_number": "MSA-HFS-ORB-2025-006",
+        "customer_id": "C-200380",
+        "item_number": "AX-CTRL-PLC",
+        "uom": "EA",
+        "list_price": 4260.0,
+        "discount_pct": 6.0,
+        "contract_price": 4004.4,
+        "currency": "EUR",
+        "effective_from": "2025-02-01",
+        "effective_to": "2027-01-31"
+      }
+    ],
+    "documents": [
+      {
+        "document_id": "DOC-CT-MSA-HFS-ORB-2025-006",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-HFS-ORB-2025-006.pdf",
+        "size_bytes": 3804
+      }
+    ],
+    "orders": [
+      "SO-2026-7791",
+      "SO-2026-7921"
+    ]
+  }
+}

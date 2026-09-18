@@ -1,0 +1,17 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "customer_id": "C-SE-0007",
+    "customer_name": "Johan Ek",
+    "company": "SE21",
+    "customer_type": "PRIVATE",
+    "country": "SE",
+    "vat_number": null,
+    "related_party": false,
+    "nga_customer": false,
+    "leasing_plate_required": false,
+    "loan_provider": false,
+    "bpi_exception": false,
+    "sharepoint_tracker": false
+  }
+}

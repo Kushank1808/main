@@ -1,0 +1,40 @@
+/* POMS — the order system the invoice must agree with. Near-black chrome, warm grey canvas,
+   generous type; deliberately unlike the Workday white/blue so the two systems read apart. */
+:root{--bg:#f6f5f3;--card:#fff;--ink:#141414;--muted:#6f6c68;--line:#e2dfda;--acc:#ff5c1a;--ok:#1c7c4d;--bad:#c62828;--warn:#9a6700;--hold:#5b3fb5}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13.5px;color:var(--ink);background:var(--bg);font-variant-numeric:tabular-nums}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:#bdb8b1;text-underline-offset:2px}
+a:hover{text-decoration-color:var(--acc)}
+.bar{background:#141414;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 24px;height:52px}
+.brand{display:flex;align-items:baseline;gap:12px}.mark{font-weight:700;letter-spacing:.22em;font-size:15px}.sub{font-size:12px;color:#a8a49f}
+.right{display:flex;gap:14px;align-items:center;font-size:12px;color:#a8a49f}.env{border:1px solid #444;padding:2px 8px;border-radius:2px}.home{color:#fff;text-decoration:none;font-size:16px}
+main{max-width:1280px;margin:0 auto;padding:22px 24px 60px}
+.crumbs{font-size:12px;color:var(--muted);margin-bottom:8px}.crumbs a{text-decoration:none}
+h1{font-size:24px;font-weight:500;margin:0 0 4px;letter-spacing:-.01em}
+.lead{color:var(--muted);margin:0 0 16px;max-width:70ch;line-height:1.55}
+.card{background:var(--card);border:1px solid var(--line);border-radius:2px;margin-bottom:14px}
+.card h2{font-size:13px;font-weight:600;margin:0;padding:10px 14px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:baseline}
+.card h2 .c{color:var(--muted);font-weight:400;font-size:12px}
+.scroll{overflow:auto}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th,td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;vertical-align:top}
+th{font-weight:600;font-size:11.5px;color:var(--muted);background:#faf9f7;position:sticky;top:0}
+th.num,td.num{text-align:right}
+tbody tr:hover td{background:#fbfaf8}
+.kv{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px 22px;padding:14px}
+.kv label{display:block;font-size:11.5px;color:var(--muted);margin-bottom:2px}
+.kv .v{font-size:14px}
+.pill{display:inline-block;border-radius:2px;padding:1px 8px;font-size:11.5px;font-weight:500;background:#eeebe6;color:#3e3a35}
+.pill.ok{background:#e6f4ec;color:var(--ok)}.pill.bad{background:#fdeaea;color:var(--bad)}.pill.warn{background:#fff4d6;color:var(--warn)}.pill.acc{background:#ffe6db;color:#b83a00}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px}
+.toolbar{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.toolbar input{height:32px;border:1px solid var(--line);border-radius:2px;padding:0 10px;min-width:300px;font-size:13px;background:#fff}
+.toolbar .count{margin-left:auto;font-size:12px;color:var(--muted)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:2px;overflow:hidden;background:#fff}
+.seg button{border:0;background:none;height:32px;padding:0 12px;cursor:pointer;font:inherit;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}.seg button.on{background:#141414;color:#fff}
+.price{display:grid;grid-template-columns:1fr auto;gap:6px 24px;padding:14px;font-size:13.5px}
+.price .t{border-top:1px solid var(--ink);padding-top:8px;font-weight:600}
+.empty{padding:16px;color:var(--muted)}.loading{padding:30px;color:var(--muted)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:14px}
+.tile{background:#fff;border:1px solid var(--line);padding:12px 14px}.tile .l{font-size:11.5px;color:var(--muted)}.tile .v{font-size:24px;margin-top:2px}

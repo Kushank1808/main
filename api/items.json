@@ -1,0 +1,162 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Item Master",
+  "count": 14,
+  "generated_at": "2026-08-27T08:15:23Z",
+  "data": [
+    {
+      "item_number": "VMPKPED",
+      "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+      "item_class": "CONSUMABLE",
+      "uom": "EA",
+      "list_price": 8.05,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "9018.90",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO"
+    },
+    {
+      "item_number": "NEO96",
+      "description": "Neonatal Assay Plate, 96-well, non-treated",
+      "item_class": "CONSUMABLE",
+      "uom": "EA",
+      "list_price": 7.36,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "3926.90",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO"
+    },
+    {
+      "item_number": "KA2V002PV1G",
+      "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+      "item_class": "FILTRATION",
+      "uom": "EA",
+      "list_price": 322.0,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "8421.29",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO"
+    },
+    {
+      "item_number": "CELLCUL500",
+      "description": "Cell Culture Media, 500mL, animal-origin free",
+      "item_class": "MEDIA",
+      "uom": "BT",
+      "list_price": 96.4,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "3821.00",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO"
+    },
+    {
+      "item_number": "BIOPROC-FLT-22",
+      "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+      "item_class": "FILTRATION",
+      "uom": "EA",
+      "list_price": 214.75,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "8421.29",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO"
+    },
+    {
+      "item_number": "CHROM-COL-16",
+      "description": "Chromatography Column, 16mm, borosilicate",
+      "item_class": "EQUIPMENT",
+      "uom": "EA",
+      "list_price": 1875.0,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "9027.20",
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO"
+    },
+    {
+      "item_number": "TARIFF_SURCHARGE",
+      "description": "Section 301 tariff surcharge, pass-through",
+      "item_class": "SURCHARGE",
+      "uom": "EA",
+      "list_price": 0.0,
+      "line_type": "SURCHARGE",
+      "taxable": false,
+      "hs_code": null,
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO"
+    },
+    {
+      "item_number": "FREIGHT-US",
+      "description": "Outbound freight and handling",
+      "item_class": "FREIGHT",
+      "uom": "EA",
+      "list_price": 0.0,
+      "line_type": "FREIGHT",
+      "taxable": false,
+      "hs_code": null,
+      "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO"
+    },
+    {
+      "item_number": "AX-PMP-320",
+      "description": "Centrifugal Pump Assembly, 320mm impeller, SS316",
+      "item_class": "ROTATING-EQUIP",
+      "uom": "EA",
+      "list_price": 1850.0,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "8413.70",
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO"
+    },
+    {
+      "item_number": "AX-SEAL-88",
+      "description": "Mechanical Seal Kit, tungsten carbide faces",
+      "item_class": "SPARES",
+      "uom": "EA",
+      "list_price": 145.0,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "8484.20",
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO"
+    },
+    {
+      "item_number": "AX-BRG-540",
+      "description": "High-load Bearing Set, sealed, Class 5",
+      "item_class": "SPARES",
+      "uom": "SET",
+      "list_price": 410.0,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "8482.10",
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO"
+    },
+    {
+      "item_number": "AX-GSKT-12",
+      "description": "Gasket and Fastener Pack (per pump)",
+      "item_class": "SPARES",
+      "uom": "PK",
+      "list_price": 62.5,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "8484.10",
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO"
+    },
+    {
+      "item_number": "AX-CTRL-PLC",
+      "description": "Pump Control Panel, PLC, IP66",
+      "item_class": "EQUIPMENT",
+      "uom": "EA",
+      "list_price": 4260.0,
+      "line_type": "GOODS",
+      "taxable": true,
+      "hs_code": "8537.10",
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO"
+    },
+    {
+      "item_number": "FREIGHT-DAP",
+      "description": "Freight to named place under DAP terms",
+      "item_class": "FREIGHT",
+      "uom": "EA",
+      "list_price": 0.0,
+      "line_type": "FREIGHT",
+      "taxable": true,
+      "hs_code": null,
+      "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO"
+    }
+  ]
+}

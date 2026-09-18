@@ -1,0 +1,64 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "DN-88216",
+    "sales_order": "SO-2026-7908",
+    "customer_id": "C-200114",
+    "ship_date": "2026-08-10",
+    "carrier": "DB Schenker",
+    "waybill": "DBS2176127306",
+    "ship_from": "Eastgate Business Park, Little Island, Cork T45 K294, Ireland",
+    "ship_to": {
+      "site_use_id": "ST-200114-1",
+      "name": "NORDWIND TURBINES GMBH",
+      "address_1": "NORDWIND TURBINES GMBH",
+      "address_2": "PLANT 2 GOODS-IN",
+      "address_3": "-",
+      "address_4": "OTTENSENER STR. 9",
+      "city": "Hamburg",
+      "state": "HH",
+      "postal_code": "22765",
+      "country": "DE"
+    },
+    "proof_of_delivery_date": "2026-08-12",
+    "incoterms": "DAP Hamburg Plant 2",
+    "gross_weight_kg": 62.16,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "AX-SEAL-88",
+        "uom": "EA",
+        "ordered_quantity": 45,
+        "shipped_quantity": 45,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "AX-BRG-540",
+        "uom": "SET",
+        "ordered_quantity": 49,
+        "shipped_quantity": 49,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "AX-GSKT-12",
+        "uom": "PK",
+        "ordered_quantity": 54,
+        "shipped_quantity": 54,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-DN-88216",
+    "documents": [
+      {
+        "document_id": "DOC-DN-DN-88216",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_DN-88216.pdf",
+        "size_bytes": 3187
+      }
+    ]
+  }
+}

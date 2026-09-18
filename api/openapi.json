@@ -1,0 +1,359 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ORBIS ERP — pre-billing read API",
+    "version": "1.0.0",
+    "description": "Read-only JSON over static hosting. Every path is a file, so any HTTP client works and no authentication is required. Responses carry Access-Control-Allow-Origin: * so browser clients can call it directly."
+  },
+  "servers": [
+    {
+      "url": "https://{user}.github.io/{repo}",
+      "variables": {
+        "user": {
+          "default": "your-user"
+        },
+        "repo": {
+          "default": "your-repo"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/api/index.json": {
+      "get": {
+        "summary": "Service catalogue",
+        "description": "Endpoint list, join keys and record counts.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/bundle.json": {
+      "get": {
+        "summary": "Full dataset",
+        "description": "Every object in one response.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/validation-packages.json": {
+      "get": {
+        "summary": "Validation package index",
+        "description": "One entry per billing draft.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/validation-packages/{draft_number}.json": {
+      "get": {
+        "summary": "Validation package",
+        "description": "A billing draft plus every upstream object needed to validate it.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/billing-drafts.json": {
+      "get": {
+        "summary": "Billing drafts",
+        "description": "Pre-invoice drafts awaiting validation.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/billing-drafts/{draft_number}.json": {
+      "get": {
+        "summary": "Billing draft",
+        "description": "Draft header, lines and totals.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/billing-draft-lines.json": {
+      "get": {
+        "summary": "Billing draft lines (flat)",
+        "description": "One row per draft line, header denormalised, plus ref_ columns joined from the source objects.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/sales-orders.json": {
+      "get": {
+        "summary": "Sales orders",
+        "description": "Order headers with billing status.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/sales-orders/{order_number}.json": {
+      "get": {
+        "summary": "Sales order",
+        "description": "Header, lines, holds, documents.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/purchase-orders.json": {
+      "get": {
+        "summary": "Customer purchase orders",
+        "description": "Validity window and authorised value.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/purchase-orders/{po_number}.json": {
+      "get": {
+        "summary": "Customer purchase order",
+        "description": "Header, lines, documents.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/contracts.json": {
+      "get": {
+        "summary": "Contracts",
+        "description": "Commercial terms per customer.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/contracts/{contract_number}.json": {
+      "get": {
+        "summary": "Contract",
+        "description": "Terms, clauses and agreed price list.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/deliveries.json": {
+      "get": {
+        "summary": "Deliveries",
+        "description": "Shipment headers with proof of delivery dates.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/deliveries/{delivery_number}.json": {
+      "get": {
+        "summary": "Delivery",
+        "description": "Shipped and backordered quantities.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/customers.json": {
+      "get": {
+        "summary": "Customers",
+        "description": "Customer master.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/customers/{customer_id}.json": {
+      "get": {
+        "summary": "Customer",
+        "description": "Bill-to and ship-to sites, tax registration.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/price-list.json": {
+      "get": {
+        "summary": "Price list",
+        "description": "Contract price per item.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/items.json": {
+      "get": {
+        "summary": "Item master",
+        "description": "List price, UOM, taxability.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/tax-rules.json": {
+      "get": {
+        "summary": "Tax rules",
+        "description": "Rate and treatment per jurisdiction.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/documents.json": {
+      "get": {
+        "summary": "Document registry",
+        "description": "URL and metadata for every source PDF.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/field-map.json": {
+      "get": {
+        "summary": "Invoice field lineage",
+        "description": "Authoritative source and precedence per field.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/mismatches.json": {
+      "get": {
+        "summary": "Seeded defects",
+        "description": "Answer key for scoring a validation run.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/docs/{file_name}": {
+      "get": {
+        "summary": "Source document",
+        "description": "A contract, PO, order acknowledgement or delivery note as PDF.",
+        "responses": {
+          "200": {
+            "description": "JSON document",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

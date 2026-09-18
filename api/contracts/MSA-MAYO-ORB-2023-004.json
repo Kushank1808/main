@@ -1,0 +1,128 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Contract",
+  "data": {
+    "contract_number": "MSA-MAYO-ORB-2023-004",
+    "contract_type": "MSA",
+    "customer_id": "C-100731",
+    "status": "ACTIVE",
+    "effective_from": "2023-07-01",
+    "effective_to": "2026-12-31",
+    "currency": "USD",
+    "price_list": "US-IDN-2026-H1",
+    "discount_pct": 15.0,
+    "payment_terms": "Net 60",
+    "incoterms": "FOB Destination",
+    "freight_terms": "PREPAID",
+    "billing_rule": "DELIVERY_BASED",
+    "tax_treatment": "EXEMPT",
+    "po_required": true,
+    "surcharge_allowed": false,
+    "price_tolerance_pct": 0.0,
+    "qty_tolerance_pct": 0.0,
+    "signed_by_customer": "R. Ellingsen, Category Manager",
+    "signed_by_supplier": "D. Okafor, VP Commercial Operations",
+    "clauses": [
+      "Prices are taken from price list US-IDN-2026-H1 less 15% for the contract term.",
+      "Freight is prepaid by supplier and is NOT separately billable to the customer.",
+      "Tariff and commodity surcharges are expressly excluded and may not be invoiced.",
+      "A valid customer purchase order is required before any shipment is invoiced."
+    ],
+    "document_id": "DOC-CT-MSA-MAYO-ORB-2023-004",
+    "customer_name": "MAYO FDN",
+    "price_list_lines": [
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MAYO-ORB-2023-004",
+        "customer_id": "C-100731",
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "list_price": 8.05,
+        "discount_pct": 15.0,
+        "contract_price": 6.84,
+        "currency": "USD",
+        "effective_from": "2023-07-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MAYO-ORB-2023-004",
+        "customer_id": "C-100731",
+        "item_number": "NEO96",
+        "uom": "EA",
+        "list_price": 7.36,
+        "discount_pct": 15.0,
+        "contract_price": 6.26,
+        "currency": "USD",
+        "effective_from": "2023-07-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MAYO-ORB-2023-004",
+        "customer_id": "C-100731",
+        "item_number": "KA2V002PV1G",
+        "uom": "EA",
+        "list_price": 322.0,
+        "discount_pct": 15.0,
+        "contract_price": 273.7,
+        "currency": "USD",
+        "effective_from": "2023-07-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MAYO-ORB-2023-004",
+        "customer_id": "C-100731",
+        "item_number": "CELLCUL500",
+        "uom": "BT",
+        "list_price": 96.4,
+        "discount_pct": 15.0,
+        "contract_price": 81.94,
+        "currency": "USD",
+        "effective_from": "2023-07-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MAYO-ORB-2023-004",
+        "customer_id": "C-100731",
+        "item_number": "BIOPROC-FLT-22",
+        "uom": "EA",
+        "list_price": 214.75,
+        "discount_pct": 15.0,
+        "contract_price": 182.54,
+        "currency": "USD",
+        "effective_from": "2023-07-01",
+        "effective_to": "2026-12-31"
+      },
+      {
+        "price_list": "US-IDN-2026-H1",
+        "contract_number": "MSA-MAYO-ORB-2023-004",
+        "customer_id": "C-100731",
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "list_price": 1875.0,
+        "discount_pct": 15.0,
+        "contract_price": 1593.75,
+        "currency": "USD",
+        "effective_from": "2023-07-01",
+        "effective_to": "2026-12-31"
+      }
+    ],
+    "documents": [
+      {
+        "document_id": "DOC-CT-MSA-MAYO-ORB-2023-004",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-MAYO-ORB-2023-004.pdf",
+        "size_bytes": 3931
+      }
+    ],
+    "orders": [
+      "1886417",
+      "1886587",
+      "1886757"
+    ]
+  }
+}

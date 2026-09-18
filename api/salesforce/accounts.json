@@ -1,0 +1,40 @@
+{
+  "source_system": "Salesforce",
+  "object": "Account",
+  "count": 4,
+  "generated_at": "2026-09-18T07:00:00Z",
+  "data": [
+    {
+      "sf_account_id": "001PT00000A1B2C",
+      "account_name": "Douro Consultores Lda",
+      "workday_customer_id": "C-PT-0217",
+      "vat_number": "PT509876543",
+      "billing_country": "PT",
+      "owner": "Market Portugal"
+    },
+    {
+      "sf_account_id": "001PT00000A1B2D",
+      "account_name": "Tejo Logística Lda",
+      "workday_customer_id": "C-PT-0216",
+      "vat_number": "PT501234567",
+      "billing_country": "PT",
+      "owner": "Market Portugal"
+    },
+    {
+      "sf_account_id": "001PT00000A1B2E",
+      "account_name": "LeasePlan Portugal",
+      "workday_customer_id": "C-PT-0201",
+      "vat_number": "PT502062468",
+      "billing_country": "PT",
+      "owner": "Market Portugal"
+    },
+    {
+      "sf_account_id": "001SE00000B7C8D",
+      "account_name": "Nordic Fleet Solutions AB",
+      "workday_customer_id": "C-SE-0005",
+      "vat_number": "SE559312345601",
+      "billing_country": "SE",
+      "owner": "Market Sweden"
+    }
+  ]
+}

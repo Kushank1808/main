@@ -1,0 +1,1144 @@
+{
+  "run_id": "run-20260918T0838Z",
+  "started_at": "2026-09-18T08:38:15Z",
+  "finished_at": "2026-09-18T08:38:15Z",
+  "duration_seconds": 0.0,
+  "schedule": {
+    "interval_minutes": 60,
+    "next_run_at": "2026-09-18T09:38:15Z",
+    "trigger": "manual"
+  },
+  "source": "local api/",
+  "scope": "all statuses",
+  "invoices_checked": 37,
+  "summary": {
+    "PASS": 16,
+    "FAIL": 20,
+    "HOLD": 1
+  },
+  "by_company": {
+    "SE21": {
+      "PASS": 3,
+      "FAIL": 3,
+      "HOLD": 0,
+      "invoices": 6
+    },
+    "NO21": {
+      "PASS": 3,
+      "FAIL": 6,
+      "HOLD": 1,
+      "invoices": 10
+    },
+    "PT21": {
+      "PASS": 7,
+      "FAIL": 9,
+      "HOLD": 0,
+      "invoices": 16
+    },
+    "DK21": {
+      "PASS": 3,
+      "FAIL": 2,
+      "HOLD": 0,
+      "invoices": 5
+    }
+  },
+  "by_rule": [
+    {
+      "rule_id": "GEN-002",
+      "name": "Workday vs POMS value match",
+      "severity": "critical",
+      "hits": 3,
+      "invoices": [
+        "CI-DK21-400503",
+        "CI-NO21-200307",
+        "CI-SE21-100206"
+      ]
+    },
+    {
+      "rule_id": "PT21-005",
+      "name": "E&Y final invoice match",
+      "severity": "critical",
+      "hits": 3,
+      "invoices": [
+        "CI-PT21-300411",
+        "CI-PT21-300412"
+      ]
+    },
+    {
+      "rule_id": "DK21-001",
+      "name": "SharePoint tracker adjustments applied",
+      "severity": "high",
+      "hits": 3,
+      "invoices": [
+        "CI-DK21-400503"
+      ]
+    },
+    {
+      "rule_id": "SE21-001",
+      "name": "Related party revenue category",
+      "severity": "high",
+      "hits": 2,
+      "invoices": [
+        "CI-SE21-100203",
+        "CI-SE21-100204"
+      ]
+    },
+    {
+      "rule_id": "NO21-001",
+      "name": "NGA tracker captured",
+      "severity": "high",
+      "hits": 2,
+      "invoices": [
+        "CI-NO21-200304",
+        "CI-NO21-200310"
+      ]
+    },
+    {
+      "rule_id": "PT21-001",
+      "name": "Leasing licence plate",
+      "severity": "high",
+      "hits": 2,
+      "invoices": [
+        "CI-PT21-300403",
+        "CI-PT21-300404"
+      ]
+    },
+    {
+      "rule_id": "PT21-006",
+      "name": "Gapless numbering and approval order",
+      "severity": "critical",
+      "hits": 2,
+      "invoices": [
+        "CI-PT21-300413",
+        "CI-PT21-300414"
+      ]
+    },
+    {
+      "rule_id": "GEN-001",
+      "name": "Line arithmetic",
+      "severity": "critical",
+      "hits": 1,
+      "invoices": [
+        "CI-SE21-100206"
+      ]
+    },
+    {
+      "rule_id": "NO21-003",
+      "name": "Fee lines removed when instructed",
+      "severity": "critical",
+      "hits": 1,
+      "invoices": [
+        "CI-NO21-200303"
+      ]
+    },
+    {
+      "rule_id": "NO21-004",
+      "name": "Revised gross and base applied",
+      "severity": "critical",
+      "hits": 1,
+      "invoices": [
+        "CI-NO21-200303"
+      ]
+    },
+    {
+      "rule_id": "NO21-002",
+      "name": "NGA response received",
+      "severity": "high",
+      "hits": 1,
+      "invoices": [
+        "CI-NO21-200305"
+      ]
+    },
+    {
+      "rule_id": "NO21-005",
+      "name": "VAT recalculated after amendment",
+      "severity": "critical",
+      "hits": 1,
+      "invoices": [
+        "CI-NO21-200306"
+      ]
+    },
+    {
+      "rule_id": "NO21-007",
+      "name": "Factoring payment captured",
+      "severity": "medium",
+      "hits": 1,
+      "invoices": [
+        "CI-NO21-200308"
+      ]
+    },
+    {
+      "rule_id": "PT21-002",
+      "name": "Personal loan bill-to",
+      "severity": "high",
+      "hits": 1,
+      "invoices": [
+        "CI-PT21-300406"
+      ]
+    },
+    {
+      "rule_id": "PT21-003",
+      "name": "Banco BPI exception",
+      "severity": "high",
+      "hits": 1,
+      "invoices": [
+        "CI-PT21-300408"
+      ]
+    },
+    {
+      "rule_id": "PT21-004",
+      "name": "VAT number on extras / prepayment",
+      "severity": "medium",
+      "hits": 1,
+      "invoices": [
+        "CI-PT21-300409"
+      ]
+    },
+    {
+      "rule_id": "GEN-003",
+      "name": "VIN match",
+      "severity": "high",
+      "hits": 1,
+      "invoices": [
+        "CI-DK21-400505"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "invoice_number": "CI-SE21-100201",
+      "company": "SE21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Anna Lindqvist",
+      "sold_to_customer": "Anna Lindqvist",
+      "poms_order_number": "11200001",
+      "invoice_status": "DRAFT",
+      "total_amount": 601100.0,
+      "currency": "SEK",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-SE21-100202",
+      "company": "SE21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Ziklo Bank",
+      "sold_to_customer": "Erik Johansson",
+      "poms_order_number": "11200002",
+      "invoice_status": "DRAFT",
+      "total_amount": 596000.0,
+      "currency": "SEK",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-SE21-100203",
+      "company": "SE21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Volvo Bank",
+      "sold_to_customer": "Sara Nilsson",
+      "poms_order_number": "11200003",
+      "invoice_status": "DRAFT",
+      "total_amount": 582350.0,
+      "currency": "SEK",
+      "status": "FAIL",
+      "rules_failed": [
+        "SE21-001"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "SE21-001",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "revenue_category",
+          "expected": "3030",
+          "actual": "3022",
+          "message": "Line 4: related party (Volvo Bank) with 'Brand' description is on revenue category 3022 — must be 3030",
+          "remediation": "Manually change revenue category on line 4 to 3030 (Car Sales - Related Party).",
+          "line": 4
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-SE21-100204",
+      "company": "SE21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Ziklo Bank",
+      "sold_to_customer": "Ziklo Bank",
+      "poms_order_number": "11200004",
+      "invoice_status": "DRAFT",
+      "total_amount": 760750.0,
+      "currency": "SEK",
+      "status": "FAIL",
+      "rules_failed": [
+        "SE21-001"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "SE21-001",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "revenue_category",
+          "expected": "3030",
+          "actual": "3027",
+          "message": "Line 1: related party (Ziklo Bank) with 'Brand' description is on revenue category 3027 — must be 3030",
+          "remediation": "Manually change revenue category on line 1 to 3030 (Car Sales - Related Party).",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-SE21-100205",
+      "company": "SE21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Nordic Fleet Solutions AB",
+      "sold_to_customer": "Nordic Fleet Solutions AB",
+      "poms_order_number": "11200005",
+      "invoice_status": "DRAFT",
+      "total_amount": 772375.0,
+      "currency": "SEK",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-SE21-100206",
+      "company": "SE21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Johan Ek",
+      "sold_to_customer": "Johan Ek",
+      "poms_order_number": "11200006",
+      "invoice_status": "DRAFT",
+      "total_amount": 621500.0,
+      "currency": "SEK",
+      "status": "FAIL",
+      "rules_failed": [
+        "GEN-001",
+        "GEN-002"
+      ],
+      "finding_count": 2,
+      "findings": [
+        {
+          "rule_id": "GEN-001",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "extended_amount",
+          "expected": 479200.0,
+          "actual": 497200.0,
+          "message": "Line 1: extended amount 497,200.00 ≠ 1 × 479,200.00",
+          "remediation": "Correct extended amount on line 1 to 479,200.00.",
+          "line": 1
+        },
+        {
+          "rule_id": "GEN-002",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "totals.subtotal",
+          "expected": 479200.0,
+          "actual": 497200.0,
+          "message": "Workday subtotal 497,200.00 ≠ POMS gross taxable amount 479,200.00 on order 11200006",
+          "remediation": "Amend the Workday lines to agree with POMS, or raise a POMS correction.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-NO21-200301",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Ingrid Haugen",
+      "sold_to_customer": "Ingrid Haugen",
+      "poms_order_number": "11100001",
+      "invoice_status": "DRAFT",
+      "total_amount": 578862.5,
+      "currency": "NOK",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-NO21-200302",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Fjord Leasing AS",
+      "sold_to_customer": "Fjord Leasing AS",
+      "poms_order_number": "11100002",
+      "invoice_status": "DRAFT",
+      "total_amount": 562375.0,
+      "currency": "NOK",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-NO21-200303",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Nordlys Finans AS",
+      "sold_to_customer": "Nordlys Finans AS",
+      "poms_order_number": "11100003",
+      "invoice_status": "DRAFT",
+      "total_amount": 841237.5,
+      "currency": "NOK",
+      "status": "FAIL",
+      "rules_failed": [
+        "NO21-003",
+        "NO21-004"
+      ],
+      "finding_count": 2,
+      "findings": [
+        {
+          "rule_id": "NO21-003",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "lines",
+          "expected": "no fee lines",
+          "actual": "fee lines 3, 4",
+          "message": "NGA instructed fee removal but fee lines 3, 4 remain (Delivery fee, Registration fee)",
+          "remediation": "Remove lines 3, 4, then update gross amount, base price and recalculate VAT.",
+          "line": null
+        },
+        {
+          "rule_id": "NO21-004",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "tax.taxable_amount",
+          "expected": 659800.0,
+          "actual": 672990.0,
+          "message": "Gross/taxable amount 672,990.00 ≠ revised gross 659,800.00 from tracker NGA-0002",
+          "remediation": "Update gross amount to 659,800.00.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-NO21-200304",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Viking Fleet AS",
+      "sold_to_customer": "Viking Fleet AS",
+      "poms_order_number": "11100004",
+      "invoice_status": "DRAFT",
+      "total_amount": 578862.5,
+      "currency": "NOK",
+      "status": "FAIL",
+      "rules_failed": [
+        "NO21-001"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "NO21-001",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "nga_tracker",
+          "expected": "tracker row",
+          "actual": null,
+          "message": "NGA customer Viking Fleet AS: invoice not captured in the NGA tracker",
+          "remediation": "Capture invoice number, customer ID, model number, total price, gross/taxable amount and base price in the tracker.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-NO21-200305",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Bergen Bilfinans AS",
+      "sold_to_customer": "Bergen Bilfinans AS",
+      "poms_order_number": "11100005",
+      "invoice_status": "DRAFT",
+      "total_amount": 591237.5,
+      "currency": "NOK",
+      "status": "HOLD",
+      "rules_failed": [
+        "NO21-002"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "NO21-002",
+          "severity": "high",
+          "outcome": "HOLD",
+          "field": "nga_tracker.response_status",
+          "expected": "RESPONDED",
+          "actual": "PENDING",
+          "message": "NGA team response pending since 2026-09-17 — invoice cannot proceed",
+          "remediation": "Wait for the NGA feedback (fees decision, revised gross amount, revised base price).",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-NO21-200306",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Oslo Leasing Partner AS",
+      "sold_to_customer": "Oslo Leasing Partner AS",
+      "poms_order_number": "11100006",
+      "invoice_status": "DRAFT",
+      "total_amount": 565672.5,
+      "currency": "NOK",
+      "status": "FAIL",
+      "rules_failed": [
+        "NO21-005"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "NO21-005",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "tax.tax_amount",
+          "expected": 112475.0,
+          "actual": 115772.5,
+          "message": "VAT 115,772.50 is not 25% of the taxable amount 449,900.00 (expected 112,475.00)",
+          "remediation": "Recalculate and update VAT after amending fee lines, gross amount or base price.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-NO21-200307",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Lars Berg",
+      "sold_to_customer": "Lars Berg",
+      "poms_order_number": "11100007",
+      "invoice_status": "DRAFT",
+      "total_amount": 591362.5,
+      "currency": "NOK",
+      "status": "FAIL",
+      "rules_failed": [
+        "GEN-002"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "GEN-002",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "totals.subtotal",
+          "expected": 463090.0,
+          "actual": 473090.0,
+          "message": "Workday subtotal 473,090.00 ≠ POMS gross taxable amount 463,090.00 on order 11100007",
+          "remediation": "Amend the Workday lines to agree with POMS, or raise a POMS correction.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-NO21-200308",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Nordic Consulting AS",
+      "sold_to_customer": "Nordic Consulting AS",
+      "poms_order_number": "11100008",
+      "invoice_status": "DRAFT",
+      "total_amount": 828862.5,
+      "currency": "NOK",
+      "status": "FAIL",
+      "rules_failed": [
+        "NO21-007"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "NO21-007",
+          "severity": "medium",
+          "outcome": "FAIL",
+          "field": "payment_application.payment_id",
+          "expected": "captured in factoring tracker",
+          "actual": "PAY-NO-88213 not found",
+          "message": "Payment PAY-NO-88213 (200,000.00 NOK) recorded On Account but not captured in the factoring tracker",
+          "remediation": "Log the payment in the factoring tracker and re-apply it to the invoice.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-NO21-200309",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Trondheim Auto Finans AS",
+      "sold_to_customer": "Trondheim Auto Finans AS",
+      "poms_order_number": "11100009",
+      "invoice_status": "DRAFT",
+      "total_amount": 578862.5,
+      "currency": "NOK",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-NO21-200310",
+      "company": "NO21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Stavanger Fleet Solutions AS",
+      "sold_to_customer": "Stavanger Fleet Solutions AS",
+      "poms_order_number": "11100010",
+      "invoice_status": "DRAFT",
+      "total_amount": 828862.5,
+      "currency": "NOK",
+      "status": "FAIL",
+      "rules_failed": [
+        "NO21-001"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "NO21-001",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "nga_tracker",
+          "expected": "all required fields",
+          "actual": "missing: model_number, base_price",
+          "message": "NGA tracker row NGA-0006 is incomplete (model_number, base_price)",
+          "remediation": "Complete the tracker row NGA-0006 before requesting NGA review.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300401",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "João Ferreira",
+      "sold_to_customer": "João Ferreira",
+      "poms_order_number": "11300001",
+      "invoice_status": "DRAFT",
+      "total_amount": 56457.0,
+      "currency": "EUR",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-PT21-300402",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "LeasePlan Portugal",
+      "sold_to_customer": "LeasePlan Portugal",
+      "poms_order_number": "11300002",
+      "invoice_status": "DRAFT",
+      "total_amount": 56457.0,
+      "currency": "EUR",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-PT21-300403",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Arval Service Lease Portugal",
+      "sold_to_customer": "Arval Service Lease Portugal",
+      "poms_order_number": "11300003",
+      "invoice_status": "DRAFT",
+      "total_amount": 78584.7,
+      "currency": "EUR",
+      "status": "FAIL",
+      "rules_failed": [
+        "PT21-001"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "PT21-001",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "line_item_description",
+          "expected": "contains BH-44-LQ",
+          "actual": "Brand - Model: Polestar 4 (2027)",
+          "message": "Line 1: licence plate BH-44-LQ (POMS) missing from the description for Arval Service Lease Portugal",
+          "remediation": "Append ' - Matrícula BH-44-LQ' to the vehicle line description.",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300404",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Kinto Portugal",
+      "sold_to_customer": "Kinto Portugal",
+      "poms_order_number": "11300004",
+      "invoice_status": "DRAFT",
+      "total_amount": 56457.0,
+      "currency": "EUR",
+      "status": "FAIL",
+      "rules_failed": [
+        "PT21-001"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "PT21-001",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "line_item_description",
+          "expected": "contains CJ-01-MN",
+          "actual": "Brand - Model: Polestar 2 (2027) - Matrícula CJ-10-MN",
+          "message": "Line 1: licence plate CJ-01-MN (POMS) missing from the description for Kinto Portugal",
+          "remediation": "Append ' - Matrícula CJ-01-MN' to the vehicle line description.",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300405",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Maria Santos",
+      "sold_to_customer": "Maria Santos",
+      "poms_order_number": "11300005",
+      "invoice_status": "DRAFT",
+      "total_amount": 56457.0,
+      "currency": "EUR",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-PT21-300406",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Crédito Ibérico SA",
+      "sold_to_customer": "Pedro Almeida",
+      "poms_order_number": "11300006",
+      "invoice_status": "DRAFT",
+      "total_amount": 77367.0,
+      "currency": "EUR",
+      "status": "FAIL",
+      "rules_failed": [
+        "PT21-002"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "PT21-002",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "bill_to_customer",
+          "expected": "Pedro Almeida",
+          "actual": "Crédito Ibérico SA",
+          "message": "Personal loan via Crédito Ibérico SA: Bill-To must be the buyer Pedro Almeida",
+          "remediation": "Change Bill-To to Pedro Almeida (Bill-To = Sold-To = Buyer).",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300407",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Banco BPI SA",
+      "sold_to_customer": "Banco BPI SA",
+      "poms_order_number": "11300007",
+      "invoice_status": "DRAFT",
+      "total_amount": 57674.7,
+      "currency": "EUR",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-PT21-300408",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Banco BPI SA",
+      "sold_to_customer": "Rui Martins",
+      "poms_order_number": "11300008",
+      "invoice_status": "DRAFT",
+      "total_amount": 56457.0,
+      "currency": "EUR",
+      "status": "FAIL",
+      "rules_failed": [
+        "PT21-003"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "PT21-003",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "sold_to_customer",
+          "expected": "Banco BPI SA",
+          "actual": "Rui Martins",
+          "message": "Banco BPI exception: Sold-To must be Banco BPI SA",
+          "remediation": "Change Sold-To to Banco BPI SA (Bill-To = Sold-To = loan provider).",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300409",
+      "company": "PT21",
+      "document_kind": "Sales Invoice Extra (prepayment)",
+      "bill_to_customer": "Douro Consultores Lda",
+      "sold_to_customer": "Douro Consultores Lda",
+      "poms_order_number": "11300009",
+      "invoice_status": "DRAFT",
+      "total_amount": 6150.0,
+      "currency": "EUR",
+      "status": "FAIL",
+      "rules_failed": [
+        "PT21-004"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "PT21-004",
+          "severity": "medium",
+          "outcome": "FAIL",
+          "field": "customer_vat_number",
+          "expected": "PT509876543",
+          "actual": null,
+          "message": "VAT number missing on Sales Invoice Extra (prepayment) for Douro Consultores Lda (Salesforce account 001PT00000A1B2C holds PT509876543)",
+          "remediation": "Populate customer VAT number PT509876543 before sending to E&Y.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300410",
+      "company": "PT21",
+      "document_kind": "Sales Invoice Extra (prepayment)",
+      "bill_to_customer": "Tejo Logística Lda",
+      "sold_to_customer": "Tejo Logística Lda",
+      "poms_order_number": "11300010",
+      "invoice_status": "DRAFT",
+      "total_amount": 3690.0,
+      "currency": "EUR",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-PT21-300411",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Locarent",
+      "sold_to_customer": "Locarent",
+      "poms_order_number": "11300011",
+      "invoice_status": "DRAFT",
+      "total_amount": 56457.0,
+      "currency": "EUR",
+      "status": "FAIL",
+      "rules_failed": [
+        "PT21-005"
+      ],
+      "finding_count": 2,
+      "findings": [
+        {
+          "rule_id": "PT21-005",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "totals.subtotal",
+          "expected": 47900.0,
+          "actual": 45900.0,
+          "message": "totals.subtotal differs between Workday (45900.0) and E&Y final invoice PT240127 (47900.0)",
+          "remediation": "Before Workday approval: mirror the E&Y details or have E&Y reissue. After approval: credit note and rebill, reason 'Manual credit and rebill due to E&Y error.'",
+          "line": null
+        },
+        {
+          "rule_id": "PT21-005",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "totals.total_amount",
+          "expected": 58917.0,
+          "actual": 56457.0,
+          "message": "totals.total_amount differs between Workday (56457.0) and E&Y final invoice PT240127 (58917.0)",
+          "remediation": "Before Workday approval: mirror the E&Y details or have E&Y reissue. After approval: credit note and rebill, reason 'Manual credit and rebill due to E&Y error.'",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300412",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Leasys Portugal",
+      "sold_to_customer": "Leasys Portugal",
+      "poms_order_number": "11300012",
+      "invoice_status": "DRAFT",
+      "total_amount": 77367.0,
+      "currency": "EUR",
+      "status": "FAIL",
+      "rules_failed": [
+        "PT21-005"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "PT21-005",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "invoice_date",
+          "expected": "2026-09-14",
+          "actual": "2026-09-16",
+          "message": "invoice_date differs between Workday (2026-09-16) and E&Y final invoice PT240128 (2026-09-14)",
+          "remediation": "Before Workday approval: mirror the E&Y details or have E&Y reissue. After approval: credit note and rebill, reason 'Manual credit and rebill due to E&Y error.'",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300413",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Carla Sousa",
+      "sold_to_customer": "Carla Sousa",
+      "poms_order_number": "11300013",
+      "invoice_status": "DRAFT",
+      "total_amount": 56457.0,
+      "currency": "EUR",
+      "status": "FAIL",
+      "rules_failed": [
+        "PT21-006"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "PT21-006",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "statutory_invoice_number",
+          "expected": "PT240129",
+          "actual": "PT240130",
+          "message": "Statutory number PT240130 does not match E&Y PT240129 (PRT Invoice - EY – Portugal, sequence 240129)",
+          "remediation": "Set the statutory invoice number to the E&Y number and approve in sequence.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300414",
+      "company": "PT21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Tiago Lopes",
+      "sold_to_customer": "Tiago Lopes",
+      "poms_order_number": "11300014",
+      "invoice_status": "APPROVED",
+      "total_amount": 56457.0,
+      "currency": "EUR",
+      "status": "FAIL",
+      "rules_failed": [
+        "PT21-006"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "PT21-006",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "status",
+          "expected": "DRAFT until E&Y final received",
+          "actual": "APPROVED",
+          "message": "Approved in Workday before the E&Y final invoice was received — breaks the gapless sequence",
+          "remediation": "Approve only after E&Y's final invoice, strictly in E&Y sequence.",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300415",
+      "company": "PT21",
+      "document_kind": "Delivery Note",
+      "bill_to_customer": "João Ferreira",
+      "sold_to_customer": "João Ferreira",
+      "poms_order_number": "11300001",
+      "invoice_status": "DRAFT",
+      "total_amount": 0.0,
+      "currency": "EUR",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": [
+        {
+          "rule_id": "PT21-007",
+          "severity": "info",
+          "outcome": "INFO",
+          "field": "document_kind",
+          "expected": "excluded from E&Y report",
+          "actual": "Delivery Note",
+          "message": "Zero-value internal document — exclude from the daily E&Y report",
+          "remediation": "",
+          "line": null
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-PT21-300416",
+      "company": "PT21",
+      "document_kind": "Credit Note",
+      "bill_to_customer": "Kinto Portugal",
+      "sold_to_customer": "Kinto Portugal",
+      "poms_order_number": "11300004",
+      "invoice_status": "DRAFT",
+      "total_amount": -56457.0,
+      "currency": "EUR",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-DK21-400501",
+      "company": "DK21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Mette Hansen",
+      "sold_to_customer": "Mette Hansen",
+      "poms_order_number": "11400001",
+      "invoice_status": "DRAFT",
+      "total_amount": 437493.75,
+      "currency": "DKK",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-DK21-400502",
+      "company": "DK21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Øresund Fleet A/S",
+      "sold_to_customer": "Øresund Fleet A/S",
+      "poms_order_number": "11400002",
+      "invoice_status": "DRAFT",
+      "total_amount": 412493.75,
+      "currency": "DKK",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-DK21-400503",
+      "company": "DK21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Øresund Fleet A/S",
+      "sold_to_customer": "Øresund Fleet A/S",
+      "poms_order_number": "11400003",
+      "invoice_status": "DRAFT",
+      "total_amount": 584362.5,
+      "currency": "DKK",
+      "status": "FAIL",
+      "rules_failed": [
+        "DK21-001",
+        "GEN-002"
+      ],
+      "finding_count": 4,
+      "findings": [
+        {
+          "rule_id": "GEN-002",
+          "severity": "critical",
+          "outcome": "FAIL",
+          "field": "totals.subtotal",
+          "expected": 437490.0,
+          "actual": 467490.0,
+          "message": "Workday subtotal 467,490.00 ≠ POMS gross taxable amount 437,490.00 on order 11400003",
+          "remediation": "Amend the Workday lines to agree with POMS, or raise a POMS correction.",
+          "line": null
+        },
+        {
+          "rule_id": "DK21-001",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "po_number",
+          "expected": "OF-PO-2026-121",
+          "actual": null,
+          "message": "PO reference does not match tracker DK-SP-002",
+          "remediation": "Set PO number to OF-PO-2026-121.",
+          "line": null
+        },
+        {
+          "rule_id": "DK21-001",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "unit_price",
+          "expected": 429995.0,
+          "actual": 459995.0,
+          "message": "Vehicle price 459,995.00 ≠ agreed price 429,995.00 in tracker DK-SP-002",
+          "remediation": "Change unit price on line 1 to 429,995.00.",
+          "line": 1
+        },
+        {
+          "rule_id": "DK21-001",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "line_item_description",
+          "expected": "contains 'CC-4410 Sales Fleet'",
+          "actual": "Brand - Model: Polestar 4 (2027)",
+          "message": "Required description text from the tracker is missing",
+          "remediation": "Append 'CC-4410 Sales Fleet' to line 1.",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "invoice_number": "CI-DK21-400504",
+      "company": "DK21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "København Byggeri A/S",
+      "sold_to_customer": "København Byggeri A/S",
+      "poms_order_number": "11400004",
+      "invoice_status": "DRAFT",
+      "total_amount": 584987.5,
+      "currency": "DKK",
+      "status": "PASS",
+      "rules_failed": [],
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "invoice_number": "CI-DK21-400505",
+      "company": "DK21",
+      "document_kind": "Customer Invoice",
+      "bill_to_customer": "Søren Nielsen",
+      "sold_to_customer": "Søren Nielsen",
+      "poms_order_number": "11400005",
+      "invoice_status": "DRAFT",
+      "total_amount": 446862.5,
+      "currency": "DKK",
+      "status": "FAIL",
+      "rules_failed": [
+        "GEN-003"
+      ],
+      "finding_count": 1,
+      "findings": [
+        {
+          "rule_id": "GEN-003",
+          "severity": "high",
+          "outcome": "FAIL",
+          "field": "vin",
+          "expected": "YSMKKE2AXS9800035",
+          "actual": "YSMKKE2AXS9800999",
+          "message": "VIN on the invoice differs from the POMS order",
+          "remediation": "Correct VIN to YSMKKE2AXS9800035.",
+          "line": null
+        }
+      ]
+    }
+  ],
+  "answer_key_check": {
+    "graded": 37,
+    "matched": 37,
+    "mismatches": []
+  }
+}

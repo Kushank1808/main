@@ -1,0 +1,72 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760423",
+    "sales_order": "1886791",
+    "customer_id": "C-102255",
+    "ship_date": "2026-08-24",
+    "carrier": "FedEx Freight",
+    "waybill": "FX5695124271",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-102255-1",
+      "name": "CLEVELAND CLINIC FDN",
+      "address_1": "CLEVELAND CLINIC FDN",
+      "address_2": "CENTRAL RECEIVING DOCK 4",
+      "address_3": "-",
+      "address_4": "2049 E 100TH ST",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44106",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-08-26",
+    "incoterms": "FOB Destination",
+    "gross_weight_kg": 255.36,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "ordered_quantity": 6,
+        "shipped_quantity": 6,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "ordered_quantity": 207,
+        "shipped_quantity": 207,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "NEO96",
+        "uom": "EA",
+        "ordered_quantity": 385,
+        "shipped_quantity": 385,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 4,
+        "item_number": "KA2V002PV1G",
+        "uom": "EA",
+        "ordered_quantity": 10,
+        "shipped_quantity": 10,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760423",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760423",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760423.pdf",
+        "size_bytes": 3226
+      }
+    ]
+  }
+}

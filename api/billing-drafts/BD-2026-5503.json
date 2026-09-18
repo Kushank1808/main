@@ -1,0 +1,141 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5503",
+    "proposed_invoice_number": "ORB-US-INV-2026-05583",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-07-17",
+    "invoice_date": "2026-07-18",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "legal_entity": "ORBIS Life Sciences Inc.",
+    "sales_order": "1886451",
+    "customer_po_number": "PO249711",
+    "contract_number": "MSA-CCF-ORB-2025-008",
+    "delivery_number": "WBO-760403",
+    "customer_id": "C-102255",
+    "bill_to": {
+      "site_use_id": "BT-102255-1",
+      "name": "CLEVELAND CLINIC FDN",
+      "address_1": "CLEVELAND CLINIC FDN",
+      "address_2": "ACCOUNTS PAYABLE MC W14",
+      "address_3": "-",
+      "address_4": "9500 EUCLID AVE",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44195",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-102255-1",
+      "name": "CLEVELAND CLINIC FDN",
+      "address_1": "CLEVELAND CLINIC FDN",
+      "address_2": "CENTRAL RECEIVING DOCK 4",
+      "address_3": "-",
+      "address_4": "2049 E 100TH ST",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44106",
+      "country": "US"
+    },
+    "currency": "USD",
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "tax_code": "US-OH-EXEMPT",
+    "tax_treatment": "EXEMPT",
+    "tax_rate": 0.0,
+    "customer_tax_registration": "US-EIN 34-0714585",
+    "exemption_certificate": "OH-EX-5540912",
+    "notes": "Exemption certificate held on file.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "line_type": "GOODS",
+        "uom": "BT",
+        "quantity_to_bill": 42,
+        "unit_price": 86.76,
+        "amount": 3643.92,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760403",
+        "tax_code": "US-OH-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 2,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 11,
+        "unit_price": 193.28,
+        "amount": 2126.08,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760403",
+        "tax_code": "US-OH-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 3,
+        "item_number": "FREIGHT-US",
+        "description": "Outbound freight and handling",
+        "line_type": "FREIGHT",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 96.05,
+        "amount": 96.05,
+        "source": "ORDER",
+        "source_reference": "1886451",
+        "tax_code": "NON-TAXABLE",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 5770.0,
+      "surcharge_total": 0.0,
+      "freight_total": 96.05,
+      "tax_amount": 0.0,
+      "total_payable": 5866.05,
+      "currency": "USD"
+    },
+    "customer_name": "CLEVELAND CLINIC FDN",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-1886451",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_1886451.pdf",
+        "size_bytes": 3807
+      },
+      {
+        "document_id": "DOC-PO-PO249711",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249711.pdf",
+        "size_bytes": 3484
+      },
+      {
+        "document_id": "DOC-CT-MSA-CCF-ORB-2025-008",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-CCF-ORB-2025-008.pdf",
+        "size_bytes": 3884
+      },
+      {
+        "document_id": "DOC-DN-WBO-760403",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760403.pdf",
+        "size_bytes": 3124
+      }
+    ]
+  }
+}

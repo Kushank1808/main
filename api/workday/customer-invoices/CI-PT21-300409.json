@@ -1,0 +1,62 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "invoice_number": "CI-PT21-300409",
+    "document_kind": "Sales Invoice Extra (prepayment)",
+    "company": "PT21",
+    "company_name": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+    "status": "DRAFT",
+    "invoice_date": "2026-09-16",
+    "due_date": "2026-10-16",
+    "payment_terms": "Net 30",
+    "bill_to_customer_id": "C-PT-0217",
+    "bill_to_customer": "Douro Consultores Lda",
+    "sold_to_customer_id": "C-PT-0217",
+    "sold_to_customer": "Douro Consultores Lda",
+    "customer_vat_number": null,
+    "currency": "EUR",
+    "po_number": null,
+    "vin": "LPSKKE2AXS9100063",
+    "poms_order_number": "11300009",
+    "model": "Polestar 4",
+    "statutory_invoice_type": "PRT Invoice - EY – Portugal",
+    "statutory_invoice_number": "PT240125",
+    "memo": "",
+    "payment_application": null,
+    "attachments": [],
+    "lines": [
+      {
+        "line": 1,
+        "company": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+        "sales_item": "PREPAY",
+        "sales_item_name": "Customer prepayment",
+        "revenue_category": "3055",
+        "revenue_category_name": "Customer Prepayment",
+        "line_item_description": "Sinal / pré-pagamento Polestar 4",
+        "quantity": 1,
+        "unit_of_measure": "Each",
+        "quantity_2": 0,
+        "unit_of_measure_2": null,
+        "unit_price": 5000.0,
+        "extended_amount": 5000.0,
+        "released_on_invoice_lines": null,
+        "tax_applicability": "Taxable"
+      }
+    ],
+    "tax": {
+      "tax_code": "PT-VAT-23",
+      "tax_rate": 23.0,
+      "taxable_amount": 5000.0,
+      "tax_amount": 1150.0
+    },
+    "totals": {
+      "subtotal": 5000.0,
+      "tax_amount": 1150.0,
+      "total_amount": 6150.0,
+      "currency": "EUR"
+    },
+    "created_by": "BPO O2C Billing Desk",
+    "created_on": "2026-09-15T09:15:00Z",
+    "last_updated": "2026-09-15T16:02:00Z"
+  }
+}

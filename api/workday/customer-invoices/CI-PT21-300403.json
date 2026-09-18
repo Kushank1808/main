@@ -1,0 +1,79 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "invoice_number": "CI-PT21-300403",
+    "document_kind": "Customer Invoice",
+    "company": "PT21",
+    "company_name": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+    "status": "DRAFT",
+    "invoice_date": "2026-09-16",
+    "due_date": "2026-10-16",
+    "payment_terms": "Net 30",
+    "bill_to_customer_id": "C-PT-0202",
+    "bill_to_customer": "Arval Service Lease Portugal",
+    "sold_to_customer_id": "C-PT-0202",
+    "sold_to_customer": "Arval Service Lease Portugal",
+    "customer_vat_number": "PT503123456",
+    "currency": "EUR",
+    "po_number": "ARV-2026-3310",
+    "vin": "LPSKKE2AXS9100021",
+    "poms_order_number": "11300003",
+    "model": "Polestar 4",
+    "statutory_invoice_type": "PRT Invoice - EY – Portugal",
+    "statutory_invoice_number": "PT240119",
+    "memo": "",
+    "payment_application": null,
+    "attachments": [],
+    "lines": [
+      {
+        "line": 1,
+        "company": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+        "sales_item": "P4-CAR",
+        "sales_item_name": "Polestar 4 Car",
+        "revenue_category": "3022",
+        "revenue_category_name": "Car Sales - New",
+        "line_item_description": "Brand - Model: Polestar 4 (2027)",
+        "quantity": 1,
+        "unit_of_measure": "Each",
+        "quantity_2": 0,
+        "unit_of_measure_2": null,
+        "unit_price": 62900.0,
+        "extended_amount": 62900.0,
+        "released_on_invoice_lines": null,
+        "tax_applicability": "Taxable"
+      },
+      {
+        "line": 2,
+        "company": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+        "sales_item": "P4-CAR",
+        "sales_item_name": "Polestar 4 Car",
+        "revenue_category": "3022",
+        "revenue_category_name": "Car Sales - New",
+        "line_item_description": "Storm",
+        "quantity": 1,
+        "unit_of_measure": "Each",
+        "quantity_2": 0,
+        "unit_of_measure_2": null,
+        "unit_price": 990.0,
+        "extended_amount": 990.0,
+        "released_on_invoice_lines": null,
+        "tax_applicability": "Taxable"
+      }
+    ],
+    "tax": {
+      "tax_code": "PT-VAT-23",
+      "tax_rate": 23.0,
+      "taxable_amount": 63890.0,
+      "tax_amount": 14694.7
+    },
+    "totals": {
+      "subtotal": 63890.0,
+      "tax_amount": 14694.7,
+      "total_amount": 78584.7,
+      "currency": "EUR"
+    },
+    "created_by": "BPO O2C Billing Desk",
+    "created_on": "2026-09-15T09:15:00Z",
+    "last_updated": "2026-09-15T16:02:00Z"
+  }
+}

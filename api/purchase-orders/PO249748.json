@@ -1,0 +1,61 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO249748",
+    "customer_id": "C-102640",
+    "customer_name": "CHARLES RIVER LABS",
+    "contract_number": "MSA-CRL-ORB-2024-019",
+    "po_date": "2026-07-07",
+    "valid_from": "2026-07-07",
+    "valid_to": "2027-07-07",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 10157.89,
+    "released_amount": 6348.68,
+    "buyer_name": "Gregory Nunes",
+    "buyer_email": "greg.nunes@criver.com",
+    "payment_terms": "Net 30",
+    "incoterms": "FOB Origin",
+    "sales_order": "1886468",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "uom": "EA",
+        "quantity": 6,
+        "unit_price": 204.01,
+        "amount": 1224.06
+      },
+      {
+        "po_line": 2,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "uom": "EA",
+        "quantity": 2,
+        "unit_price": 1781.25,
+        "amount": 3562.5
+      },
+      {
+        "po_line": 3,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "uom": "EA",
+        "quantity": 125,
+        "unit_price": 7.65,
+        "amount": 956.25
+      }
+    ],
+    "document_id": "DOC-PO-PO249748",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO249748",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249748.pdf",
+        "size_bytes": 3619
+      }
+    ]
+  }
+}

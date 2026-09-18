@@ -1,0 +1,62 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "invoice_number": "CI-PT21-300412",
+    "document_kind": "Customer Invoice",
+    "company": "PT21",
+    "company_name": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+    "status": "DRAFT",
+    "invoice_date": "2026-09-16",
+    "due_date": "2026-10-16",
+    "payment_terms": "Net 30",
+    "bill_to_customer_id": "C-PT-0203",
+    "bill_to_customer": "Leasys Portugal",
+    "sold_to_customer_id": "C-PT-0203",
+    "sold_to_customer": "Leasys Portugal",
+    "customer_vat_number": "PT504234567",
+    "currency": "EUR",
+    "po_number": "LSY-4402",
+    "vin": "LPSKKE2ALS9100084",
+    "poms_order_number": "11300012",
+    "model": "Polestar 4",
+    "statutory_invoice_type": "PRT Invoice - EY – Portugal",
+    "statutory_invoice_number": "PT240128",
+    "memo": "",
+    "payment_application": null,
+    "attachments": [],
+    "lines": [
+      {
+        "line": 1,
+        "company": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+        "sales_item": "P4-CAR",
+        "sales_item_name": "Polestar 4 Car",
+        "revenue_category": "3022",
+        "revenue_category_name": "Car Sales - New",
+        "line_item_description": "Brand - Model: Polestar 4 (2027) - Matrícula EL-90-TA",
+        "quantity": 1,
+        "unit_of_measure": "Each",
+        "quantity_2": 0,
+        "unit_of_measure_2": null,
+        "unit_price": 62900.0,
+        "extended_amount": 62900.0,
+        "released_on_invoice_lines": null,
+        "tax_applicability": "Taxable"
+      }
+    ],
+    "tax": {
+      "tax_code": "PT-VAT-23",
+      "tax_rate": 23.0,
+      "taxable_amount": 62900.0,
+      "tax_amount": 14467.0
+    },
+    "totals": {
+      "subtotal": 62900.0,
+      "tax_amount": 14467.0,
+      "total_amount": 77367.0,
+      "currency": "EUR"
+    },
+    "created_by": "BPO O2C Billing Desk",
+    "created_on": "2026-09-15T09:15:00Z",
+    "last_updated": "2026-09-15T16:02:00Z"
+  }
+}

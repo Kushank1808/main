@@ -1,0 +1,56 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760412",
+    "sales_order": "1886604",
+    "customer_id": "C-101902",
+    "ship_date": "2026-08-02",
+    "carrier": "FedEx Freight",
+    "waybill": "FX3683607186",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-101902-1",
+      "name": "SARTORIUS PUERTO RICO",
+      "address_1": "SARTORIUS PUERTO RICO",
+      "address_2": "-",
+      "address_3": "INT 368 KM 12 H 9",
+      "address_4": "ROAD 128",
+      "city": "Yauco",
+      "state": "PR",
+      "postal_code": "00698",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-08-04",
+    "incoterms": "EXW Marlborough",
+    "gross_weight_kg": 292.32,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "ordered_quantity": 378,
+        "shipped_quantity": 378,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "NEO96",
+        "uom": "EA",
+        "ordered_quantity": 318,
+        "shipped_quantity": 318,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760412",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760412",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760412.pdf",
+        "size_bytes": 3078
+      }
+    ]
+  }
+}

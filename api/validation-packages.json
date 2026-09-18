@@ -1,0 +1,189 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Validation Package",
+  "note": "One call per draft returns the draft plus every upstream object needed to validate it: sales order, purchase order, contract with price list, delivery, customer, tax rules, item master and the URLs of all source documents.",
+  "count": 20,
+  "generated_at": "2026-08-27T08:15:23Z",
+  "data": [
+    {
+      "draft_number": "BD-2026-5500",
+      "url": "api/validation-packages/BD-2026-5500.json",
+      "sales_order": "1886400",
+      "customer_id": "C-100428",
+      "total_payable": 3054.53,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5501",
+      "url": "api/validation-packages/BD-2026-5501.json",
+      "sales_order": "1886417",
+      "customer_id": "C-100731",
+      "total_payable": 11612.49,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5502",
+      "url": "api/validation-packages/BD-2026-5502.json",
+      "sales_order": "1886434",
+      "customer_id": "C-101902",
+      "total_payable": 21838.11,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5503",
+      "url": "api/validation-packages/BD-2026-5503.json",
+      "sales_order": "1886451",
+      "customer_id": "C-102255",
+      "total_payable": 5866.05,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5504",
+      "url": "api/validation-packages/BD-2026-5504.json",
+      "sales_order": "1886468",
+      "customer_id": "C-102640",
+      "total_payable": 6348.68,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5505",
+      "url": "api/validation-packages/BD-2026-5505.json",
+      "sales_order": "1886485",
+      "customer_id": "C-103018",
+      "total_payable": 8211.93,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5506",
+      "url": "api/validation-packages/BD-2026-5506.json",
+      "sales_order": "SO-2026-7778",
+      "customer_id": "C-200114",
+      "total_payable": 16027.18,
+      "currency": "EUR",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5507",
+      "url": "api/validation-packages/BD-2026-5507.json",
+      "sales_order": "SO-2026-7791",
+      "customer_id": "C-200380",
+      "total_payable": 13478.22,
+      "currency": "EUR",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5508",
+      "url": "api/validation-packages/BD-2026-5508.json",
+      "sales_order": "SO-2026-7804",
+      "customer_id": "C-200552",
+      "total_payable": 33225.6,
+      "currency": "EUR",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5509",
+      "url": "api/validation-packages/BD-2026-5509.json",
+      "sales_order": "SO-2026-7817",
+      "customer_id": "C-200790",
+      "total_payable": 32487.0,
+      "currency": "EUR",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5510",
+      "url": "api/validation-packages/BD-2026-5510.json",
+      "sales_order": "1886570",
+      "customer_id": "C-100428",
+      "total_payable": 10375.15,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5511",
+      "url": "api/validation-packages/BD-2026-5511.json",
+      "sales_order": "1886587",
+      "customer_id": "C-100731",
+      "total_payable": 21199.08,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5512",
+      "url": "api/validation-packages/BD-2026-5512.json",
+      "sales_order": "1886604",
+      "customer_id": "C-101902",
+      "total_payable": 5166.86,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5513",
+      "url": "api/validation-packages/BD-2026-5513.json",
+      "sales_order": "1886621",
+      "customer_id": "C-102255",
+      "total_payable": 5570.8,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5514",
+      "url": "api/validation-packages/BD-2026-5514.json",
+      "sales_order": "1886638",
+      "customer_id": "C-102640",
+      "total_payable": 13024.85,
+      "currency": "USD",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5515",
+      "url": "api/validation-packages/BD-2026-5515.json",
+      "sales_order": "1886655",
+      "customer_id": "C-103018",
+      "total_payable": 10673.0,
+      "currency": "EUR",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5516",
+      "url": "api/validation-packages/BD-2026-5516.json",
+      "sales_order": "SO-2026-7908",
+      "customer_id": "C-200114",
+      "total_payable": 27990.18,
+      "currency": "EUR",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5517",
+      "url": "api/validation-packages/BD-2026-5517.json",
+      "sales_order": "SO-2026-7921",
+      "customer_id": "C-200380",
+      "total_payable": 50981.7,
+      "currency": "EUR",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5518",
+      "url": "api/validation-packages/BD-2026-5518.json",
+      "sales_order": "SO-2026-7934",
+      "customer_id": "C-200552",
+      "total_payable": 9319.2,
+      "currency": "EUR",
+      "document_count": 4
+    },
+    {
+      "draft_number": "BD-2026-5519",
+      "url": "api/validation-packages/BD-2026-5519.json",
+      "sales_order": "1886774",
+      "customer_id": "C-101902",
+      "total_payable": 10144.27,
+      "currency": "USD",
+      "document_count": 4
+    }
+  ]
+}

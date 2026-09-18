@@ -1,0 +1,73 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Tax Rule",
+  "count": 8,
+  "generated_at": "2026-08-27T08:15:23Z",
+  "data": [
+    {
+      "tax_code": "US-AR-EXEMPT",
+      "jurisdiction": "US-AR",
+      "rate": 0.0,
+      "treatment": "EXEMPT",
+      "basis": "Non-profit hospital exemption certificate on file.",
+      "requires_certificate": true
+    },
+    {
+      "tax_code": "US-MN-EXEMPT",
+      "jurisdiction": "US-MN",
+      "rate": 0.0,
+      "treatment": "EXEMPT",
+      "basis": "Non-profit hospital exemption certificate on file.",
+      "requires_certificate": true
+    },
+    {
+      "tax_code": "US-OH-EXEMPT",
+      "jurisdiction": "US-OH",
+      "rate": 0.0,
+      "treatment": "EXEMPT",
+      "basis": "Non-profit hospital exemption certificate on file.",
+      "requires_certificate": true
+    },
+    {
+      "tax_code": "US-MA-SALES",
+      "jurisdiction": "US-MA",
+      "rate": 6.25,
+      "treatment": "SALES_TAX",
+      "basis": "Massachusetts state sales tax on tangible goods.",
+      "requires_certificate": false
+    },
+    {
+      "tax_code": "US-TX-EXEMPT",
+      "jurisdiction": "US-TX",
+      "rate": 0.0,
+      "treatment": "EXEMPT",
+      "basis": "State university exemption certificate on file.",
+      "requires_certificate": true
+    },
+    {
+      "tax_code": "US-PR-ZERO",
+      "jurisdiction": "US-PR",
+      "rate": 0.0,
+      "treatment": "ZERO_RATED",
+      "basis": "Puerto Rico manufacturing exemption (Act 60).",
+      "requires_certificate": true
+    },
+    {
+      "tax_code": "EU-RC-0",
+      "jurisdiction": "EU-INTRA",
+      "rate": 0.0,
+      "treatment": "REVERSE_CHARGE",
+      "basis": "Intra-Community supply, Art. 138 VAT Directive. VAT accounted by recipient.",
+      "requires_certificate": false,
+      "requires_vat_id": true
+    },
+    {
+      "tax_code": "IE-VAT-23",
+      "jurisdiction": "IE",
+      "rate": 23.0,
+      "treatment": "DOMESTIC_VAT",
+      "basis": "Irish domestic supply, standard rate.",
+      "requires_certificate": false
+    }
+  ]
+}

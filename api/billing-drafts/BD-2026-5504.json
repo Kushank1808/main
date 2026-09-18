@@ -1,0 +1,171 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5504",
+    "proposed_invoice_number": "ORB-US-INV-2026-05584",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-07-19",
+    "invoice_date": "2026-07-20",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "legal_entity": "ORBIS Life Sciences Inc.",
+    "sales_order": "1886468",
+    "customer_po_number": "PO249748",
+    "contract_number": "MSA-CRL-ORB-2024-019",
+    "delivery_number": "WBO-760404",
+    "customer_id": "C-102640",
+    "bill_to": {
+      "site_use_id": "BT-102640-1",
+      "name": "CHARLES RIVER LABS",
+      "address_1": "CHARLES RIVER LABORATORIES INTL",
+      "address_2": "AP SHARED SERVICES",
+      "address_3": "-",
+      "address_4": "251 BALLARDVALE ST",
+      "city": "Wilmington",
+      "state": "MA",
+      "postal_code": "01887",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-102640-1",
+      "name": "CHARLES RIVER LABS",
+      "address_1": "CHARLES RIVER LABORATORIES",
+      "address_2": "RECEIVING BLDG C",
+      "address_3": "-",
+      "address_4": "334 SOUTH ST",
+      "city": "Shrewsbury",
+      "state": "MA",
+      "postal_code": "01545",
+      "country": "US"
+    },
+    "currency": "USD",
+    "payment_terms": "Net 30",
+    "incoterms": "FOB Origin",
+    "tax_code": "US-MA-SALES",
+    "tax_treatment": "SALES_TAX",
+    "tax_rate": 6.25,
+    "customer_tax_registration": "US-EIN 06-1397316",
+    "exemption_certificate": null,
+    "notes": "Standard taxable supply.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 6,
+        "unit_price": 204.01,
+        "amount": 1224.06,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760404",
+        "tax_code": "US-MA-SALES",
+        "tax_rate": 6.25,
+        "tax_amount": 76.5
+      },
+      {
+        "line": 2,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 2,
+        "unit_price": 1781.25,
+        "amount": 3562.5,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760404",
+        "tax_code": "US-MA-SALES",
+        "tax_rate": 6.25,
+        "tax_amount": 222.66
+      },
+      {
+        "line": 3,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 125,
+        "unit_price": 7.65,
+        "amount": 956.25,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760404",
+        "tax_code": "US-MA-SALES",
+        "tax_rate": 6.25,
+        "tax_amount": 59.77
+      },
+      {
+        "line": 4,
+        "item_number": "TARIFF_SURCHARGE",
+        "description": "Section 301 tariff surcharge, pass-through",
+        "line_type": "SURCHARGE",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 143.57,
+        "amount": 143.57,
+        "source": "ORDER",
+        "source_reference": "1886468",
+        "tax_code": "NON-TAXABLE",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 5,
+        "item_number": "FREIGHT-US",
+        "description": "Outbound freight and handling",
+        "line_type": "FREIGHT",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 103.37,
+        "amount": 103.37,
+        "source": "ORDER",
+        "source_reference": "1886468",
+        "tax_code": "NON-TAXABLE",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 5742.81,
+      "surcharge_total": 143.57,
+      "freight_total": 103.37,
+      "tax_amount": 358.93,
+      "total_payable": 6348.68,
+      "currency": "USD"
+    },
+    "customer_name": "CHARLES RIVER LABS",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-1886468",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_1886468.pdf",
+        "size_bytes": 4508
+      },
+      {
+        "document_id": "DOC-PO-PO249748",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249748.pdf",
+        "size_bytes": 3619
+      },
+      {
+        "document_id": "DOC-CT-MSA-CRL-ORB-2024-019",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-CRL-ORB-2024-019.pdf",
+        "size_bytes": 3893
+      },
+      {
+        "document_id": "DOC-DN-WBO-760404",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760404.pdf",
+        "size_bytes": 3173
+      }
+    ]
+  }
+}

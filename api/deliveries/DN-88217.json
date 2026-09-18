@@ -1,0 +1,72 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "DN-88217",
+    "sales_order": "SO-2026-7921",
+    "customer_id": "C-200380",
+    "ship_date": "2026-08-12",
+    "carrier": "DB Schenker",
+    "waybill": "DBS6542554149",
+    "ship_from": "Eastgate Business Park, Little Island, Cork T45 K294, Ireland",
+    "ship_to": {
+      "site_use_id": "ST-200380-1",
+      "name": "HELIOS FLUID SYSTEMS SAS",
+      "address_1": "HELIOS FLUID SYSTEMS SAS",
+      "address_2": "ATELIER SUD RECEPTION",
+      "address_3": "-",
+      "address_4": "ZI DES GRANDES TERRES",
+      "city": "Saint-Priest",
+      "state": "ARA",
+      "postal_code": "69800",
+      "country": "FR"
+    },
+    "proof_of_delivery_date": "2026-08-14",
+    "incoterms": "DAP Saint-Priest",
+    "gross_weight_kg": 21.0,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "AX-BRG-540",
+        "uom": "SET",
+        "ordered_quantity": 23,
+        "shipped_quantity": 23,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "AX-GSKT-12",
+        "uom": "PK",
+        "ordered_quantity": 10,
+        "shipped_quantity": 10,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "AX-CTRL-PLC",
+        "uom": "EA",
+        "ordered_quantity": 5,
+        "shipped_quantity": 5,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 4,
+        "item_number": "AX-PMP-320",
+        "uom": "EA",
+        "ordered_quantity": 12,
+        "shipped_quantity": 12,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-DN-88217",
+    "documents": [
+      {
+        "document_id": "DOC-DN-DN-88217",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_DN-88217.pdf",
+        "size_bytes": 3256
+      }
+    ]
+  }
+}

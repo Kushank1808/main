@@ -1,0 +1,171 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5511",
+    "proposed_invoice_number": "ORB-US-INV-2026-05591",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-08-02",
+    "invoice_date": "2026-08-03",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "legal_entity": "ORBIS Life Sciences Inc.",
+    "sales_order": "1886587",
+    "customer_po_number": "PO250007",
+    "contract_number": "MSA-MAYO-ORB-2023-004",
+    "delivery_number": "WBO-760411",
+    "customer_id": "C-100731",
+    "bill_to": {
+      "site_use_id": "BT-100731-1",
+      "name": "MAYO CLINIC",
+      "address_1": "MAYO CLINIC",
+      "address_2": "SUPPLY CHAIN AP",
+      "address_3": "-",
+      "address_4": "200 1ST ST SW",
+      "city": "ROCHESTER",
+      "state": "MN",
+      "postal_code": "55905",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-100731-1",
+      "name": "MAYO FDN",
+      "address_1": "MAYO FDN",
+      "address_2": "INV INVENTORY CENTER",
+      "address_3": "-",
+      "address_4": "3131 VALLEY HIGH RD NW",
+      "city": "Rochester",
+      "state": "MN",
+      "postal_code": "55901",
+      "country": "US"
+    },
+    "currency": "USD",
+    "payment_terms": "Net 60",
+    "incoterms": "FOB Destination",
+    "tax_code": "US-MN-EXEMPT",
+    "tax_treatment": "EXEMPT",
+    "tax_rate": 0.0,
+    "customer_tax_registration": "US-EIN 41-6011702",
+    "exemption_certificate": "MN-EX-2277341",
+    "notes": "Exemption certificate held on file.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 5,
+        "unit_price": 1593.75,
+        "amount": 7968.75,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760411",
+        "tax_code": "US-MN-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 2,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 187,
+        "unit_price": 6.84,
+        "amount": 1279.08,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760411",
+        "tax_code": "US-MN-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 3,
+        "item_number": "NEO96",
+        "description": "Neonatal Assay Plate, 96-well, non-treated",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 340,
+        "unit_price": 6.26,
+        "amount": 2128.4,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760411",
+        "tax_code": "US-MN-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 4,
+        "item_number": "KA2V002PV1G",
+        "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 34,
+        "unit_price": 273.7,
+        "amount": 9305.8,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760411",
+        "tax_code": "US-MN-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 5,
+        "item_number": "TARIFF_SURCHARGE",
+        "description": "Section 301 tariff surcharge, pass-through",
+        "line_type": "SURCHARGE",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 517.05,
+        "amount": 517.05,
+        "source": "MANUAL",
+        "source_reference": null,
+        "tax_code": "NON-TAXABLE",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 20682.03,
+      "surcharge_total": 517.05,
+      "freight_total": 0.0,
+      "tax_amount": 0.0,
+      "total_payable": 21199.08,
+      "currency": "USD"
+    },
+    "customer_name": "MAYO FDN",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-1886587",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_1886587.pdf",
+        "size_bytes": 3970
+      },
+      {
+        "document_id": "DOC-PO-PO250007",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO250007.pdf",
+        "size_bytes": 3731
+      },
+      {
+        "document_id": "DOC-CT-MSA-MAYO-ORB-2023-004",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-MAYO-ORB-2023-004.pdf",
+        "size_bytes": 3931
+      },
+      {
+        "document_id": "DOC-DN-WBO-760411",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760411.pdf",
+        "size_bytes": 3218
+      }
+    ]
+  }
+}

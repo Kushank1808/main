@@ -1,0 +1,51 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "data": {
+    "customer_id": "C-102255",
+    "customer_name": "CLEVELAND CLINIC FDN",
+    "customer_class": "HEALTHCARE-IDN",
+    "country": "US",
+    "currency": "USD",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "tax_code": "US-OH-EXEMPT",
+    "tax_registration": "US-EIN 34-0714585",
+    "exemption_certificate": "OH-EX-5540912",
+    "credit_limit": 1800000,
+    "payment_terms": "Net 45",
+    "collector": "Bhattacharjee, Arpan",
+    "bill_to": {
+      "site_use_id": "BT-102255-1",
+      "name": "CLEVELAND CLINIC FDN",
+      "address_1": "CLEVELAND CLINIC FDN",
+      "address_2": "ACCOUNTS PAYABLE MC W14",
+      "address_3": "-",
+      "address_4": "9500 EUCLID AVE",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44195",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-102255-1",
+      "name": "CLEVELAND CLINIC FDN",
+      "address_1": "CLEVELAND CLINIC FDN",
+      "address_2": "CENTRAL RECEIVING DOCK 4",
+      "address_3": "-",
+      "address_4": "2049 E 100TH ST",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44106",
+      "country": "US"
+    },
+    "contact_name": "Dana Whitfield",
+    "contact_email": "whitfid@ccf.org",
+    "contact_phone": "216-444-2200",
+    "contract_number": "MSA-CCF-ORB-2025-008",
+    "orders": [
+      "1886451",
+      "1886621",
+      "1886791"
+    ]
+  }
+}

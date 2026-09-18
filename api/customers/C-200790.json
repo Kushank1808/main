@@ -1,0 +1,50 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "data": {
+    "customer_id": "C-200790",
+    "customer_name": "BRAEMAR PROCESS LTD",
+    "customer_class": "DISTRIBUTOR",
+    "country": "IE",
+    "currency": "EUR",
+    "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+    "tax_code": "IE-VAT-23",
+    "tax_registration": "IE 6389047T",
+    "exemption_certificate": null,
+    "credit_limit": 600000,
+    "payment_terms": "Net 30",
+    "collector": "Voss, Henrik",
+    "bill_to": {
+      "site_use_id": "BT-200790-1",
+      "name": "BRAEMAR PROCESS LTD",
+      "address_1": "BRAEMAR PROCESS LTD",
+      "address_2": "FINANCE DEPT",
+      "address_3": "-",
+      "address_4": "UNIT 7 KILBARRY BUSINESS PARK",
+      "city": "Cork",
+      "state": "CO",
+      "postal_code": "T23 XH92",
+      "country": "IE"
+    },
+    "ship_to": {
+      "site_use_id": "ST-200790-1",
+      "name": "BRAEMAR PROCESS LTD",
+      "address_1": "BRAEMAR PROCESS LTD",
+      "address_2": "STORES",
+      "address_3": "-",
+      "address_4": "UNIT 7 KILBARRY BUSINESS PARK",
+      "city": "Cork",
+      "state": "CO",
+      "postal_code": "T23 XH92",
+      "country": "IE"
+    },
+    "contact_name": "Sinead Kelleher",
+    "contact_email": "s.kelleher@braemarprocess.ie",
+    "contact_phone": "+353 21 450 9900",
+    "contract_number": "DA-BRAE-ORB-2025-014",
+    "orders": [
+      "SO-2026-7817",
+      "SO-2026-7947"
+    ]
+  }
+}

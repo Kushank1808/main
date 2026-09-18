@@ -1,0 +1,141 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5501",
+    "proposed_invoice_number": "ORB-US-INV-2026-05581",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-07-13",
+    "invoice_date": "2026-07-14",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "legal_entity": "ORBIS Life Sciences Inc.",
+    "sales_order": "1886417",
+    "customer_po_number": "PO249637",
+    "contract_number": "MSA-MAYO-ORB-2023-004",
+    "delivery_number": "WBO-760401",
+    "customer_id": "C-100731",
+    "bill_to": {
+      "site_use_id": "BT-100731-1",
+      "name": "MAYO CLINIC",
+      "address_1": "MAYO CLINIC",
+      "address_2": "SUPPLY CHAIN AP",
+      "address_3": "-",
+      "address_4": "200 1ST ST SW",
+      "city": "ROCHESTER",
+      "state": "MN",
+      "postal_code": "55905",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-100731-1",
+      "name": "MAYO FDN",
+      "address_1": "MAYO FDN",
+      "address_2": "INV INVENTORY CENTER",
+      "address_3": "-",
+      "address_4": "3131 VALLEY HIGH RD NW",
+      "city": "Rochester",
+      "state": "MN",
+      "postal_code": "55901",
+      "country": "US"
+    },
+    "currency": "USD",
+    "payment_terms": "Net 60",
+    "incoterms": "FOB Destination",
+    "tax_code": "US-MN-EXEMPT",
+    "tax_treatment": "EXEMPT",
+    "tax_rate": 0.0,
+    "customer_tax_registration": "US-EIN 41-6011702",
+    "exemption_certificate": "MN-EX-2277341",
+    "notes": "Exemption certificate held on file.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "NEO96",
+        "description": "Neonatal Assay Plate, 96-well, non-treated",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 71,
+        "unit_price": 6.73,
+        "amount": 477.83,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760401",
+        "tax_code": "US-MN-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 2,
+        "item_number": "KA2V002PV1G",
+        "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 32,
+        "unit_price": 273.7,
+        "amount": 8758.4,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760401",
+        "tax_code": "US-MN-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 3,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "line_type": "GOODS",
+        "uom": "BT",
+        "quantity_to_bill": 29,
+        "unit_price": 81.94,
+        "amount": 2376.26,
+        "source": "DELIVERY",
+        "source_reference": "WBO-760401",
+        "tax_code": "US-MN-EXEMPT",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 11612.49,
+      "surcharge_total": 0.0,
+      "freight_total": 0.0,
+      "tax_amount": 0.0,
+      "total_payable": 11612.49,
+      "currency": "USD"
+    },
+    "customer_name": "MAYO FDN",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-1886417",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_1886417.pdf",
+        "size_bytes": 3817
+      },
+      {
+        "document_id": "DOC-PO-PO249637",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249637.pdf",
+        "size_bytes": 3594
+      },
+      {
+        "document_id": "DOC-CT-MSA-MAYO-ORB-2023-004",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-MAYO-ORB-2023-004.pdf",
+        "size_bytes": 3931
+      },
+      {
+        "document_id": "DOC-DN-WBO-760401",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760401.pdf",
+        "size_bytes": 3159
+      }
+    ]
+  }
+}

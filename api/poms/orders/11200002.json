@@ -1,0 +1,37 @@
+{
+  "source_system": "POMS",
+  "data": {
+    "order_number": "11200002",
+    "market": "Sweden",
+    "company": "SE21",
+    "vin": "YSMKKE2ALS8400014",
+    "model": "Polestar 2",
+    "model_code": "P2",
+    "model_year": 2027,
+    "exterior_colour": "Midnight",
+    "buyer_customer_id": "C-SE-0004",
+    "buyer_name": "Erik Johansson",
+    "financing_type": "PERSONAL_LOAN",
+    "financing_partner_id": "C-SE-0001",
+    "financing_partner": "Ziklo Bank",
+    "license_plate": null,
+    "order_date": "2026-08-09",
+    "handover_date": "2026-09-12",
+    "order_status": "HANDOVER_COMPLETED",
+    "currency": "SEK",
+    "base_price": 479200.0,
+    "paint_amount": 9600.0,
+    "options": [],
+    "fees": [],
+    "discount_amount": 12000.0,
+    "gross_taxable_amount": 476800.0,
+    "vat_rate": 25.0,
+    "vat_amount": 119200.0,
+    "total_price": 596000.0,
+    "payment_status": "FINANCED",
+    "poms_last_updated": "2026-09-17T18:40:00Z",
+    "workday_invoices": [
+      "CI-SE21-100202"
+    ]
+  }
+}

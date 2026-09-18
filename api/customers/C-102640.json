@@ -1,0 +1,50 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "data": {
+    "customer_id": "C-102640",
+    "customer_name": "CHARLES RIVER LABS",
+    "customer_class": "CRO-RESEARCH",
+    "country": "US",
+    "currency": "USD",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "tax_code": "US-MA-SALES",
+    "tax_registration": "US-EIN 06-1397316",
+    "exemption_certificate": null,
+    "credit_limit": 900000,
+    "payment_terms": "Net 30",
+    "collector": "Kumar, Abhijeet",
+    "bill_to": {
+      "site_use_id": "BT-102640-1",
+      "name": "CHARLES RIVER LABS",
+      "address_1": "CHARLES RIVER LABORATORIES INTL",
+      "address_2": "AP SHARED SERVICES",
+      "address_3": "-",
+      "address_4": "251 BALLARDVALE ST",
+      "city": "Wilmington",
+      "state": "MA",
+      "postal_code": "01887",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-102640-1",
+      "name": "CHARLES RIVER LABS",
+      "address_1": "CHARLES RIVER LABORATORIES",
+      "address_2": "RECEIVING BLDG C",
+      "address_3": "-",
+      "address_4": "334 SOUTH ST",
+      "city": "Shrewsbury",
+      "state": "MA",
+      "postal_code": "01545",
+      "country": "US"
+    },
+    "contact_name": "Gregory Nunes",
+    "contact_email": "greg.nunes@criver.com",
+    "contact_phone": "978-658-6000",
+    "contract_number": "MSA-CRL-ORB-2024-019",
+    "orders": [
+      "1886468",
+      "1886638"
+    ]
+  }
+}

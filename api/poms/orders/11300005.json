@@ -1,0 +1,37 @@
+{
+  "source_system": "POMS",
+  "data": {
+    "order_number": "11300005",
+    "market": "Portugal",
+    "company": "PT21",
+    "vin": "LPSKKE2AXS9100035",
+    "model": "Polestar 2",
+    "model_code": "P2",
+    "model_year": 2027,
+    "exterior_colour": "Snow",
+    "buyer_customer_id": "C-PT-0210",
+    "buyer_name": "Maria Santos",
+    "financing_type": "PERSONAL_LOAN",
+    "financing_partner_id": "C-PT-0207",
+    "financing_partner": "Lusitânia Crédito SA",
+    "license_plate": null,
+    "order_date": "2026-08-09",
+    "handover_date": "2026-09-12",
+    "order_status": "HANDOVER_COMPLETED",
+    "currency": "EUR",
+    "base_price": 45900.0,
+    "paint_amount": 0.0,
+    "options": [],
+    "fees": [],
+    "discount_amount": 0.0,
+    "gross_taxable_amount": 45900.0,
+    "vat_rate": 23.0,
+    "vat_amount": 10557.0,
+    "total_price": 56457.0,
+    "payment_status": "FINANCED",
+    "poms_last_updated": "2026-09-17T18:40:00Z",
+    "workday_invoices": [
+      "CI-PT21-300405"
+    ]
+  }
+}

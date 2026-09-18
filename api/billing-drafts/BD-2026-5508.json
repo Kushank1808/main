@@ -1,0 +1,156 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5508",
+    "proposed_invoice_number": "ORB-EU-INV-2026-05588",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-07-27",
+    "invoice_date": "2026-07-28",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+    "legal_entity": "ORBIS Industrial Solutions Ireland Ltd",
+    "sales_order": "SO-2026-7804",
+    "customer_po_number": "4500198848",
+    "contract_number": "FA-VANTA-ORB-2026-002",
+    "delivery_number": "DN-88208",
+    "customer_id": "C-200552",
+    "bill_to": {
+      "site_use_id": "BT-200552-1",
+      "name": "VANTA ENERGY SYSTEMS AB",
+      "address_1": "VANTA ENERGY SYSTEMS AB",
+      "address_2": "LEVERANTORSFAKTUROR",
+      "address_3": "-",
+      "address_4": "BOX 1188",
+      "city": "Malmö",
+      "state": "SK",
+      "postal_code": "21120",
+      "country": "SE"
+    },
+    "ship_to": {
+      "site_use_id": "ST-200552-1",
+      "name": "VANTA ENERGY SYSTEMS AB",
+      "address_1": "VANTA ENERGY SYSTEMS AB",
+      "address_2": "GODSMOTTAGNING",
+      "address_3": "-",
+      "address_4": "INDUSTRIGATAN 42",
+      "city": "Malmö",
+      "state": "SK",
+      "postal_code": "21275",
+      "country": "SE"
+    },
+    "currency": "EUR",
+    "payment_terms": "Net 30",
+    "incoterms": "FCA Cork",
+    "tax_code": "EU-RC-0",
+    "tax_treatment": "REVERSE_CHARGE",
+    "tax_rate": 0.0,
+    "customer_tax_registration": "SE 556677889901",
+    "exemption_certificate": null,
+    "notes": "Cross-border supply; VAT accounted by recipient under reverse charge.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "AX-GSKT-12",
+        "description": "Gasket and Fastener Pack (per pump)",
+        "line_type": "GOODS",
+        "uom": "PK",
+        "quantity_to_bill": 22,
+        "unit_price": 60.0,
+        "amount": 1320.0,
+        "source": "DELIVERY",
+        "source_reference": "DN-88208",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 2,
+        "item_number": "AX-CTRL-PLC",
+        "description": "Pump Control Panel, PLC, IP66",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 3,
+        "unit_price": 4089.6,
+        "amount": 12268.8,
+        "source": "DELIVERY",
+        "source_reference": "DN-88208",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 3,
+        "item_number": "AX-PMP-320",
+        "description": "Centrifugal Pump Assembly, 320mm impeller, SS316",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 8,
+        "unit_price": 1776.0,
+        "amount": 14208.0,
+        "source": "DELIVERY",
+        "source_reference": "DN-88208",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 4,
+        "item_number": "AX-SEAL-88",
+        "description": "Mechanical Seal Kit, tungsten carbide faces",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 39,
+        "unit_price": 139.2,
+        "amount": 5428.8,
+        "source": "DELIVERY",
+        "source_reference": "DN-88208",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 33225.6,
+      "surcharge_total": 0.0,
+      "freight_total": 0.0,
+      "tax_amount": 0.0,
+      "total_payable": 33225.6,
+      "currency": "EUR"
+    },
+    "customer_name": "VANTA ENERGY SYSTEMS AB",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-SO-2026-7804",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_SO-2026-7804.pdf",
+        "size_bytes": 3914
+      },
+      {
+        "document_id": "DOC-PO-4500198848",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_4500198848.pdf",
+        "size_bytes": 3682
+      },
+      {
+        "document_id": "DOC-CT-FA-VANTA-ORB-2026-002",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_FA-VANTA-ORB-2026-002.pdf",
+        "size_bytes": 3778
+      },
+      {
+        "document_id": "DOC-DN-DN-88208",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_DN-88208.pdf",
+        "size_bytes": 3238
+      }
+    ]
+  }
+}

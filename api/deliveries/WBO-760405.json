@@ -1,0 +1,72 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760405",
+    "sales_order": "1886485",
+    "customer_id": "C-103018",
+    "ship_date": "2026-07-19",
+    "carrier": "FedEx Freight",
+    "waybill": "FX3335166061",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-103018-1",
+      "name": "UT MD ANDERSON CANCER CTR",
+      "address_1": "UT MD ANDERSON CANCER CTR",
+      "address_2": "CENTRAL RECEIVING",
+      "address_3": "-",
+      "address_4": "1515 HOLCOMBE BLVD",
+      "city": "Houston",
+      "state": "TX",
+      "postal_code": "77030",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-07-21",
+    "incoterms": "FOB Destination",
+    "gross_weight_kg": 189.84,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "ordered_quantity": 1,
+        "shipped_quantity": 1,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "ordered_quantity": 137,
+        "shipped_quantity": 137,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "NEO96",
+        "uom": "EA",
+        "ordered_quantity": 302,
+        "shipped_quantity": 302,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 4,
+        "item_number": "KA2V002PV1G",
+        "uom": "EA",
+        "ordered_quantity": 12,
+        "shipped_quantity": 12,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760405",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760405",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760405.pdf",
+        "size_bytes": 3225
+      }
+    ]
+  }
+}

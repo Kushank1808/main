@@ -1,0 +1,17 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "customer_id": "C-SE-0001",
+    "customer_name": "Ziklo Bank",
+    "company": "SE21",
+    "customer_type": "BANK",
+    "country": "SE",
+    "vat_number": "SE556069045401",
+    "related_party": true,
+    "nga_customer": false,
+    "leasing_plate_required": false,
+    "loan_provider": false,
+    "bpi_exception": false,
+    "sharepoint_tracker": false
+  }
+}

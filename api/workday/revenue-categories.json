@@ -1,0 +1,63 @@
+{
+  "source_system": "Workday",
+  "object": "Revenue Category",
+  "count": 9,
+  "generated_at": "2026-09-18T07:00:00Z",
+  "data": [
+    {
+      "revenue_category": "3022",
+      "name": "Car Sales - New",
+      "is_fee": false,
+      "ledger_account": "3022 Vehicle revenue"
+    },
+    {
+      "revenue_category": "3027",
+      "name": "Extras",
+      "is_fee": false,
+      "ledger_account": "3027 Accessories and services"
+    },
+    {
+      "revenue_category": "3030",
+      "name": "Car Sales - Related Party",
+      "is_fee": false,
+      "ledger_account": "3030 Related party vehicle revenue",
+      "note": "Mandatory for vehicle (Brand) lines where bill-to or sold-to is a related party."
+    },
+    {
+      "revenue_category": "3033",
+      "name": "Discounts Retail",
+      "is_fee": false,
+      "ledger_account": "3033 Sales discounts"
+    },
+    {
+      "revenue_category": "3041",
+      "name": "Delivery Fee",
+      "is_fee": true,
+      "ledger_account": "3041 Delivery fees"
+    },
+    {
+      "revenue_category": "3042",
+      "name": "Registration Fee",
+      "is_fee": true,
+      "ledger_account": "3042 Registration fees"
+    },
+    {
+      "revenue_category": "3043",
+      "name": "Administration Fee",
+      "is_fee": true,
+      "ledger_account": "3043 Admin fees"
+    },
+    {
+      "revenue_category": "3055",
+      "name": "Customer Prepayment",
+      "is_fee": false,
+      "ledger_account": "2450 Customer prepayments"
+    },
+    {
+      "revenue_category": "9000",
+      "name": "Internal Zero-Value Document",
+      "is_fee": false,
+      "ledger_account": "n/a"
+    }
+  ]
+}

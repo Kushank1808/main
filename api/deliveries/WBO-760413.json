@@ -1,0 +1,64 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760413",
+    "sales_order": "1886621",
+    "customer_id": "C-102255",
+    "ship_date": "2026-08-04",
+    "carrier": "FedEx Freight",
+    "waybill": "FX4393409916",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-102255-1",
+      "name": "CLEVELAND CLINIC FDN",
+      "address_1": "CLEVELAND CLINIC FDN",
+      "address_2": "CENTRAL RECEIVING DOCK 4",
+      "address_3": "-",
+      "address_4": "2049 E 100TH ST",
+      "city": "Cleveland",
+      "state": "OH",
+      "postal_code": "44106",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-08-06",
+    "incoterms": "FOB Destination",
+    "gross_weight_kg": 125.16,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "NEO96",
+        "uom": "EA",
+        "ordered_quantity": 267,
+        "shipped_quantity": 267,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "KA2V002PV1G",
+        "uom": "EA",
+        "ordered_quantity": 5,
+        "shipped_quantity": 5,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "CELLCUL500",
+        "uom": "BT",
+        "ordered_quantity": 26,
+        "shipped_quantity": 26,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760413",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760413",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760413.pdf",
+        "size_bytes": 3166
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+name: Hourly ERP validation
+
+on:
+  schedule:
+    - cron: "0 * * * *"        # top of every hour, UTC
+  workflow_dispatch:           # run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate Workday invoices against POMS, trackers, E&Y and Salesforce
+        env:
+          VALIDATION_TRIGGER: github-schedule
+        run: python3 validator/validate.py --check
+      - name: Publish results
+        run: |
+          git config user.name "validation-bot"
+          git config user.email "validation-bot@users.noreply.github.com"
+          git add api/validation-runs
+          git diff --cached --quiet || git commit -m "validation run $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

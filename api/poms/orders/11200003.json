@@ -1,0 +1,43 @@
+{
+  "source_system": "POMS",
+  "data": {
+    "order_number": "11200003",
+    "market": "Sweden",
+    "company": "SE21",
+    "vin": "YSMKKE2AXS8400021",
+    "model": "Polestar 2",
+    "model_code": "P2",
+    "model_year": 2027,
+    "exterior_colour": "Snow",
+    "buyer_customer_id": "C-SE-0006",
+    "buyer_name": "Sara Nilsson",
+    "financing_type": "PERSONAL_LOAN",
+    "financing_partner_id": "C-SE-0002",
+    "financing_partner": "Volvo Bank",
+    "license_plate": null,
+    "order_date": "2026-08-09",
+    "handover_date": "2026-09-12",
+    "order_status": "HANDOVER_COMPLETED",
+    "currency": "SEK",
+    "base_price": 479200.0,
+    "paint_amount": 0.0,
+    "options": [
+      {
+        "option_code": "S00001",
+        "description": "S00001 PS4 SUV Connected services plus",
+        "amount": 1680.0
+      }
+    ],
+    "fees": [],
+    "discount_amount": 15000.0,
+    "gross_taxable_amount": 465880.0,
+    "vat_rate": 25.0,
+    "vat_amount": 116470.0,
+    "total_price": 582350.0,
+    "payment_status": "FINANCED",
+    "poms_last_updated": "2026-09-17T18:40:00Z",
+    "workday_invoices": [
+      "CI-SE21-100203"
+    ]
+  }
+}

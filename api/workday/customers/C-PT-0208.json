@@ -1,0 +1,17 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "customer_id": "C-PT-0208",
+    "customer_name": "Crédito Ibérico SA",
+    "company": "PT21",
+    "customer_type": "BANK",
+    "country": "PT",
+    "vat_number": "PT508678901",
+    "related_party": false,
+    "nga_customer": false,
+    "leasing_plate_required": false,
+    "loan_provider": true,
+    "bpi_exception": false,
+    "sharepoint_tracker": false
+  }
+}

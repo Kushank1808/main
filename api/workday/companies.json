@@ -1,0 +1,52 @@
+{
+  "source_system": "Workday",
+  "object": "Company",
+  "count": 4,
+  "generated_at": "2026-09-18T07:00:00Z",
+  "data": [
+    {
+      "company": "SE21",
+      "company_name": "SE21 Polestar Automotive Sweden AB",
+      "country": "SE",
+      "currency": "SEK",
+      "vat_rate": 25.0,
+      "vat_registration": "SE559123456701",
+      "statutory_invoicing": "Workday",
+      "market": "Sweden",
+      "exception_scope": "Related-party revenue category (Ziklo Bank, Volvo Bank)"
+    },
+    {
+      "company": "NO21",
+      "company_name": "NO21 Polestar Automotive Norway AS",
+      "country": "NO",
+      "currency": "NOK",
+      "vat_rate": 25.0,
+      "vat_registration": "NO923456789MVA",
+      "statutory_invoicing": "Workday",
+      "market": "Norway",
+      "exception_scope": "NGA customer tracker, fee removal, POMS price match, factoring"
+    },
+    {
+      "company": "PT21",
+      "company_name": "PT21 Polestar Automotive Portugal, Unipessoal Lda",
+      "country": "PT",
+      "currency": "EUR",
+      "vat_rate": 23.0,
+      "vat_registration": "PT516234567",
+      "statutory_invoicing": "E&Y (certified invoicing), mirrored in Workday",
+      "market": "Portugal",
+      "exception_scope": "Leasing licence plates, loan bill-to rules, VAT on extras, E&Y matching, gapless numbering"
+    },
+    {
+      "company": "DK21",
+      "company_name": "DK21 Polestar Automotive Denmark ApS",
+      "country": "DK",
+      "currency": "DKK",
+      "vat_rate": 25.0,
+      "vat_registration": "DK41234567",
+      "statutory_invoicing": "Workday",
+      "market": "Denmark",
+      "exception_scope": "Customer-specific SharePoint tracker adjustments"
+    }
+  ]
+}

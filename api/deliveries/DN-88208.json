@@ -1,0 +1,72 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "DN-88208",
+    "sales_order": "SO-2026-7804",
+    "customer_id": "C-200552",
+    "ship_date": "2026-07-25",
+    "carrier": "DB Schenker",
+    "waybill": "DBS6197895946",
+    "ship_from": "Eastgate Business Park, Little Island, Cork T45 K294, Ireland",
+    "ship_to": {
+      "site_use_id": "ST-200552-1",
+      "name": "VANTA ENERGY SYSTEMS AB",
+      "address_1": "VANTA ENERGY SYSTEMS AB",
+      "address_2": "GODSMOTTAGNING",
+      "address_3": "-",
+      "address_4": "INDUSTRIGATAN 42",
+      "city": "Malmö",
+      "state": "SK",
+      "postal_code": "21275",
+      "country": "SE"
+    },
+    "proof_of_delivery_date": "2026-07-27",
+    "incoterms": "FCA Cork",
+    "gross_weight_kg": 30.24,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "AX-GSKT-12",
+        "uom": "PK",
+        "ordered_quantity": 22,
+        "shipped_quantity": 22,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "AX-CTRL-PLC",
+        "uom": "EA",
+        "ordered_quantity": 3,
+        "shipped_quantity": 3,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "AX-PMP-320",
+        "uom": "EA",
+        "ordered_quantity": 8,
+        "shipped_quantity": 8,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 4,
+        "item_number": "AX-SEAL-88",
+        "uom": "EA",
+        "ordered_quantity": 39,
+        "shipped_quantity": 39,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-DN-88208",
+    "documents": [
+      {
+        "document_id": "DOC-DN-DN-88208",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_DN-88208.pdf",
+        "size_bytes": 3238
+      }
+    ]
+  }
+}

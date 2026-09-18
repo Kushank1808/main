@@ -1,0 +1,286 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Invoice Field Lineage",
+  "note": "Which invoice field is validated against which upstream object, and in what precedence.",
+  "count": 24,
+  "generated_at": "2026-08-27T08:15:23Z",
+  "data": [
+    {
+      "invoice_field": "Bill-to customer name",
+      "category": "Identity",
+      "severity": "high",
+      "authoritative_source": "customer.bill_to.name",
+      "precedence": [
+        "customer_master"
+      ],
+      "compare_to": "billing_draft.bill_to.name",
+      "match": "exact_text"
+    },
+    {
+      "invoice_field": "Bill-to address",
+      "category": "Identity",
+      "severity": "medium",
+      "authoritative_source": "customer.bill_to (address_1..4, city, state, postal_code)",
+      "precedence": [
+        "customer_master"
+      ],
+      "compare_to": "billing_draft.bill_to",
+      "match": "exact_text_block"
+    },
+    {
+      "invoice_field": "Ship-to address / tax jurisdiction",
+      "category": "Identity",
+      "severity": "high",
+      "authoritative_source": "delivery.ship_to",
+      "precedence": [
+        "delivery",
+        "sales_order",
+        "customer_master"
+      ],
+      "compare_to": "billing_draft.ship_to",
+      "match": "exact_text_block"
+    },
+    {
+      "invoice_field": "Customer PO number",
+      "category": "Commercial",
+      "severity": "high",
+      "authoritative_source": "purchase_order.po_number",
+      "precedence": [
+        "purchase_order",
+        "sales_order"
+      ],
+      "compare_to": "billing_draft.customer_po_number",
+      "match": "exact_text; mandatory when contract.po_required is true"
+    },
+    {
+      "invoice_field": "PO validity at invoice date",
+      "category": "Commercial",
+      "severity": "high",
+      "authoritative_source": "purchase_order.valid_from / valid_to",
+      "precedence": [
+        "purchase_order"
+      ],
+      "compare_to": "billing_draft.invoice_date",
+      "match": "date_within_range"
+    },
+    {
+      "invoice_field": "PO authorised value",
+      "category": "Commercial",
+      "severity": "high",
+      "authoritative_source": "purchase_order.po_amount_limit",
+      "precedence": [
+        "purchase_order"
+      ],
+      "compare_to": "billing_draft.totals.total_payable",
+      "match": "less_than_or_equal"
+    },
+    {
+      "invoice_field": "Contract reference",
+      "category": "Commercial",
+      "severity": "medium",
+      "authoritative_source": "sales_order.contract_number",
+      "precedence": [
+        "sales_order",
+        "purchase_order"
+      ],
+      "compare_to": "billing_draft.contract_number",
+      "match": "exact_text"
+    },
+    {
+      "invoice_field": "Item number",
+      "category": "Line",
+      "severity": "high",
+      "authoritative_source": "delivery.lines.item_number",
+      "precedence": [
+        "delivery",
+        "sales_order"
+      ],
+      "compare_to": "billing_draft.lines.item_number",
+      "match": "exact_text"
+    },
+    {
+      "invoice_field": "Quantity billed",
+      "category": "Line",
+      "severity": "critical",
+      "authoritative_source": "delivery.lines.shipped_quantity",
+      "precedence": [
+        "delivery",
+        "sales_order"
+      ],
+      "compare_to": "billing_draft.lines.quantity_to_bill",
+      "match": "less_than_or_equal within contract.qty_tolerance_pct"
+    },
+    {
+      "invoice_field": "Unit price",
+      "category": "Pricing",
+      "severity": "critical",
+      "authoritative_source": "price_list.contract_price",
+      "precedence": [
+        "contract_price_list",
+        "purchase_order",
+        "sales_order"
+      ],
+      "compare_to": "billing_draft.lines.unit_price",
+      "match": "equal within contract.price_tolerance_pct"
+    },
+    {
+      "invoice_field": "Discount percentage",
+      "category": "Pricing",
+      "severity": "high",
+      "authoritative_source": "contract.discount_pct",
+      "precedence": [
+        "contract"
+      ],
+      "compare_to": "derived from billing_draft.lines.unit_price vs item.list_price",
+      "match": "equal"
+    },
+    {
+      "invoice_field": "Extended line amount",
+      "category": "Pricing",
+      "severity": "critical",
+      "authoritative_source": "quantity_to_bill * unit_price",
+      "precedence": [
+        "computed"
+      ],
+      "compare_to": "billing_draft.lines.amount",
+      "match": "equal within 0.01"
+    },
+    {
+      "invoice_field": "Currency",
+      "category": "Financial",
+      "severity": "critical",
+      "authoritative_source": "contract.currency",
+      "precedence": [
+        "contract",
+        "customer_master"
+      ],
+      "compare_to": "billing_draft.currency",
+      "match": "exact_text"
+    },
+    {
+      "invoice_field": "Payment terms",
+      "category": "Financial",
+      "severity": "medium",
+      "authoritative_source": "contract.payment_terms",
+      "precedence": [
+        "contract",
+        "customer_master"
+      ],
+      "compare_to": "billing_draft.payment_terms",
+      "match": "exact_text"
+    },
+    {
+      "invoice_field": "Incoterms",
+      "category": "Financial",
+      "severity": "medium",
+      "authoritative_source": "contract.incoterms",
+      "precedence": [
+        "contract",
+        "delivery"
+      ],
+      "compare_to": "billing_draft.incoterms",
+      "match": "exact_text"
+    },
+    {
+      "invoice_field": "Freight charge",
+      "category": "Charges",
+      "severity": "high",
+      "authoritative_source": "contract.freight_terms",
+      "precedence": [
+        "contract"
+      ],
+      "compare_to": "billing_draft freight lines",
+      "match": "billable only when freight_terms = PREPAID_AND_ADD"
+    },
+    {
+      "invoice_field": "Surcharge",
+      "category": "Charges",
+      "severity": "high",
+      "authoritative_source": "contract.surcharge_allowed",
+      "precedence": [
+        "contract"
+      ],
+      "compare_to": "billing_draft surcharge lines",
+      "match": "billable only when surcharge_allowed is true"
+    },
+    {
+      "invoice_field": "Tax code and treatment",
+      "category": "Tax",
+      "severity": "critical",
+      "authoritative_source": "tax_rule for customer.tax_code",
+      "precedence": [
+        "tax_rules",
+        "contract",
+        "customer_master"
+      ],
+      "compare_to": "billing_draft.tax_code / tax_treatment",
+      "match": "exact_text"
+    },
+    {
+      "invoice_field": "Tax rate and amount",
+      "category": "Tax",
+      "severity": "critical",
+      "authoritative_source": "tax_rule.rate applied to taxable lines",
+      "precedence": [
+        "tax_rules"
+      ],
+      "compare_to": "billing_draft.totals.tax_amount",
+      "match": "equal within 0.01"
+    },
+    {
+      "invoice_field": "Customer tax registration / exemption certificate",
+      "category": "Tax",
+      "severity": "high",
+      "authoritative_source": "customer.tax_registration, customer.exemption_certificate",
+      "precedence": [
+        "customer_master"
+      ],
+      "compare_to": "billing_draft.customer_tax_registration",
+      "match": "exact_text; certificate mandatory when treatment = EXEMPT"
+    },
+    {
+      "invoice_field": "Total payable",
+      "category": "Financial",
+      "severity": "critical",
+      "authoritative_source": "goods + surcharge + freight + tax",
+      "precedence": [
+        "computed"
+      ],
+      "compare_to": "billing_draft.totals.total_payable",
+      "match": "equal within 0.01"
+    },
+    {
+      "invoice_field": "Invoice date vs proof of delivery",
+      "category": "Timing",
+      "severity": "medium",
+      "authoritative_source": "delivery.proof_of_delivery_date",
+      "precedence": [
+        "delivery"
+      ],
+      "compare_to": "billing_draft.invoice_date",
+      "match": "invoice_date >= pod when contract.billing_rule = DELIVERY_BASED"
+    },
+    {
+      "invoice_field": "Already invoiced check",
+      "category": "Duplicate",
+      "severity": "critical",
+      "authoritative_source": "sales_order.invoiced_date",
+      "precedence": [
+        "sales_order"
+      ],
+      "compare_to": "existence of a billing draft",
+      "match": "must be null"
+    },
+    {
+      "invoice_field": "Order holds",
+      "category": "Commercial",
+      "severity": "high",
+      "authoritative_source": "sales_order.holds",
+      "precedence": [
+        "sales_order"
+      ],
+      "compare_to": "billing eligibility",
+      "match": "no unreleased holds"
+    }
+  ]
+}

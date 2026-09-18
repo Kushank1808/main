@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Billing validation POC — ORBIS · Workday · POMS</title>
+<style>
+  :root{--navy:#1f3348;--link:#0a63b0;--line:#d7dee6;--muted:#5c6a78;--ink:#18212a}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#f4f7f9}
+  header{background:var(--navy);color:#fff;padding:34px 30px}
+  header .logo{font-weight:700;letter-spacing:.18em;font-size:14px;color:#8fb4d6}
+  header h1{margin:8px 0 0;font-size:26px;font-weight:600}
+  header p{margin:10px 0 0;color:#b6c7d6;font-size:14px;max-width:78ch;line-height:1.6}
+  main{padding:26px 30px 70px;max-width:1120px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:4px;padding:20px;text-decoration:none;color:inherit;display:block}
+  .card:hover{border-color:#9fb0c0}
+  .card.erp{border-top:4px solid var(--link)}
+  .card.bi{border-top:4px solid #3fb98a}
+  .card.docs{border-top:4px solid #ff7a45}
+  .card.wd{border-top:4px solid #0875e1}
+  .card.poms{border-top:4px solid #141414}
+  .card.val{border-top:4px solid #5b3fb5}
+  .card .tag{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .card h2{margin:6px 0 0;font-size:18px}
+  .card p{font-size:13px;color:var(--muted);margin:9px 0 0;line-height:1.6}
+  h3{margin:32px 0 10px;font-size:15px}
+  table{border-collapse:collapse;width:100%;background:#fff;font-size:12.5px}
+  th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+  th{background:#eef2f6;font-weight:600}
+  code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;background:#eaeff4;padding:1px 5px;border-radius:2px}
+  pre{background:#14202c;color:#dfe9f2;padding:15px 17px;overflow:auto;font-size:12.5px;border-radius:4px}
+  .note{font-size:13px;color:var(--muted);line-height:1.65}
+  .pill{display:inline-block;background:#eef2f6;border:1px solid var(--line);border-radius:11px;padding:2px 10px;font-size:11.5px;margin:0 6px 6px 0}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">BILLING VALIDATION POC</div>
+    <h1>Workday · POMS · ORBIS — pre-billing systems and the hourly validator</h1>
+    <p>Two data layers over one static JSON API. <b>Workday + POMS</b>: Polestar-style entities SE21, NO21, PT21 and
+       DK21 with customer invoices (Sales Item and Revenue Category on every line), the POMS orders behind them,
+       the NGA / factoring / SharePoint trackers, E&amp;Y final invoices and Salesforce — seeded with every exception
+       from the entity process notes as both a passing and a failing case, and validated every hour.
+       <b>ORBIS</b>: the original generic pre-billing dataset (contracts, POs, deliveries, drafts, PDFs).</p>
+  </header>
+  <main>
+    <div class="cards">
+      <a class="card wd" href="workday/index.html">
+        <span class="tag">ERP · Workday customer invoicing</span>
+        <h2>Workday — Customer Invoices</h2>
+        <p>37 invoices across SE21 / NO21 / PT21 / DK21. Invoice Lines tab with Sales Item, Revenue Category and
+           Line Item Description; Validation tab shows the latest hourly run's findings on each invoice.</p>
+      </a>
+      <a class="card poms" href="poms/index.html">
+        <span class="tag">Order management</span>
+        <h2>POMS — Vehicle orders</h2>
+        <p>35 orders: buyer, financing partner, VIN, licence plate, base price, fees, gross taxable amount and total —
+           the values Workday must agree with.</p>
+      </a>
+      <a class="card val" href="workday/index.html#/monitor">
+        <span class="tag">Scheduler output</span>
+        <h2>Hourly validation monitor</h2>
+        <p>Pass / fail / hold per invoice and per rule, run history, next run time. Written by
+           <code>validator/validate.py</code> — run by <code>validator/scheduler.py</code> locally or the GitHub Actions cron.</p>
+      </a>
+      <a class="card erp" href="erp/index.html">
+        <span class="tag">Transactional system</span>
+        <h2>ORBIS ERP</h2>
+        <p>Billing drafts, sales orders with lines and holds, contracts with price lists and clauses,
+           customer POs, deliveries, customer and item master, tax rules, document repository.</p>
+      </a>
+      <a class="card bi" href="analytics/index.html">
+        <span class="tag">Analytics</span>
+        <h2>ORBIS Insight</h2>
+        <p>Qlik-style sheet: selections at the top govern KPI tiles, order value by customer and week,
+           draft value by tax treatment, and the billing draft list.</p>
+      </a>
+      <a class="card docs" href="api/index.json">
+        <span class="tag">Integration</span>
+        <h2>JSON API and documents</h2>
+        <p>Every object is an endpoint under <code>api/</code>; every contract, PO, order acknowledgement
+           and delivery note is a PDF under <code>docs/</code>.</p>
+      </a>
+    </div>
+
+    <h3>Workday / POMS endpoints</h3>
+    <table>
+      <thead><tr><th>Object</th><th>List</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td>Workday customer invoices (validate these)</td><td><code>api/workday/customer-invoices.json</code></td><td><code>api/workday/customer-invoices/{invoice_number}.json</code></td></tr>
+        <tr><td>Invoice lines, flat — Revenue Category on every row</td><td colspan="2"><code>api/workday/invoice-lines.json</code></td></tr>
+        <tr><td>Customers · revenue categories · sales items</td><td colspan="2"><code>api/workday/customers.json</code> · <code>api/workday/revenue-categories.json</code> · <code>api/workday/sales-items.json</code></td></tr>
+        <tr><td>POMS orders</td><td><code>api/poms/orders.json</code></td><td><code>api/poms/orders/{order_number}.json</code></td></tr>
+        <tr><td>Trackers</td><td colspan="2"><code>api/trackers/nga-tracker.json</code> · <code>api/trackers/factoring-tracker.json</code> · <code>api/trackers/dk21-sharepoint-tracker.json</code></td></tr>
+        <tr><td>E&amp;Y final invoices · Salesforce accounts</td><td colspan="2"><code>api/ey/final-invoices.json</code> · <code>api/salesforce/accounts.json</code></td></tr>
+        <tr><td>Rule catalogue · answer key</td><td colspan="2"><code>api/workday/exception-rules.json</code> · <code>api/workday/expected-results.json</code></td></tr>
+        <tr><td>Validation runs</td><td><code>api/validation-runs/latest.json</code></td><td><code>api/validation-runs/history.json</code> · <code>api/validation-runs/runs/{run_id}.json</code></td></tr>
+      </tbody>
+    </table>
+
+    <h3>ORBIS endpoints</h3>
+    <table>
+      <thead><tr><th>Object</th><th>List</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td>Billing drafts (validate these)</td><td><code>api/billing-drafts.json</code></td><td><code>api/billing-drafts/{draft_number}.json</code></td></tr>
+        <tr><td>Sales orders</td><td><code>api/sales-orders.json</code></td><td><code>api/sales-orders/{order_number}.json</code></td></tr>
+        <tr><td>Customer POs</td><td><code>api/purchase-orders.json</code></td><td><code>api/purchase-orders/{po_number}.json</code></td></tr>
+        <tr><td>Contracts</td><td><code>api/contracts.json</code></td><td><code>api/contracts/{contract_number}.json</code></td></tr>
+        <tr><td>Deliveries</td><td><code>api/deliveries.json</code></td><td><code>api/deliveries/{delivery_number}.json</code></td></tr>
+        <tr><td>Customers</td><td><code>api/customers.json</code></td><td><code>api/customers/{customer_id}.json</code></td></tr>
+        <tr><td>Price list · items · tax rules</td><td colspan="2"><code>api/price-list.json</code> · <code>api/items.json</code> · <code>api/tax-rules.json</code></td></tr>
+        <tr><td>Documents · field lineage · answer key</td><td colspan="2"><code>api/documents.json</code> · <code>api/field-map.json</code> · <code>api/mismatches.json</code></td></tr>
+      </tbody>
+    </table>
+
+    <h3>Join keys</h3>
+    <p class="note">
+      <span class="pill">draft.sales_order = sales_order.order_number</span>
+      <span class="pill">order.customer_po_number = purchase_order.po_number</span>
+      <span class="pill">order.contract_number = contract.contract_number</span>
+      <span class="pill">order.delivery_number = delivery.delivery_number</span>
+      <span class="pill">draft.lines.item_number + contract → price_list.contract_price</span>
+      <span class="pill">draft.tax_code = tax_rule.tax_code</span>
+    </p>
+
+    <h3>Billing draft in three shapes</h3>
+    <table>
+      <thead><tr><th>Endpoint</th><th>Shape</th><th>Use for</th></tr></thead>
+      <tbody>
+        <tr><td><code>api/billing-drafts.json</code></td><td>One row per draft, ~50 header fields</td><td>Worklists, header checks</td></tr>
+        <tr><td><code>api/billing-drafts/{draft_number}.json</code></td><td>Header + nested lines + totals</td><td>Working a single draft</td></tr>
+        <tr><td><code>api/billing-draft-lines.json</code></td><td>One row per line, 93 columns, header denormalised</td><td>Field-by-field validation, CSV</td></tr>
+      </tbody>
+    </table>
+    <p class="note">On the flat endpoint, columns prefixed <code>ref_</code> are joined from the contract,
+      purchase order, sales order, delivery and tax rules — the values the draft should agree with.</p>
+
+    <h3>One call per draft</h3>
+    <p class="note"><code>api/validation-packages/{draft_number}.json</code> returns a billing draft with every
+       upstream object already joined — sales order, purchase order, contract and price list, delivery, customer,
+       tax rules, item master, and the URLs of all four source PDFs. One request instead of six. The whole model
+       is also available in a single <code>api/bundle.json</code>, and the API describes itself at
+       <code>api/openapi.json</code>.</p>
+
+    <h3>Connecting a validation tool</h3>
+<pre>import requests
+
+BASE = "https://&lt;your-user&gt;.github.io/&lt;your-repo&gt;"
+pkg = requests.get(f"{BASE}/api/validation-packages/BD-2026-5501.json").json()
+
+draft, order  = pkg["billing_draft"], pkg["sales_order"]
+contract      = pkg["contract"]
+prices  = {p["item_number"]: p["contract_price"] for p in contract["price_list_lines"]}
+shipped = {l["item_number"]: l["shipped_quantity"] for l in pkg["delivery"]["lines"]}
+
+for line in draft["lines"]:
+    if line["line_type"] != "GOODS":
+        continue
+    expected = prices.get(line["item_number"])
+    if expected is not None and abs(line["unit_price"] - expected) &gt; 0.01:
+        print(line["item_number"], "price", line["unit_price"], "expected", expected)
+    if line["quantity_to_bill"] &gt; shipped.get(line["item_number"], 0):
+        print(line["item_number"], "billing more than shipped")
+
+# source documents, e.g. the signed contract PDF
+pdf = requests.get(f"{BASE}/{pkg['documents'][0]['url']}").content</pre>
+
+    <p class="note"><code>api/field-map.json</code> lists all 24 invoice fields with the authoritative source and
+       precedence for each, and <code>api/mismatches.json</code> is the answer key — 14 defects were deliberately
+       seeded into the drafts so a validation run can be scored on recall and precision.</p>
+  </main>
+</body>
+</html>

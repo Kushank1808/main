@@ -1,0 +1,70 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO249785",
+    "customer_id": "C-103018",
+    "customer_name": "UT MD ANDERSON CANCER CTR",
+    "contract_number": "MSA-MDA-ORB-2025-031",
+    "po_date": "2026-07-09",
+    "valid_from": "2026-07-09",
+    "valid_to": "2026-06-30",
+    "status": "EXPIRED",
+    "currency": "USD",
+    "po_amount_limit": 13139.09,
+    "released_amount": 8211.93,
+    "buyer_name": "Rosa Delgado",
+    "buyer_email": "rdelgado@mdanderson.org",
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "sales_order": "1886485",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "uom": "EA",
+        "quantity": 1,
+        "unit_price": 1668.75,
+        "amount": 1668.75
+      },
+      {
+        "po_line": 2,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "uom": "EA",
+        "quantity": 137,
+        "unit_price": 7.16,
+        "amount": 980.92
+      },
+      {
+        "po_line": 3,
+        "item_number": "NEO96",
+        "description": "Neonatal Assay Plate, 96-well, non-treated",
+        "uom": "EA",
+        "quantity": 302,
+        "unit_price": 6.55,
+        "amount": 1978.1
+      },
+      {
+        "po_line": 4,
+        "item_number": "KA2V002PV1G",
+        "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+        "uom": "EA",
+        "quantity": 12,
+        "unit_price": 286.58,
+        "amount": 3438.96
+      }
+    ],
+    "document_id": "DOC-PO-PO249785",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO249785",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249785.pdf",
+        "size_bytes": 3713
+      }
+    ]
+  }
+}

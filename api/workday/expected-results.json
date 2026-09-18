@@ -1,0 +1,354 @@
+{
+  "source_system": "Answer key",
+  "object": "Expected validation result",
+  "count": 37,
+  "generated_at": "2026-09-18T07:00:00Z",
+  "summary": {
+    "PASS": 16,
+    "FAIL": 20,
+    "HOLD": 1
+  },
+  "data": [
+    {
+      "invoice_number": "CI-SE21-100201",
+      "company": "SE21",
+      "scenario": "SE21 normal: private cash buyer, bill-to = sold-to, no related party",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-SE21-100202",
+      "company": "SE21",
+      "scenario": "SE21 exception PASS: bill-to Ziklo Bank, Brand line already on 3030",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-SE21-100203",
+      "company": "SE21",
+      "scenario": "SE21 exception FAIL: bill-to Volvo Bank, Brand line left on 3022 (the screenshot case)",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "SE21-001"
+      ],
+      "remediation": "Change revenue category on line 4 from 3022 to 3030 (related party)."
+    },
+    {
+      "invoice_number": "CI-SE21-100204",
+      "company": "SE21",
+      "scenario": "SE21 exception FAIL: Ziklo Bank is sold-to, Brand line on 3027",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "SE21-001"
+      ],
+      "remediation": "Change revenue category on line 1 from 3027 to 3030 (related party)."
+    },
+    {
+      "invoice_number": "CI-SE21-100205",
+      "company": "SE21",
+      "scenario": "SE21 normal: corporate fleet buyer with PO",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-SE21-100206",
+      "company": "SE21",
+      "scenario": "SE21 generic FAIL: extended amount does not equal quantity × unit price",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "GEN-001",
+        "GEN-002"
+      ],
+      "remediation": "Correct extended amount on line 1 to 479,200.00; total then agrees with POMS."
+    },
+    {
+      "invoice_number": "CI-NO21-200301",
+      "company": "NO21",
+      "scenario": "NO21 normal: private buyer, not NGA, fees chargeable, matches POMS",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-NO21-200302",
+      "company": "NO21",
+      "scenario": "NO21 NGA PASS: tracker says remove fees; fees removed, gross and base revised, VAT recalculated",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-NO21-200303",
+      "company": "NO21",
+      "scenario": "NO21 NGA FAIL: tracker says remove fees but fee lines are still on the draft",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "NO21-003",
+        "NO21-004"
+      ],
+      "remediation": "Remove lines 3 and 4 (fees), set gross to revised 659,800.00, recalculate VAT, then submit."
+    },
+    {
+      "invoice_number": "CI-NO21-200304",
+      "company": "NO21",
+      "scenario": "NO21 NGA FAIL: NGA customer but invoice never captured in the NGA tracker",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "NO21-001"
+      ],
+      "remediation": "Capture invoice number, customer ID, model, total, gross and base price in the NGA tracker."
+    },
+    {
+      "invoice_number": "CI-NO21-200305",
+      "company": "NO21",
+      "scenario": "NO21 NGA HOLD: tracker submitted, NGA team response still pending",
+      "expected_status": "HOLD",
+      "expected_findings": [
+        "NO21-002"
+      ],
+      "remediation": "Wait for NGA team response (fees decision, revised gross, revised base) before processing."
+    },
+    {
+      "invoice_number": "CI-NO21-200306",
+      "company": "NO21",
+      "scenario": "NO21 NGA FAIL: fees removed and gross revised but VAT still calculated on the old gross",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "NO21-005"
+      ],
+      "remediation": "Recalculate VAT: 25% of 449,900.00 = 112,475.00 (draft shows 115,772.50)."
+    },
+    {
+      "invoice_number": "CI-NO21-200307",
+      "company": "NO21",
+      "scenario": "NO21 FAIL: Workday vehicle price 459,900 vs POMS 449,900 (manual amendment needed)",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "GEN-002"
+      ],
+      "remediation": "Amend line 1 unit price to the POMS base price 449,900.00."
+    },
+    {
+      "invoice_number": "CI-NO21-200308",
+      "company": "NO21",
+      "scenario": "NO21 FAIL: payment recorded On Account but missing from the factoring tracker (processing delay)",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "NO21-007"
+      ],
+      "remediation": "Log PAY-NO-88213 (200,000.00 NOK) in the factoring tracker and re-apply against the invoice."
+    },
+    {
+      "invoice_number": "CI-NO21-200309",
+      "company": "NO21",
+      "scenario": "NO21 NGA PASS: tracker confirms fees are chargeable; fee lines retained, amounts unchanged",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-NO21-200310",
+      "company": "NO21",
+      "scenario": "NO21 NGA FAIL: tracker row exists but Model Number and Base Price were not captured",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "NO21-001"
+      ],
+      "remediation": "Complete the tracker row: model_number = P4, base_price = 649,900.00."
+    },
+    {
+      "invoice_number": "CI-PT21-300401",
+      "company": "PT21",
+      "scenario": "PT21 normal: private cash buyer; E&Y final invoice matches on date, amount, name, PO",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-PT21-300402",
+      "company": "PT21",
+      "scenario": "PT21 leasing PASS: LeasePlan, licence plate from POMS present in the line description",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-PT21-300403",
+      "company": "PT21",
+      "scenario": "PT21 leasing FAIL: Arval, licence plate BH-44-LQ missing from the description",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "PT21-001"
+      ],
+      "remediation": "Append ' - Matrícula BH-44-LQ' (from POMS) to the vehicle line description."
+    },
+    {
+      "invoice_number": "CI-PT21-300404",
+      "company": "PT21",
+      "scenario": "PT21 leasing FAIL: Kinto, plate on invoice CJ-10-MN, POMS has CJ-01-MN",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "PT21-001"
+      ],
+      "remediation": "Correct the plate in the description to CJ-01-MN as recorded in POMS."
+    },
+    {
+      "invoice_number": "CI-PT21-300405",
+      "company": "PT21",
+      "scenario": "PT21 personal loan PASS: Lusitânia Crédito finances; bill-to changed to buyer so bill-to = sold-to = buyer",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-PT21-300406",
+      "company": "PT21",
+      "scenario": "PT21 personal loan FAIL: bill-to still Crédito Ibérico SA instead of the buyer",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "PT21-002"
+      ],
+      "remediation": "Change Bill-To from Crédito Ibérico SA to Pedro Almeida (Bill-To = Sold-To = Buyer)."
+    },
+    {
+      "invoice_number": "CI-PT21-300407",
+      "company": "PT21",
+      "scenario": "PT21 Banco BPI PASS: sold-to changed to Banco BPI SA so bill-to = sold-to = loan provider",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-PT21-300408",
+      "company": "PT21",
+      "scenario": "PT21 Banco BPI FAIL: sold-to is still the buyer Rui Martins",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "PT21-003"
+      ],
+      "remediation": "Change Sold-To from Rui Martins to Banco BPI SA."
+    },
+    {
+      "invoice_number": "CI-PT21-300409",
+      "company": "PT21",
+      "scenario": "PT21 prepayment FAIL: customer VAT number blank on the draft; Salesforce holds PT509876543",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "PT21-004"
+      ],
+      "remediation": "Populate customer VAT number PT509876543 from Salesforce account 001PT00000A1B2C."
+    },
+    {
+      "invoice_number": "CI-PT21-300410",
+      "company": "PT21",
+      "scenario": "PT21 prepayment PASS: VAT number populated",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-PT21-300411",
+      "company": "PT21",
+      "scenario": "PT21 E&Y FAIL: E&Y final invoice amount 47,900.00 excl. VAT vs Workday 45,900.00",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "PT21-005"
+      ],
+      "remediation": "E&Y error before Workday approval: mirror the E&Y invoice or request E&Y to reissue; do not approve."
+    },
+    {
+      "invoice_number": "CI-PT21-300412",
+      "company": "PT21",
+      "scenario": "PT21 E&Y FAIL: invoice date in Workday differs from the E&Y final invoice date",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "PT21-005"
+      ],
+      "remediation": "Update the Workday invoice date to the exact E&Y date."
+    },
+    {
+      "invoice_number": "CI-PT21-300413",
+      "company": "PT21",
+      "scenario": "PT21 gapless FAIL: Workday statutory number is one ahead of the E&Y number for this invoice",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "PT21-006"
+      ],
+      "remediation": "Set statutory invoice number to the E&Y number; approve strictly in E&Y sequence."
+    },
+    {
+      "invoice_number": "CI-PT21-300414",
+      "company": "PT21",
+      "scenario": "PT21 gapless FAIL: approved in Workday before the E&Y final invoice was received",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "PT21-006"
+      ],
+      "remediation": "Cancel approval; wait for the E&Y final invoice, then approve in sequence."
+    },
+    {
+      "invoice_number": "CI-PT21-300415",
+      "company": "PT21",
+      "scenario": "PT21 delivery note PASS: zero-value internal document, excluded from the daily E&Y report",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-PT21-300416",
+      "company": "PT21",
+      "scenario": "PT21 credit note PASS: matches E&Y credit note; reason noted; kept in draft",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-DK21-400501",
+      "company": "DK21",
+      "scenario": "DK21 normal: private cash buyer",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-DK21-400502",
+      "company": "DK21",
+      "scenario": "DK21 tracker PASS: PO reference, agreed fleet price and cost-centre text all applied from SharePoint tracker",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-DK21-400503",
+      "company": "DK21",
+      "scenario": "DK21 tracker FAIL: list price billed, PO reference missing, cost-centre text missing",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "DK21-001",
+        "GEN-002"
+      ],
+      "remediation": "Apply tracker DK-SP-002: PO OF-PO-2026-121, unit price 429,995.00, add 'CC-4410 Sales Fleet' to line 1."
+    },
+    {
+      "invoice_number": "CI-DK21-400504",
+      "company": "DK21",
+      "scenario": "DK21 normal: corporate buyer with accessory line",
+      "expected_status": "PASS",
+      "expected_findings": [],
+      "remediation": null
+    },
+    {
+      "invoice_number": "CI-DK21-400505",
+      "company": "DK21",
+      "scenario": "DK21 generic FAIL: VIN on the invoice does not match the POMS order",
+      "expected_status": "FAIL",
+      "expected_findings": [
+        "GEN-003"
+      ],
+      "remediation": "Correct VIN to YSMKKE2AXS9800035 from POMS order 11400005."
+    }
+  ]
+}

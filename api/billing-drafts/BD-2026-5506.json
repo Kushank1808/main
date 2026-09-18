@@ -1,0 +1,141 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Billing Draft",
+  "data": {
+    "draft_number": "BD-2026-5506",
+    "proposed_invoice_number": "ORB-EU-INV-2026-05586",
+    "status": "PENDING_VALIDATION",
+    "prepared_by": "BPO O2C Billing Desk",
+    "prepared_on": "2026-07-23",
+    "invoice_date": "2026-07-24",
+    "billing_type": "Delivery-based (goods)",
+    "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+    "legal_entity": "ORBIS Industrial Solutions Ireland Ltd",
+    "sales_order": "SO-2026-7778",
+    "customer_po_number": "4500198846",
+    "contract_number": "MSA-NW-ORB-2024-017",
+    "delivery_number": "DN-88206",
+    "customer_id": "C-200114",
+    "bill_to": {
+      "site_use_id": "BT-200114-1",
+      "name": "NORDWIND TURBINES GMBH",
+      "address_1": "NORDWIND TURBINES GMBH",
+      "address_2": "ACCOUNTS PAYABLE",
+      "address_3": "-",
+      "address_4": "POSTFACH 44",
+      "city": "Hamburg",
+      "state": "HH",
+      "postal_code": "20095",
+      "country": "DE"
+    },
+    "ship_to": {
+      "site_use_id": "ST-200114-1",
+      "name": "NORDWIND TURBINES GMBH",
+      "address_1": "NORDWIND TURBINES GMBH",
+      "address_2": "PLANT 2 GOODS-IN",
+      "address_3": "-",
+      "address_4": "OTTENSENER STR. 9",
+      "city": "Hamburg",
+      "state": "HH",
+      "postal_code": "22765",
+      "country": "DE"
+    },
+    "currency": "EUR",
+    "payment_terms": "Net 45",
+    "incoterms": "DAP Hamburg Plant 2",
+    "tax_code": "EU-RC-0",
+    "tax_treatment": "REVERSE_CHARGE",
+    "tax_rate": 0.0,
+    "customer_tax_registration": "DE 812447906",
+    "exemption_certificate": null,
+    "notes": "Cross-border supply; VAT accounted by recipient under reverse charge.",
+    "lines": [
+      {
+        "line": 1,
+        "item_number": "AX-SEAL-88",
+        "description": "Mechanical Seal Kit, tungsten carbide faces",
+        "line_type": "GOODS",
+        "uom": "EA",
+        "quantity_to_bill": 58,
+        "unit_price": 134.13,
+        "amount": 7779.54,
+        "source": "DELIVERY",
+        "source_reference": "DN-88206",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 2,
+        "item_number": "AX-BRG-540",
+        "description": "High-load Bearing Set, sealed, Class 5",
+        "line_type": "GOODS",
+        "uom": "SET",
+        "quantity_to_bill": 21,
+        "unit_price": 379.25,
+        "amount": 7964.25,
+        "source": "DELIVERY",
+        "source_reference": "DN-88206",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      },
+      {
+        "line": 3,
+        "item_number": "FREIGHT-DAP",
+        "description": "Freight to named place under DAP terms",
+        "line_type": "FREIGHT",
+        "uom": "EA",
+        "quantity_to_bill": 1,
+        "unit_price": 283.39,
+        "amount": 283.39,
+        "source": "ORDER",
+        "source_reference": "SO-2026-7778",
+        "tax_code": "EU-RC-0",
+        "tax_rate": 0.0,
+        "tax_amount": 0.0
+      }
+    ],
+    "totals": {
+      "goods_subtotal": 15743.79,
+      "surcharge_total": 0.0,
+      "freight_total": 283.39,
+      "tax_amount": 0.0,
+      "total_payable": 16027.18,
+      "currency": "EUR"
+    },
+    "customer_name": "NORDWIND TURBINES GMBH",
+    "order_status": "AWAITING_BILLING",
+    "order_invoiced_date": null,
+    "documents": [
+      {
+        "document_id": "DOC-SO-SO-2026-7778",
+        "document_type": "SALES_ORDER",
+        "title": "Sales Order Acknowledgement",
+        "url": "docs/so_SO-2026-7778.pdf",
+        "size_bytes": 3823
+      },
+      {
+        "document_id": "DOC-PO-4500198846",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_4500198846.pdf",
+        "size_bytes": 3468
+      },
+      {
+        "document_id": "DOC-CT-MSA-NW-ORB-2024-017",
+        "document_type": "CONTRACT",
+        "title": "Master Commercial Agreement",
+        "url": "docs/contract_MSA-NW-ORB-2024-017.pdf",
+        "size_bytes": 3922
+      },
+      {
+        "document_id": "DOC-DN-DN-88206",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_DN-88206.pdf",
+        "size_bytes": 3131
+      }
+    ]
+  }
+}

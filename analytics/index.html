@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORBIS Insight — Order-to-cash analytics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="brand"><span class="logo">ORBIS</span><span class="app">Insight</span>
+      <span class="sheet">Order-to-cash · Billing readiness</span></div>
+    <div class="bar-right">
+      <span class="fx" id="fxNote"></span>
+      <a class="erp-link" href="../erp/index.html">Open ERP</a>
+    </div>
+  </header>
+
+  <section class="selections">
+    <div class="sel-group">
+      <label>Operating unit</label><div class="chips" id="fOu"></div>
+    </div>
+    <div class="sel-group">
+      <label>Customer</label><div class="chips" id="fCust"></div>
+    </div>
+    <div class="sel-group">
+      <label>Order status</label><div class="chips" id="fStatus"></div>
+    </div>
+    <button class="clear" id="clearSel">Clear selections</button>
+  </section>
+
+  <main id="board"><div class="loading">Loading model…</div></main>
+  <script src="app.js"></script>
+</body>
+</html>

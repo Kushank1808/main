@@ -1,0 +1,17 @@
+{
+  "source_system": "Workday",
+  "data": {
+    "customer_id": "C-PT-0206",
+    "customer_name": "Banco BPI SA",
+    "company": "PT21",
+    "customer_type": "BANK",
+    "country": "PT",
+    "vat_number": "PT501214534",
+    "related_party": false,
+    "nga_customer": false,
+    "leasing_plate_required": false,
+    "loan_provider": true,
+    "bpi_exception": true,
+    "sharepoint_tracker": false
+  }
+}

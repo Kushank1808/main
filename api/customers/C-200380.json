@@ -1,0 +1,50 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "data": {
+    "customer_id": "C-200380",
+    "customer_name": "HELIOS FLUID SYSTEMS SAS",
+    "customer_class": "OEM-MANUFACTURER",
+    "country": "FR",
+    "currency": "EUR",
+    "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+    "tax_code": "EU-RC-0",
+    "tax_registration": "FR 47812993041",
+    "exemption_certificate": null,
+    "credit_limit": 1600000,
+    "payment_terms": "Net 60",
+    "collector": "Voss, Henrik",
+    "bill_to": {
+      "site_use_id": "BT-200380-1",
+      "name": "HELIOS FLUID SYSTEMS SAS",
+      "address_1": "HELIOS FLUID SYSTEMS SAS",
+      "address_2": "SERVICE COMPTABILITE",
+      "address_3": "-",
+      "address_4": "14 RUE DE LA VILLETTE",
+      "city": "Lyon",
+      "state": "ARA",
+      "postal_code": "69003",
+      "country": "FR"
+    },
+    "ship_to": {
+      "site_use_id": "ST-200380-1",
+      "name": "HELIOS FLUID SYSTEMS SAS",
+      "address_1": "HELIOS FLUID SYSTEMS SAS",
+      "address_2": "ATELIER SUD RECEPTION",
+      "address_3": "-",
+      "address_4": "ZI DES GRANDES TERRES",
+      "city": "Saint-Priest",
+      "state": "ARA",
+      "postal_code": "69800",
+      "country": "FR"
+    },
+    "contact_name": "Émilie Rousseau",
+    "contact_email": "e.rousseau@helios-fluid.fr",
+    "contact_phone": "+33 4 72 11 88 40",
+    "contract_number": "MSA-HFS-ORB-2025-006",
+    "orders": [
+      "SO-2026-7791",
+      "SO-2026-7921"
+    ]
+  }
+}

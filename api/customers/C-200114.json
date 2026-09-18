@@ -1,0 +1,50 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "data": {
+    "customer_id": "C-200114",
+    "customer_name": "NORDWIND TURBINES GMBH",
+    "customer_class": "OEM-MANUFACTURER",
+    "country": "DE",
+    "currency": "EUR",
+    "operating_unit": "GEAM_OU_EUR_IND_EU_TRB_WBO",
+    "tax_code": "EU-RC-0",
+    "tax_registration": "DE 812447906",
+    "exemption_certificate": null,
+    "credit_limit": 3000000,
+    "payment_terms": "Net 45",
+    "collector": "Voss, Henrik",
+    "bill_to": {
+      "site_use_id": "BT-200114-1",
+      "name": "NORDWIND TURBINES GMBH",
+      "address_1": "NORDWIND TURBINES GMBH",
+      "address_2": "ACCOUNTS PAYABLE",
+      "address_3": "-",
+      "address_4": "POSTFACH 44",
+      "city": "Hamburg",
+      "state": "HH",
+      "postal_code": "20095",
+      "country": "DE"
+    },
+    "ship_to": {
+      "site_use_id": "ST-200114-1",
+      "name": "NORDWIND TURBINES GMBH",
+      "address_1": "NORDWIND TURBINES GMBH",
+      "address_2": "PLANT 2 GOODS-IN",
+      "address_3": "-",
+      "address_4": "OTTENSENER STR. 9",
+      "city": "Hamburg",
+      "state": "HH",
+      "postal_code": "22765",
+      "country": "DE"
+    },
+    "contact_name": "Katrin Bauer",
+    "contact_email": "k.bauer@nordwind-turbines.de",
+    "contact_phone": "+49 40 4711 220",
+    "contract_number": "MSA-NW-ORB-2024-017",
+    "orders": [
+      "SO-2026-7778",
+      "SO-2026-7908"
+    ]
+  }
+}

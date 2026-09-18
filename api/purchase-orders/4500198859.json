@@ -1,0 +1,61 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "4500198859",
+    "customer_id": "C-200790",
+    "customer_name": "BRAEMAR PROCESS LTD",
+    "contract_number": "DA-BRAE-ORB-2025-014",
+    "po_date": "2026-08-06",
+    "valid_from": "2026-08-06",
+    "valid_to": "2027-08-06",
+    "status": "OPEN",
+    "currency": "EUR",
+    "po_amount_limit": 49144.3,
+    "released_amount": 30715.19,
+    "buyer_name": "Sinead Kelleher",
+    "buyer_email": "s.kelleher@braemarprocess.ie",
+    "payment_terms": "Net 30",
+    "incoterms": "DAP Cork",
+    "sales_order": "SO-2026-7947",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "AX-CTRL-PLC",
+        "description": "Pump Control Panel, PLC, IP66",
+        "uom": "EA",
+        "quantity": 6,
+        "unit_price": 3322.8,
+        "amount": 19936.8
+      },
+      {
+        "po_line": 2,
+        "item_number": "AX-PMP-320",
+        "description": "Centrifugal Pump Assembly, 320mm impeller, SS316",
+        "uom": "EA",
+        "quantity": 2,
+        "unit_price": 1443.0,
+        "amount": 2886.0
+      },
+      {
+        "po_line": 3,
+        "item_number": "AX-SEAL-88",
+        "description": "Mechanical Seal Kit, tungsten carbide faces",
+        "uom": "EA",
+        "quantity": 19,
+        "unit_price": 113.1,
+        "amount": 2148.9
+      }
+    ],
+    "document_id": "DOC-PO-4500198859",
+    "documents": [
+      {
+        "document_id": "DOC-PO-4500198859",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_4500198859.pdf",
+        "size_bytes": 3540
+      }
+    ]
+  }
+}

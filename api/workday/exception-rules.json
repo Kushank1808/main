@@ -1,0 +1,189 @@
+{
+  "source_system": "Validation rule catalogue",
+  "object": "Rule",
+  "count": 18,
+  "generated_at": "2026-09-18T07:00:00Z",
+  "data": [
+    {
+      "rule_id": "GEN-001",
+      "company": "ALL",
+      "name": "Line arithmetic",
+      "severity": "critical",
+      "condition": "Every invoice line",
+      "check": "extended_amount = quantity × unit_price",
+      "source": "Workday invoice line",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "GEN-002",
+      "company": "ALL",
+      "name": "Workday vs POMS value match",
+      "severity": "critical",
+      "condition": "Invoice references a POMS order",
+      "check": "Order number exists in POMS and invoice subtotal (excl. VAT) equals POMS gross_taxable_amount. Skipped for prepayments, delivery notes and credit notes, and superseded by NO21-004 once an NGA tracker response exists",
+      "source": "POMS order",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "GEN-003",
+      "company": "ALL",
+      "name": "VIN match",
+      "severity": "high",
+      "condition": "Invoice references a POMS order",
+      "check": "Invoice VIN equals POMS VIN",
+      "source": "POMS order",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "SE21-001",
+      "company": "SE21",
+      "name": "Related party revenue category",
+      "severity": "high",
+      "condition": "Bill-To or Sold-To is Ziklo Bank or Volvo Bank (customer.related_party) AND line description contains 'Brand'",
+      "check": "Line revenue_category = 3030",
+      "source": "Workday customer master + invoice line",
+      "outcome_on_fail": "FAIL",
+      "remediation": "Manually correct the revenue category to 3030."
+    },
+    {
+      "rule_id": "NO21-001",
+      "company": "NO21",
+      "name": "NGA tracker captured",
+      "severity": "high",
+      "condition": "Bill-To customer.nga_customer = true",
+      "check": "A tracker row exists for the invoice with invoice_number, customer_id, model_number, total_invoice_price, gross_taxable_amount and base_price populated",
+      "source": "NGA tracker",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "NO21-002",
+      "company": "NO21",
+      "name": "NGA response received",
+      "severity": "high",
+      "condition": "NGA customer with a tracker row",
+      "check": "tracker.response_status = RESPONDED",
+      "source": "NGA tracker",
+      "outcome_on_fail": "HOLD"
+    },
+    {
+      "rule_id": "NO21-003",
+      "company": "NO21",
+      "name": "Fee lines removed when instructed",
+      "severity": "critical",
+      "condition": "tracker.remove_fees = true",
+      "check": "No line whose revenue category is a fee category (3041, 3042, 3043)",
+      "source": "NGA tracker + revenue category master",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "NO21-004",
+      "company": "NO21",
+      "name": "Revised gross and base applied",
+      "severity": "critical",
+      "condition": "NGA tracker responded",
+      "check": "Invoice taxable amount = revised_gross_amount; vehicle line unit price = revised_base_price",
+      "source": "NGA tracker",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "NO21-005",
+      "company": "NO21",
+      "name": "VAT recalculated after amendment",
+      "severity": "critical",
+      "condition": "Every NO21 invoice",
+      "check": "tax_amount = taxable_amount × 25%",
+      "source": "Workday tax",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "NO21-007",
+      "company": "NO21",
+      "name": "Factoring payment captured",
+      "severity": "medium",
+      "condition": "A payment is applied to the invoice as ON_ACCOUNT",
+      "check": "payment_id exists in the factoring tracker",
+      "source": "Factoring tracker",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "PT21-001",
+      "company": "PT21",
+      "name": "Leasing licence plate",
+      "severity": "high",
+      "condition": "Bill-To is LeasePlan, Arval, Leasys, Locarent or Kinto (customer.leasing_plate_required)",
+      "check": "Vehicle line description contains the POMS license_plate",
+      "source": "POMS order",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "PT21-002",
+      "company": "PT21",
+      "name": "Personal loan bill-to",
+      "severity": "high",
+      "condition": "POMS financing_type = PERSONAL_LOAN and partner is not Banco BPI SA",
+      "check": "Bill-To = Sold-To = buyer",
+      "source": "POMS order",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "PT21-003",
+      "company": "PT21",
+      "name": "Banco BPI exception",
+      "severity": "high",
+      "condition": "POMS financing partner = Banco BPI SA",
+      "check": "Bill-To = Sold-To = Banco BPI SA",
+      "source": "POMS order",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "PT21-004",
+      "company": "PT21",
+      "name": "VAT number on extras / prepayment",
+      "severity": "medium",
+      "condition": "document_kind is Sales Invoice Extra or prepayment",
+      "check": "customer_vat_number populated (fallback source: Salesforce)",
+      "source": "Workday + Salesforce",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "PT21-005",
+      "company": "PT21",
+      "name": "E&Y final invoice match",
+      "severity": "critical",
+      "condition": "An E&Y final invoice exists for the Workday invoice",
+      "check": "invoice_date, customer name, PO number, VIN, amount excl. VAT and total all equal",
+      "source": "E&Y final invoices",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "PT21-006",
+      "company": "PT21",
+      "name": "Gapless numbering and approval order",
+      "severity": "critical",
+      "condition": "Statutory invoice types PRT Invoice / Credit note - EY",
+      "check": "Workday statutory number equals the E&Y number; an APPROVED invoice must have an E&Y final invoice",
+      "source": "E&Y final invoices",
+      "outcome_on_fail": "FAIL"
+    },
+    {
+      "rule_id": "PT21-007",
+      "company": "PT21",
+      "name": "Exclude internal zero-value documents",
+      "severity": "info",
+      "condition": "Delivery Note or Sales Invoice Extra with zero value",
+      "check": "Flag as excluded from the daily E&Y report",
+      "source": "Workday",
+      "outcome_on_fail": "INFO"
+    },
+    {
+      "rule_id": "DK21-001",
+      "company": "DK21",
+      "name": "SharePoint tracker adjustments applied",
+      "severity": "high",
+      "condition": "Bill-To customer.sharepoint_tracker = true and a tracker row exists for the POMS order",
+      "check": "po_number = required_po_reference; vehicle unit price = agreed_unit_price; description contains required_description_text",
+      "source": "DK21 SharePoint tracker",
+      "outcome_on_fail": "FAIL"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO249637",
+    "customer_id": "C-100731",
+    "customer_name": "MAYO FDN",
+    "contract_number": "MSA-MAYO-ORB-2023-004",
+    "po_date": "2026-07-01",
+    "valid_from": "2026-07-01",
+    "valid_to": "2027-07-01",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 18526.59,
+    "released_amount": 11579.12,
+    "buyer_name": "INV Inventory Center Procurement",
+    "buyer_email": "orderconfirmations@mayo.edu",
+    "payment_terms": "Net 60",
+    "incoterms": "FOB Destination",
+    "sales_order": "1886417",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "NEO96",
+        "description": "Neonatal Assay Plate, 96-well, non-treated",
+        "uom": "EA",
+        "quantity": 71,
+        "unit_price": 6.26,
+        "amount": 444.46
+      },
+      {
+        "po_line": 2,
+        "item_number": "KA2V002PV1G",
+        "description": "Filter Cartridge 0.2um PVDF, 10in, gamma-irradiated",
+        "uom": "EA",
+        "quantity": 32,
+        "unit_price": 273.7,
+        "amount": 8758.4
+      },
+      {
+        "po_line": 3,
+        "item_number": "CELLCUL500",
+        "description": "Cell Culture Media, 500mL, animal-origin free",
+        "uom": "BT",
+        "quantity": 29,
+        "unit_price": 81.94,
+        "amount": 2376.26
+      }
+    ],
+    "document_id": "DOC-PO-PO249637",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO249637",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249637.pdf",
+        "size_bytes": 3594
+      }
+    ]
+  }
+}

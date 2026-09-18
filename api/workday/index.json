@@ -1,0 +1,52 @@
+{
+  "system": "Workday + POMS layer for the billing validation POC",
+  "generated_at": "2026-09-18T07:00:00Z",
+  "companies": [
+    "SE21",
+    "NO21",
+    "PT21",
+    "DK21"
+  ],
+  "endpoints": {
+    "companies": "api/workday/companies.json",
+    "customers": "api/workday/customers.json",
+    "customer_detail": "api/workday/customers/{customer_id}.json",
+    "revenue_categories": "api/workday/revenue-categories.json",
+    "sales_items": "api/workday/sales-items.json",
+    "customer_invoices": "api/workday/customer-invoices.json",
+    "customer_invoice_detail": "api/workday/customer-invoices/{invoice_number}.json",
+    "invoice_lines_flat": "api/workday/invoice-lines.json",
+    "poms_orders": "api/poms/orders.json",
+    "poms_order_detail": "api/poms/orders/{order_number}.json",
+    "nga_tracker": "api/trackers/nga-tracker.json",
+    "factoring_tracker": "api/trackers/factoring-tracker.json",
+    "dk21_sharepoint_tracker": "api/trackers/dk21-sharepoint-tracker.json",
+    "ey_final_invoices": "api/ey/final-invoices.json",
+    "salesforce_accounts": "api/salesforce/accounts.json",
+    "exception_rules": "api/workday/exception-rules.json",
+    "expected_results": "api/workday/expected-results.json",
+    "validation_latest_run": "api/validation-runs/latest.json",
+    "validation_history": "api/validation-runs/history.json"
+  },
+  "join_keys": {
+    "invoice_to_poms": "customer_invoice.poms_order_number = poms_order.order_number",
+    "invoice_to_customer": "customer_invoice.bill_to_customer_id / sold_to_customer_id = customer.customer_id",
+    "line_to_revenue_category": "invoice_line.revenue_category = revenue_category.revenue_category",
+    "invoice_to_nga": "nga_tracker.invoice_number = customer_invoice.invoice_number",
+    "invoice_to_ey": "ey_final_invoice.workday_invoice_number = customer_invoice.invoice_number",
+    "order_to_dk_tracker": "dk21_tracker.poms_order_number = poms_order.order_number",
+    "payment_to_factoring": "factoring_tracker.payment_id = customer_invoice.payment_application.payment_id"
+  },
+  "counts": {
+    "customer_invoices": 37,
+    "invoice_lines": 78,
+    "poms_orders": 35,
+    "customers": 40,
+    "rules": 18,
+    "expected": {
+      "PASS": 16,
+      "FAIL": 20,
+      "HOLD": 1
+    }
+  }
+}

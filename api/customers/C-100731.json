@@ -1,0 +1,51 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer",
+  "data": {
+    "customer_id": "C-100731",
+    "customer_name": "MAYO FDN",
+    "customer_class": "HEALTHCARE-IDN",
+    "country": "US",
+    "currency": "USD",
+    "operating_unit": "GEAM_OU_USD_LS_US_BIO_WBO",
+    "tax_code": "US-MN-EXEMPT",
+    "tax_registration": "US-EIN 41-6011702",
+    "exemption_certificate": "MN-EX-2277341",
+    "credit_limit": 2500000,
+    "payment_terms": "Net 60",
+    "collector": "C N, Pavithra",
+    "bill_to": {
+      "site_use_id": "BT-100731-1",
+      "name": "MAYO CLINIC",
+      "address_1": "MAYO CLINIC",
+      "address_2": "SUPPLY CHAIN AP",
+      "address_3": "-",
+      "address_4": "200 1ST ST SW",
+      "city": "ROCHESTER",
+      "state": "MN",
+      "postal_code": "55905",
+      "country": "US"
+    },
+    "ship_to": {
+      "site_use_id": "ST-100731-1",
+      "name": "MAYO FDN",
+      "address_1": "MAYO FDN",
+      "address_2": "INV INVENTORY CENTER",
+      "address_3": "-",
+      "address_4": "3131 VALLEY HIGH RD NW",
+      "city": "Rochester",
+      "state": "MN",
+      "postal_code": "55901",
+      "country": "US"
+    },
+    "contact_name": "INV Inventory Center Procurement",
+    "contact_email": "orderconfirmations@mayo.edu",
+    "contact_phone": "507-266-5551",
+    "contract_number": "MSA-MAYO-ORB-2023-004",
+    "orders": [
+      "1886417",
+      "1886587",
+      "1886757"
+    ]
+  }
+}

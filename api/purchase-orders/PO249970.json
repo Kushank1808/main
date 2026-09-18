@@ -1,0 +1,61 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Customer Purchase Order",
+  "data": {
+    "po_number": "PO249970",
+    "customer_id": "C-100428",
+    "customer_name": "ARKANSAS CHILDRENS HOSP",
+    "contract_number": "MSA-ACH-ORB-2024-011",
+    "po_date": "2026-07-19",
+    "valid_from": "2026-07-19",
+    "valid_to": "2027-07-19",
+    "status": "OPEN",
+    "currency": "USD",
+    "po_amount_limit": 16600.24,
+    "released_amount": 10375.15,
+    "buyer_name": "Mary Heroux",
+    "buyer_email": "HerouxME@archildrens.org",
+    "payment_terms": "Net 45",
+    "incoterms": "FOB Destination",
+    "sales_order": "1886570",
+    "lines": [
+      {
+        "po_line": 1,
+        "item_number": "BIOPROC-FLT-22",
+        "description": "Bioprocess Inline Filter Assembly, 2.2in TC",
+        "uom": "EA",
+        "quantity": 31,
+        "unit_price": 188.98,
+        "amount": 5858.38
+      },
+      {
+        "po_line": 2,
+        "item_number": "CHROM-COL-16",
+        "description": "Chromatography Column, 16mm, borosilicate",
+        "uom": "EA",
+        "quantity": 1,
+        "unit_price": 1650.0,
+        "amount": 1650.0
+      },
+      {
+        "po_line": 3,
+        "item_number": "VMPKPED",
+        "description": "Vacuum Manifold Pack, Pediatric, sterile, 50/cs",
+        "uom": "EA",
+        "quantity": 379,
+        "unit_price": 7.08,
+        "amount": 2683.32
+      }
+    ],
+    "document_id": "DOC-PO-PO249970",
+    "documents": [
+      {
+        "document_id": "DOC-PO-PO249970",
+        "document_type": "PURCHASE_ORDER",
+        "title": "Customer Purchase Order",
+        "url": "docs/po_PO249970.pdf",
+        "size_bytes": 3571
+      }
+    ]
+  }
+}

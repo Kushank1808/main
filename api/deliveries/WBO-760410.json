@@ -1,0 +1,64 @@
+{
+  "source_system": "ORBIS ERP",
+  "object": "Delivery",
+  "data": {
+    "delivery_number": "WBO-760410",
+    "sales_order": "1886570",
+    "customer_id": "C-100428",
+    "ship_date": "2026-07-29",
+    "carrier": "FedEx Freight",
+    "waybill": "FX8192180817",
+    "ship_from": "455 Bioscience Parkway, Marlborough, MA 01752, United States",
+    "ship_to": {
+      "site_use_id": "ST-100428-1",
+      "name": "ARKANSAS CHILDRENS HOSP",
+      "address_1": "ARKANSAS CHILDRENS HOSP",
+      "address_2": "WAREHOUSE",
+      "address_3": "-",
+      "address_4": "2410 W 8TH STREET",
+      "city": "Little Rock",
+      "state": "AR",
+      "postal_code": "72202",
+      "country": "US"
+    },
+    "proof_of_delivery_date": "2026-07-31",
+    "incoterms": "FOB Destination",
+    "gross_weight_kg": 172.62,
+    "lines": [
+      {
+        "delivery_line": 1,
+        "item_number": "BIOPROC-FLT-22",
+        "uom": "EA",
+        "ordered_quantity": 31,
+        "shipped_quantity": 31,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 2,
+        "item_number": "CHROM-COL-16",
+        "uom": "EA",
+        "ordered_quantity": 1,
+        "shipped_quantity": 1,
+        "backordered_quantity": 0
+      },
+      {
+        "delivery_line": 3,
+        "item_number": "VMPKPED",
+        "uom": "EA",
+        "ordered_quantity": 379,
+        "shipped_quantity": 379,
+        "backordered_quantity": 0
+      }
+    ],
+    "document_id": "DOC-DN-WBO-760410",
+    "documents": [
+      {
+        "document_id": "DOC-DN-WBO-760410",
+        "document_type": "DELIVERY_NOTE",
+        "title": "Delivery Note / Packing List",
+        "url": "docs/dn_WBO-760410.pdf",
+        "size_bytes": 3168
+      }
+    ]
+  }
+}
