@@ -802,7 +802,18 @@
         "HOLD": 1
       },
       "trigger": "github-schedule"
+    },
+    {
+      "run_id": "run-20261002T1907Z",
+      "started_at": "2026-10-02T19:07:52Z",
+      "invoices_checked": 37,
+      "summary": {
+        "PASS": 16,
+        "FAIL": 20,
+        "HOLD": 1
+      },
+      "trigger": "github-schedule"
     }
   ],
-  "count": 73
+  "count": 74
 }
