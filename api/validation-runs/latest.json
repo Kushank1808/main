@@ -1,11 +1,11 @@
 {
-  "run_id": "run-20261017T1913Z",
-  "started_at": "2026-10-17T19:13:35Z",
-  "finished_at": "2026-10-17T19:13:35Z",
+  "run_id": "run-20261017T2208Z",
+  "started_at": "2026-10-17T22:08:31Z",
+  "finished_at": "2026-10-17T22:08:31Z",
   "duration_seconds": 0.0,
   "schedule": {
     "interval_minutes": 60,
-    "next_run_at": "2026-10-17T20:13:35Z",
+    "next_run_at": "2026-10-17T23:08:31Z",
     "trigger": "github-schedule"
   },
   "source": "local api/",
