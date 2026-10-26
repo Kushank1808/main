@@ -1,17 +1,6 @@
 {
   "runs": [
     {
-      "run_id": "run-20260921T1352Z",
-      "started_at": "2026-09-21T13:52:20Z",
-      "invoices_checked": 37,
-      "summary": {
-        "PASS": 16,
-        "FAIL": 20,
-        "HOLD": 1
-      },
-      "trigger": "github-schedule"
-    },
-    {
       "run_id": "run-20260921T1914Z",
       "started_at": "2026-09-21T19:14:36Z",
       "invoices_checked": 37,
@@ -1840,6 +1829,17 @@
     {
       "run_id": "run-20261026T0556Z",
       "started_at": "2026-10-26T05:56:29Z",
+      "invoices_checked": 37,
+      "summary": {
+        "PASS": 16,
+        "FAIL": 20,
+        "HOLD": 1
+      },
+      "trigger": "github-schedule"
+    },
+    {
+      "run_id": "run-20261026T1246Z",
+      "started_at": "2026-10-26T12:46:11Z",
       "invoices_checked": 37,
       "summary": {
         "PASS": 16,
